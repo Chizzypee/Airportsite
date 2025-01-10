@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+      <div class="content">
+        <nav>
+                <div class="time-nav">
+                    <div class="n-time">
+                        <p>SECURITY TIMES</p>
+                        <P>T1 = 6 min</P>
+                        <p>T2 = 6 min</p>
+                    </div>
+                    <div class="n-book">
+                        <a href="#">
+                            <p>Book Fast Track</p>
+                            <img src="./icon/arrow-right-solid.svg" class="n-bookIMG">
+                        </a>
+                    </div>
+                </div>
+                <div class="hamburger-container" id="hambuger">
+                  <div class="hamburger">
+                    <div class="hamburger-head">
+                      <img src="./img/Picsart_24-06-01_17-42-41-472.png" class="n-logoIMG">
+                          <p>Dublin Airport</p>
+                        <img src="/icon/xmark-solid.svg" class="menu" id="closemenu" onclick="closeMenu()">
+                    </div>
+                    <div class="hambuger-content">
+                      <ul>
+                        <li><a href="#">Flight</a></li>
+                        <img src="./icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">To & From</a></li>
+                        <img src="./icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">Parking</a></li>
+                        <img src="./icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">Art the Airport</a></li>
+                        <img src="./icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">Enhanace Your Journey</a></li>
+                        <img src="./icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">Accessibility</a></li>
+                        <img src="./icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">NEWS</a></li>
+                        <img src="./icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">SHOP</a></li>
+                        <img src="./icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">CONTACT</a></li>
+                        <img src="./icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                        <li><a href="#" class="cop">CORPORATE</a></li>
+                        <li><a href="#" class="cop">B2B</a></li>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-menu" id="navmenu">
+                  <div class="navmenu-head">
+                    <img src="./img/search.png" class="menusearchIMG" onclick="openSearch()">
+                        <p>Dublin Airport</p>
+                      <img src="/icon/bars-solid.svg" class="menu" onclick="openMenu()">
+                  </div>
+                </div>
+                <div class="white-menu" id="whitemenu">
+                  <div class="whitemenu-head">
+                    <img src="./icon/xmark-solid.svg" class="menusearchIMG" onclick="closeSearch()">
+                        <p>Dublin Airport</p>
+                      <img src="/icon/bars-solid.svg" class="menu" onclick="openMenu()">
+                  </div>
+                </div>
+                <div class="navSearch" id="search">
+                  <div class="search-con">
+                    <input type="text" class="searchbar" placeholder="E.G, LUGGAGE, PASSWORD">
+                    <img src="./img//search.png" class="searchIMG">
+                  </div>
+                </div>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <P>|</P>
+                        <li><a href="#">CORPORATE</a></li>
+                        <li><a href="#">B2B</a></li>
+                    </ul>
+                </div>
+                <div class="nav-logo-link">
+                    <div class="n-logo">
+                        <img src="./img/Picsart_24-06-01_17-42-41-472.png" class="n-logoIMG">
+                        <p>DublinAriport</p>    
+                    </div>
+                    <div class="n-logo-link">
+                        <ul>
+                            <li><a href="#">Flight</a></li>
+                            <li><a href="#">To & From</a></li>
+                            <li><a href="#">Parking</a></li>
+                            <li><a href="#">Art the Airport</a></li>
+                            <li><a href="#">Enhanace Your Journey</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <img src="./img/search.png" class="n-search">
+                        </ul>
+                    </div>
+                </div>
+                <div class="depArr" id="depArr">
+                    <div class="depart">
+                        <img src="./icon/plane-departure-solid.svg" class="departIMG">
+                        <p>DEPARTURES</p>
+                    </div>
+                    <div class="arrive">
+                        <img src="./icon/plane-arrival-solid.svg" class="departIMG">
+                        <p>ARRIVALS</p>
+                    </div>
+                </div>
+        </nav>
+            <section class="hero-container">
+                <div class="hero-slider">
+                  <div class="slide active">
+                    <img src="./img/charles-causse-nZGLua7IlYg-unsplash.jpg"
+                      alt="children playing" class="slider-image" id="sliderImage">
+                  </div>
+                  <div class="slide">
+                    <img src="./img/gabriel-tovar-eyG1ujdHmI0-unsplash.jpg"
+                      alt="Children receiving school supplies">
+                  </div>
+                  <div class="slide">
+                    <img src="./img/nicolas-jehly-6WImwokn8dA-unsplash.jpg"
+                      alt="Children seating Together">
+                  </div>
+                  <div class="slide">
+                    <img src="./img/riku-lu-RISlZXiSShA-unsplash (1).jpg"
+                      alt="Nneoma Children in seating room">
+                  </div>
+                  <div class="slide">
+                    <img src="./img/tim-dennert-LT0FbUHtwzY-unsplash.jpg"
+                      alt="Children in group">
+                  </div>
+                  <div class="slide">
+                    <img src="./img/tim-gouw-OwD1ON8O-O4-unsplash.jpg"
+                      alt="Children in group">
+                  </div>
+                  <div class="slide">
+                    <img src="./img/niklas-jonasson-FazPmCV-9Jo-unsplash.jpg    "
+                      alt="Children in group">
+                  </div>
+                  <div class="slide">
+                    <img src="./img/hyundai-motor-group-ErBFxMkJpKk-unsplash.jpg"
+                      alt="Children in group">
+                  </div>
+
+                  <button class="slider-btn prev-btn">&#10094;</button>
+                  <button class="slider-btn next-btn">&#10095;</button>
+          
+                  <div class="slide-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                    <span class="indicator" data-slide="3"></span>
+                    <span class="indicator" data-slide="4"></span>
+                    <span class="indicator" data-slide="5"></span>
+                    <span class="indicator" data-slide="6"></span>
+                    <span class="indicator" data-slide="7"></span>
+                  </div>
+                  <div class="hero-option">
+                      <div class="h-option">
+                          <div class="option-box boy"  onclick="dropOpen()">
+                              <img src=".//icon/square-parking-solid.svg" class="optIMg">
+                              <div class="opttext">
+                                <h1>Parking</h1>
+                                <p>Most convenient parking</p>
+                              </div>
+                          </div>
+                          <div class="option-box"  onclick="dropOpen1()">
+                            <img src="/icon/truck-fast-solid.svg" class="optIMg">
+                            <div class="opttext">
+                              <h1>Fast Track</h1>
+                              <p>save time through security</p>
+                            </div>
+                          </div>
+                          <div class="option-box" onclick="dropOpen2()">
+                            <img src="./icon/cart-flatbed-suitcase-solid.svg" class="optIMg">
+                              <div class="opttext">
+                                <h1>Lounges</h1>
+                                <p>Relax before your flight</p>
+                              </div>
+                          </div>
+                          <div class="option-box" onclick="dropOpen3()">
+                            <img src="./icon/hand-holding-dollar-solid.svg" class="optIMg">
+                            <div class="opttext">
+                              <h1>Platinum</h1>
+                              <p>Ultimate airport expeirence</p>
+                            </div>
+                          </div>
+                          <div class="option-box" onclick="dropOpen4()">
+                            <img src="./icon/plane-solid.svg" class="optIMg">
+                            <div class="opttext">
+                              <h1>Airport Club</h1>
+                              <p>Annual pass for regular fylers</p>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="option-detail">
+                        <div class="opt-con">
+                          <div class="opt" id="active">
+                            <div class="opt-head">
+                              <div class="head">
+                                <h1>ENTER YOU DETAILS</h1>
+                                <p>-</p>
+                                <p>Most convenient parking</p>
+                              </div>
+                              <div class="head">
+                                <div class="headlink">
+                                  <p>Login</p>
+                                  <a href="#">
+                                    <img src="./img/Picsart_24-04-19_14-47-27-441.png" class="opt-bookIMG">
+                                </a>
+                                </div>
+                                <div class="headlink">
+                                  <p>Manage my bookings</p>
+                                  <a href="#">
+                                      <img src="./img/Picsart_24-04-19_14-47-27-441.png" class="opt-bookIMG">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="opt-field">
+                              <div class="field-con">
+                                <div class="fieldbox">
+                                  <p>Entry Date</p>
+                                  <input type="date" class="field">
+                                </div>
+                                <div class="timefield">
+                                  <input type="button" class="time" placeholder="Time">
+                                </div>
+                              </div>
+                              <div class="field-con">
+                                <div class="fieldbox">
+                                  <p>Entry Date</p>
+                                  <input type="date" class="field">
+                                </div>
+                                <div class="timefield">
+                                  <input type="button" class="time" placeholder="Time">
+                                </div>
+                              </div>
+                              <div class="field-con">
+                                <div class="fieldbox">
+                                  <p>Entry Date</p>
+                                  <input type="date" class="field">
+                                </div>
+                                <div class="bookfield">
+                                  <button class="booknow">BOOK NOW</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div> 
+                          <div class="opt" id="green">
+                            <div class="opt-head">
+                              <div class="head">
+                                <h1>FAST TRACK</h1>
+                              </div>
+                            </div>
+                            <div class="opt-field">
+                              <div class="field-con">
+                                <P>Fast track allow you to save time security and is available in Tarminal 1 and 2</P>
+                              </div>
+                              <div class="field-con">
+                                <div class="bookfield">
+                                  <button class="booknow">BOOK NOW</button>
+                                </div>
+                                <div class="head">
+                                  <div class="headlink fastheadlink">
+                                    <p>Login</p>
+                                    <a href="#">
+                                      <img src="./img/Picsart_24-04-19_14-47-27-441.png" class="opt-bookIMG">
+                                    </a>
+                                  </div>
+                                  <div class="headlink fastheadlink">
+                                    <p>Manage my bookings</p>
+                                    <a href="#">
+                                      <img src="./img/Picsart_24-04-19_14-47-27-441.png" class="opt-bookIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div> 
+                          <div class="opt" id="red">
+                            <div class="opt-head">
+                              <div class="head">
+                                <h1>lOUNGES</h1>
+                              </div>
+                            </div>
+                            <div class="opt-field">
+                              <div class="field-con">
+                                <P>Enjoy a Dublin Ariport lounge expeirence, stylish and relaxing spaces with delicious food and drink and much more</P>
+                              </div>
+                              <div class="field-con">
+                                <div class="bookfield">
+                                  <button class="booknow">BOOK NOW</button>
+                                </div>
+                                <div class="head">
+                                  <div class="headlink fastheadlink">
+                                    <p>Login</p>
+                                    <a href="#">
+                                      <img src="./img/Picsart_24-04-19_14-47-27-441.png" class="opt-bookIMG">
+                                    </a>
+                                  </div>
+                                  <div class="headlink fastheadlink">
+                                    <p>Manage my bookings</p>
+                                    <a href="#">
+                                      <img src="./img/Picsart_24-04-19_14-47-27-441.png" class="opt-bookIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div> 
+                          <div class="opt" id="yellow">
+                            <div class="opt-head">
+                              <div class="head">
+                                <h1>ENTER YOU DETAILS</h1>
+                                <p>-</p>
+                                <p>Our 24/7 private Terminal ensures a VIP treatment before or after your flight</p>
+                              </div>
+                              
+                            </div>
+                            <div class="opt-field">
+                              <div class="field-con">
+                                <div class="fieldbox">
+                                  <p>Entry Date</p>
+                                  <input type="date" class="field">
+                                </div>
+                              </div>
+                              <div class="field-con">
+                                <div class="fieldbox">
+                                  <option value="select">BOOKING TYPE</option>
+                                </div>
+                                <div class="fieldbox">
+                                  <input type="text" class="field" placeholder="NO OUT OF ALDUT">
+                                </div>
+                              </div>
+                              <div class="field-con">
+                                <div class="bookfield">
+                                  <button class="booknow">BOOK NOW</button>
+                                </div>
+                                <div class="head">
+                                  <div class="headlink">
+                                    <p>Login</p>
+                                    <a href="#">
+                                      <img src="./img/Picsart_24-04-19_14-47-27-441.png" class="opt-bookIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div> 
+                          <div class="opt" id="black">
+                            <div class="opt-head">
+                              <div class="head">
+                                <h1>lOUNGES</h1>
+                              </div>
+                            </div>
+                            <div class="opt-field">
+                              <div class="field-con">
+                                <P>Airpor club give Annual unlimited Fast Track access, unlimited Airport parking access to our lounges and discount in Dublin Airport Duty fee</P>
+                              </div>
+                              <div class="field-con">
+                                <div class="bookfield">
+                                  <button class="booknow">JOIN THE CLUB</button>
+                                </div>
+                                <div class="head">
+                                  <div class="headlink fastheadlink">
+                                    <p>Renew membership</p>
+                                    <a href="#">
+                                      <img src="./img/Picsart_24-04-19_14-47-27-441.png" class="opt-bookIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div> 
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </section>
+              <section class="ToForm">
+                <div class="ToFrom-content">
+                  <div class="Tofrom-head">
+                    <h1>To % From</h1>
+                    <p>The best way to and from the airport</p>
+                  </div>
+                  <div class="tofrombox">
+                    <div class="ToBox">
+                      <a href="">
+                        <img src="./icon/car-side-solid.svg" class="tofromIMG">
+                        <p>By Bus</p>
+                      </a>
+                    </div>
+                    <div class="ToBox">
+                      <a href="">
+                        <img src=".//icon/truck-solid.svg" class="tofromIMG">
+                        <p>By Car</p>
+                      </a>
+                    </div>
+                    <div class="ToBox Tobox">
+                      <a href="">
+                        <img src=".//icon/map-solid.svg" class="tofromIMG">
+                        <p>Info and maps</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="ToFrom-content">
+                  <div class="Tofrom-head">
+                    <h1>Shopping at Dublin Ariport</h1>
+                    <p>Enjoy incredible saving on the brands you love</p>
+                  </div>
+                  <div class="tofrombox">
+                    <div class="ToBox">
+                      <a href="">
+                        <img src="./icon/shopify-brands-solid.svg" class="tofromIMG">
+                        <p>Shopping at Airport</p>
+                      </a>
+                    </div>
+                    <div class="ToBox">
+                      <a href="">
+                        <img src="./icon/handshake-solid.svg" class="tofromIMG">
+                        <p>Special Offer</p>
+                      </a>
+                    </div>
+                    <div class="ToBox Tobox">
+                      <a href="">
+                        <img src="./icon/comments-solid.svg" class="tofromIMG">
+                        <p>Click & Collect</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="keepdate">
+                <div class="keepdate-content">
+                  <div class="keepdate-head">
+                    <h1>Keep up to date</h1>
+                  </div>
+                  <div class="keepdate-item">
+                    <div class="keeppics">
+                      <div class="keepboxcon">
+                        <img src="./img/hyundai-motor-group-ErBFxMkJpKk-unsplash.jpg" class="keepIMG">
+                        <div class="keepbox">
+                          <h2>Lorem, ipsum.</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, dolore! Corrupti corporis suscipit ipsam odio quaerat facilis </p>
+                        </div>
+                      </div>
+                      <div class="keepboxcon">
+                        <img src="./img/charles-causse-nZGLua7IlYg-unsplash.jpg" class="keepIMG">
+                        <div class="keepbox">
+                          <h2>Lorem, ipsum.</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, dolore! Corrupti corporis suscipit ipsam odio quaerat facilis </p>
+                        </div>
+                      </div>
+                      <div class="keepboxcon">
+                        <img src="./img/gabriel-tovar-eyG1ujdHmI0-unsplash.jpg" class="keepIMG">
+                        <div class="keepbox">
+                          <h2>Lorem, ipsum.</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, dolore! Corrupti corporis suscipit ipsam odio quaerat facilis </p>
+                        </div>
+                      </div>
+                      <div class="keepboxcon keepboxconHide">
+                        <img src="./img/rudityas-w-anggoro-ZadM4ldiuY8-unsplash.jpg   " class="keepIMG">
+                        <div class="keepbox">
+                          <h2>Lorem, ipsum.</h2>
+                          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, dolore! Corrupti corporis suscipit ipsam odio quaerat facilis </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="latest">
+                <div class="latest-content">
+                  <div class="latest-head">
+                    <div class="latest-headrow">
+                      <h1>Latest news</h1>
+                      <p>Find out what's happening at the airport</p>
+                    </div>
+                    <div class="latest-headrow">
+                      <div class="latest-social">
+                        <h1>Follow Us</h1>
+                        <img src="./icon/facebook-brands-solid.svg" class="latestIMG">
+                        <img src="./icon/whatsapp-brands-solid.svg" class="latestIMG">
+                        <img src="./icon/twitter-brands-solid.svg" class="latestIMG">
+                        <img src="./icon/linkedin-brands-solid.svg" class="latestIMG">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="latest-item">
+                    <div class="latestbox">
+                      <img src="./img/tim-dennert-LT0FbUHtwzY-unsplash.jpg" class="latestIMG1">
+                      <div class="latestboxcon">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate est amet sit nesciunt nulla animi soluta earum</p>
+                        <h6>Decembar 2024</h6>
+                      </div>
+                    </div>
+                    <div class="latestbox">
+                      <img src="./img/tim-gouw-OwD1ON8O-O4-unsplash.jpg" class="latestIMG1">
+                      <div class="latestboxcon">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate est amet sit nesciunt nulla animi soluta earum</p>
+                        <h6>Decembar 2024</h6>
+                      </div>
+                    </div>
+                    <div class="latestbox">
+                      <img src="./img/niklas-jonasson-FazPmCV-9Jo-unsplash.jpg" class="latestIMG1">
+                      <div class="latestboxcon">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate est amet sit nesciunt nulla animi soluta earum</p>
+                        <h6>Decembar 2024</h6>
+                      </div>
+                    </div>
+                    <div class="latestbox latestboxHide">
+                      <img src="./img/hyundai-motor-group-ErBFxMkJpKk-unsplash.jpg" class="latestIMG1">
+                      <div class="latestboxcon">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate est amet sit nesciunt nulla animi soluta earum</p>
+                        <h6>Decembar 2024</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="signup">
+                <div class="signip-content">
+                  <div class="signip-row">
+                    <div class="signup-head">
+                      <p>SIgn up now and get 10% off your next Dublin Airport Duty free online purchuse</p>
+                    </div>
+                    <div class="signup-con">
+                      <div class="sign-row">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ex!</p>
+                        <button class="sighupnow">Sign up now</button>
+                      </div>
+                      <div class="up-row">
+                        <div class="up-con">
+                          <div class="up-con-row">
+                            <img src="./icon/check-solid.svg" class="getintouchIMG">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="up-con-row">
+                            <img src="./icon/check-solid.svg" class="getintouchIMG">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="up-con-row">
+                            <img src="./icon/check-solid.svg" class="getintouchIMG">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="up-con-row">
+                            <img src="./icon/check-solid.svg" class="getintouchIMG">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="getintouch-row">
+                    <div class="getintouch-head">
+                      <p>Get in touch</p>
+                    </div>
+                    <div class="getintouch-con">
+                      <div class="touch-row">
+                        <img src="./icon/envelope-solid.svg" class="getintouchIMG">
+                        <p>@DublinAriport</p>
+                      </div>
+                      <div class="touch-row">
+                        <img src=".//icon/whatsapp-brands-solid.svg" class="getintouchIMG">
+                        <p>Massage us on Whatsapp</p>
+                      </div>
+                      <div class="touch-row">
+                        <img src="./icon/map-solid.svg" class="getintouchIMG">
+                        <p>8131252376</p>
+                      </div>
+                      <div class="touch-row">
+                        <img src="./icon/comments-solid.svg" class="getintouchIMG">
+                        <p>Contact us</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer class="footer">
+                <div class="footer-content">
+                  <div class="footer-link">
+                    <div class="link-row">
+                      <p>Shop Dublin Airport Duty free</p>
+                      <p>North Runway</p>
+                      <p>Achievement to calebrate</p>
+                      <p>Privacy Policy</p>
+                      <div class="copyright copyrightHide">
+                        <p>@ DublinAriport 2025</p>
+                      </div>
+                    </div>
+                    <div class="link-row">
+                      <p>Terms & Conditions</p>
+                      <p>Accessibility Ststement</p>
+                      <p>Gaeilge</p>
+                      <p>Sitemap</p>
+                      <p>Cookie setting</p>
+                    </div>
+                  </div>
+                  <div class="footer-social">
+                    <div class="social-con">
+                      <p>Follow Us</p>
+                      <div class="social-row">
+                        <img src="./icon/whatsapp-brands-solid.svg" class="socialIMG">
+                        <img src="./icon/facebook-brands-solid.svg" class="socialIMG">
+                        <img src="./icon/linkedin-brands-solid.svg" class="socialIMG">
+                        <img src="./icon/twitter-brands-solid.svg" class="socialIMG">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-appstore">
+                    <div class="appstore-head">
+                      <p>Download Dublin Ariport App</p>
+                    </div>
+                    <div class="app-con">
+                      <img src="./img/top-view.jpg" class="appIMG">
+                      <img src="./img/top-view.jpg" class="appIMG">
+                    </div>
+                  </div>
+                </div>
+              </footer>
+        </div>
+    </div>
+    <script src="./JS/slider.js"></script>
+    <script src="./JS/dropmenu.js"></script>
+</body>
+</html>
