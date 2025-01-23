@@ -19,15 +19,18 @@
   display: flex;
   flex-direction: column;
   height: auto;
-  width: 95%;
+  width: 100%;
   background-color: rgb(248, 247, 247);
 }
 nav{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 30vh;
+    height: auto;
     background-color: green;
+    background-image: url(/img/green.jpg);
+    background-position: center;
+    background-size: contain;
 }
 .time-nav{
     background-color: rgb(253, 253, 225);
@@ -187,13 +190,13 @@ nav{
   display: none;
   flex-direction: column;
   height: 100vh;
-  width: 95%;
+  width: 100%;
   z-index: 2;
 }
 .hamburger{
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 100%;
   height: 100vh;
   background-color: white;
   position: fixed;
@@ -206,7 +209,7 @@ nav{
   font-weight: 700;
   position: fixed;
   color: green;
-  width: 94%;
+  width: 100%;
 }
 .hambuger-content{
   display: flex;
@@ -292,16 +295,16 @@ nav{
 
 
 .hero-container{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: auto;
     width: 100%;
   }
   .hero-slider {
     position: relative;
     overflow: hidden;
-    height: 100vh;  
+    height: auto;  
     width: 100%;
   }
   
@@ -310,7 +313,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 70%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
     
@@ -388,7 +391,7 @@ nav{
   /* Slide Indicators */
   .slide-indicators {
     position: absolute;
-    bottom: 55%;
+    bottom: 50%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -415,7 +418,7 @@ nav{
     align-items: center;
     height: 50vh;
     background-color: rgb(221, 221, 221);
-    margin-top: 20rem;
+    margin-top: 30rem;
   }
   .h-option{                         
     display: flex;
@@ -590,7 +593,7 @@ nav{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 50vh;
+  height: auto;
   background-color: rgb(248, 247, 247);
 }
 .ToFrom-content{
@@ -646,7 +649,7 @@ nav{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: rgb(248, 247, 247);
 }
 .keepdate-content{
@@ -716,7 +719,7 @@ nav{
 .latest{
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
   width: 100%;
 }
 .latest-content{
@@ -797,7 +800,7 @@ nav{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 50vh;
+  height: auto;
   background-color: rgb(221, 221, 221);
 }
 .signip-content{
@@ -902,7 +905,7 @@ nav{
 .footer{
   display: flex;
   flex-direction: column;
-  height: 60vh;
+  height: auto;
   width: 100%;
   background-image: url(/img//charles-causse-nZGLua7IlYg-unsplash.jpg);
   background-position: center;
@@ -913,7 +916,7 @@ nav{
   background-color: green;
   display: flex;
   flex-direction: row;
-  height: 50vh;
+  height: 60vh;
   width: 100%;
   opacity: 90%;
   
@@ -1003,10 +1006,10 @@ nav{
     font-size: 10px;
   }
   nav{
-    height: 18vh;
-  }
+    height: 28vh;
+}
   .time-nav{
-    height: 5vh;
+    height: 8vh;
   }
   .n-time{
     display: flex;
@@ -1026,31 +1029,31 @@ nav{
     display: flex;
   }
   .depart{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
   .arrive{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
 
-  .hero-container{
-    height: 60vh;
-  }
   .hero-slider{
-    height: 60vh;
+    height: 75vh;
   }
   .slide{
-    height: 30vh;
+    height: 40vh;
   }
   .slider-btn{
     width: 7%;
+  }
+  .hero-option{
+    background-color: rgb(248, 247, 247);
   }
   .h-option{
     margin-top: 7.5rem;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     width: 100%;
   }
@@ -1067,7 +1070,7 @@ nav{
     width: 95%;
     gap: 25px;
     box-shadow: 1px 1px 5px;
-    border-radius: 3px;
+    border-radius: 1px;
   }
   .option-detail{
     display: none;
@@ -1077,7 +1080,7 @@ nav{
   }
 
   .ToForm{
-    height: 40vh;
+    height: 20vh;
   }
   .ToFrom-content{
     display: flex;
@@ -1109,35 +1112,40 @@ nav{
     width: 10%;
   }
 
-  .keeppics{
+  .keepdate-content{
+    height: 180vh;
+  }
+ .keeppics{
     flex-direction: column;
     width: 100%;
     justify-content: start;
   }
   .keepIMG{
     width: 100%;
-    height: 20vh;
+    height: 30vh;
   }
   .keepbox{
     height: 12vh;
     width: 95%;
-    margin-bottom: 3rem;
+    margin-top: 31rem;
+    border-radius: 3px;
   }
   .keepbox h2{
     margin-top: 10px;
   }
   .keepbox p{
-    font-size: 10px;
+    font-size: 13px;
   }
   .keepboxcon{
-    height: 30vh;
-  }
-  .keepboxconHide{
-    display: none;
+    height: 40vh;
   }
   
   .latest-head{
     flex-direction: column;
+    width: 80%;
+  }
+  .latest-content{
+    height: 190vh;
   }
   .latest-headrow{
     flex-direction: column;
@@ -1149,37 +1157,54 @@ nav{
   .latest-item{
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
+    margin-top: 50px;
+    gap: 10px;
   }
   .latestbox{
     width: 95%;
-    height: 26vh;
+    height: 40vh;
   }
   .latestIMG1{
-    height: 18vh;
+    height: 30vh;
   }
-  .latestboxHide{
-    display: none;
+  .latestboxcon{
+    height: 25vh;
+    width: 100%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 13px;
+  }
+
 
   .signip-content{
     flex-direction: column;
+    height: 70vh;
+    justify-content: start;
   }
- 
   .signup-head{
     margin-top: 10px;
   }
   .signup-head p{
     margin: 0px;
+    font-size: 13px;
+    font-weight: 700;
   }
   .signip-row{
     width: 90%;
-    height: 20vh;
+    height: 25vh;
   }
   .signup-con{
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column-reverse;
+    margin-top: 10px;
   }
   .sign-row{
     width: 100%;
@@ -1188,15 +1213,17 @@ nav{
   .sign-row p{
     width: 100%;
    margin: 0px;
+   display: none;
   }
   .sighupnow{
-    width: 50%;
+    width: 60%;
     height: 2vh;
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 0px;
-    border-radius: 1px;
+    border-radius: 2px;
+    background-color: rgb(1, 58, 1);
   }
   .up-row{
     width: 100%;
@@ -1205,8 +1232,8 @@ nav{
     gap: 5px;
   }
   .getintouch-row{
-    width: 100%;
-    height: 18vh;
+    width: 90%;
+    height: 25vh;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -1219,10 +1246,16 @@ nav{
   .getintouch-head p{
    width: 100%;
    margin-left: 20px;
+   font-size: 15px;
   }
   .touch-row{
     background-color: rgb(225, 225, 225);
     width: 90%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 13px;
   }
 
   .footer-content{
@@ -1230,12 +1263,13 @@ nav{
     height: 60vh
   }
   .footer-appstore{
-    background-color: rgb(248, 247, 247);
+    background-color: rgb(226, 225, 225);
     width: 100%;
     align-items: start;
   }
   .appstore-head p{
     color: black;
+    font: 13px;
   }
   .appIMG{
     width: 50%;
@@ -1257,7 +1291,6 @@ nav{
     align-items: center;
     margin: 0px;
     flex-direction: row;
-
   }
   .footer-link{
     flex-direction: column;
@@ -1265,7 +1298,13 @@ nav{
     width: 100%;
     margin-bottom: 50px;
   }
-
+  .link-row{
+    font-size: 13px;
+    width: 80%;
+  }
+  .link-row p{
+    font-size: 13px;
+  }
   .copyrightHide{
     display: none;
   }
@@ -1275,10 +1314,10 @@ nav{
     font-size: 10px;
   }
   nav{
-    height: 18vh;
-  }
+    height: 28vh;
+}
   .time-nav{
-    height: 5vh;
+    height: 8vh;
   }
   .n-time{
     display: flex;
@@ -1298,31 +1337,34 @@ nav{
     display: flex;
   }
   .depart{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
   .arrive{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
 
-  .hero-container{
-    height: 60vh;
-  }
   .hero-slider{
-    height: 60vh;
+    height: 80vh;
   }
   .slide{
-    height: 30vh;
+    height: 40vh;
   }
   .slider-btn{
     width: 7%;
   }
+  .slide-indicators{
+    top: 45%;
+  }
+  .hero-option{
+    background-color: rgb(248, 247, 247);
+  }
   .h-option{
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     width: 100%;
   }
@@ -1339,7 +1381,7 @@ nav{
     width: 95%;
     gap: 25px;
     box-shadow: 1px 1px 5px;
-    border-radius: 3px;
+    border-radius: 1px;
   }
   .option-detail{
     display: none;
@@ -1349,7 +1391,7 @@ nav{
   }
 
   .ToForm{
-    height: 40vh;
+    height: 20vh;
   }
   .ToFrom-content{
     display: flex;
@@ -1366,12 +1408,6 @@ nav{
     margin: 20px;
     margin-left: 20px;
   }
-  .Tofrom-head h1{
-    font-size: 12px;
-  }
-  .Tofrom-head p{
-    font-size: 10px;
-  }
   .ToBox{
     width: 40%;
     height: 5vh;
@@ -1387,50 +1423,40 @@ nav{
     width: 10%;
   }
 
-  .keeppics{
+  .keepdate-content{
+    height: 200vh;
+  }
+ .keeppics{
     flex-direction: column;
     width: 100%;
     justify-content: start;
   }
-  .keepdate-head{
-    margin: 0px;
-    margin-left: 20px;
-  }
-  .keepdate-head h1{
-    font-size: 12px;
-  }
   .keepIMG{
     width: 100%;
-    height: 20vh;
+    height: 30vh;
   }
   .keepbox{
-    height: 12vh;
+    height: 15vh;
     width: 95%;
-    margin-bottom: 6rem;
+    margin-top: 31rem;
+    border-radius: 3px;
   }
   .keepbox h2{
     margin-top: 10px;
   }
   .keepbox p{
-    font-size: 10px;
+    font-size: 13px;
   }
   .keepboxcon{
-    height: 30vh;
-  }
-  .keepboxconHide{
-    display: none;
+    height: 45vh;
   }
   
-
   .latest-head{
     flex-direction: column;
-    gap: 10px;
+    width: 80%;
   }
-  .latest-head h1{
-    font-size: 12px;
-  }
-  .latest-head p{
-    font-size: 10px;
+  .latest-content{
+    height: 210vh;
   }
   .latest-headrow{
     flex-direction: column;
@@ -1442,24 +1468,36 @@ nav{
   .latest-item{
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     gap: 10px;
   }
   .latestbox{
     width: 95%;
-    height: 27vh;
+    height: 45vh;
   }
   .latestIMG1{
-    height: 18vh;
+    height: 30vh;
   }
-  .latestboxHide{
-    display: none;
+  .latestboxcon{
+    height: 20vh;
+    width: 100%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 13px;
   }
 
 
   .signip-content{
     flex-direction: column;
+    height: 80vh;
     justify-content: start;
   }
   .signup-head{
@@ -1467,35 +1505,35 @@ nav{
   }
   .signup-head p{
     margin: 0px;
+    font-size: 13px;
+    font-weight: 700;
   }
   .signip-row{
     width: 90%;
-    height: 5vh;
-    gap: 5px;
+    height: 20vh;
   }
   .signup-con{
-    flex-direction: column;
-    gap: 0px;
+    flex-direction: column-reverse;
+    margin-top: 10px;
   }
   .sign-row{
     width: 100%;
     align-items: center;
-    margin: 0px;
-
   }
   .sign-row p{
     width: 100%;
+   margin: 0px;
+   display: none;
   }
   .sighupnow{
-    width: 50%;
+    width: 60%;
     height: 2vh;
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 0px;
-    border-radius: 1px;
-    padding: 10px;
-    font-size: 10px;
+    border-radius: 2px;
+    background-color: rgb(1, 58, 1);
   }
   .up-row{
     width: 100%;
@@ -1504,13 +1542,13 @@ nav{
     gap: 5px;
   }
   .getintouch-row{
-    width: 100%;
-    height: 15vh;
+    width: 90%;
+    height: 30vh;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     background-color: rgb(248, 247, 247);
-    margin-top: 150px;
+    margin-top: 100px;
   }
   .getintouch-head{
    width: 100%;
@@ -1518,10 +1556,16 @@ nav{
   .getintouch-head p{
    width: 100%;
    margin-left: 20px;
+   font-size: 15px;
   }
   .touch-row{
     background-color: rgb(225, 225, 225);
     width: 90%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 13px;
   }
 
   .footer-content{
@@ -1529,12 +1573,13 @@ nav{
     height: 60vh
   }
   .footer-appstore{
-    background-color: rgb(248, 247, 247);
+    background-color: rgb(226, 225, 225);
     width: 100%;
     align-items: start;
   }
   .appstore-head p{
     color: black;
+    font: 13px;
   }
   .appIMG{
     width: 50%;
@@ -1542,7 +1587,7 @@ nav{
   }
   .app-con{
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .footer-social{
     width: 100%;
@@ -1556,7 +1601,6 @@ nav{
     align-items: center;
     margin: 0px;
     flex-direction: row;
-
   }
   .footer-link{
     flex-direction: column;
@@ -1564,7 +1608,13 @@ nav{
     width: 100%;
     margin-bottom: 50px;
   }
-
+  .link-row{
+    font-size: 13px;
+    width: 80%;
+  }
+  .link-row p{
+    font-size: 13px;
+  }
   .copyrightHide{
     display: none;
   }
@@ -1574,10 +1624,10 @@ nav{
     font-size: 10px;
   }
   nav{
-    height: 18vh;
-  }
+    height: 28vh;
+}
   .time-nav{
-    height: 5vh;
+    height: 8vh;
   }
   .n-time{
     display: flex;
@@ -1596,32 +1646,43 @@ nav{
   .nav-menu{
     display: flex;
   }
+  .hamburger-head p{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .navmenu-head p{
+    font-size: 14px;
+    font-weight: 700;
+  }
   .depart{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
   .arrive{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
 
-  .hero-container{
-    height: 60vh;
-  }
   .hero-slider{
-    height: 70vh;
+    height: 80vh;
   }
   .slide{
-    height: 30vh;
+    height: 40vh;
   }
   .slider-btn{
     width: 7%;
   }
+  .slide-indicators{
+    top: 45%;
+  }
+  .hero-option{
+    background-color: rgb(248, 247, 247);
+  }
   .h-option{
-    margin-top: 7px;
+    margin-top: -1rem;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     width: 100%;
   }
@@ -1634,11 +1695,11 @@ nav{
   .option-box{
     display: flex;
     flex-direction: row;
-    height: 5vh;
+    height: 6vh;
     width: 95%;
     gap: 25px;
     box-shadow: 1px 1px 5px;
-    border-radius: 3px;
+    border-radius: 1px;
   }
   .option-detail{
     display: none;
@@ -1648,7 +1709,7 @@ nav{
   }
 
   .ToForm{
-    height: 40vh;
+    height: 20vh;
   }
   .ToFrom-content{
     display: flex;
@@ -1666,74 +1727,76 @@ nav{
     margin-left: 20px;
   }
   .Tofrom-head h1{
-    font-size: 12px;
-  }
-  .Tofrom-head p{
-    font-size: 10px;
+    font-size: 15px;
   }
   .ToBox{
     width: 40%;
     height: 5vh;
     display: flex;
   }
-  .ToBox a{
+  .ToBox a {
     gap: 5px;
+    font-size: 13px;
+  }
+  .ToBox a p{
+    font-size: 13px;
   }
   .Tobox{
     display: none;
   }
   .tofromIMG{
-    width: 10%;
+    width: 13%;
   }
 
-  .keeppics{
+  .keepdate-content{
+    height: 220vh;
+  }
+  .keepdate-head{
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .keepdate-head h1{
+    font-size: 15px;
+  }
+ .keeppics{
     flex-direction: column;
     width: 100%;
     justify-content: start;
   }
-  .keepdate-head{
-    margin: 0px;
-    margin-left: 20px;
-  }
-  .keepdate-head h1{
-    font-size: 12px;
-  }
   .keepIMG{
     width: 100%;
-    height: 18vh;
+    height: 35vh;
   }
   .keepbox{
-    height: 11vh;
+    height: 15vh;
     width: 95%;
-    margin-bottom: 6rem;
+    margin-top: 32rem;
+    border-radius: 3px;
   }
   .keepbox h2{
-    margin-top: 3px;
+    margin-top: 10px;
   }
   .keepbox p{
-    font-size: 10px;
+    font-size: 13px;
   }
   .keepboxcon{
-    height: 30vh;
-  }
-  .keepboxconHide{
-    display: none;
+    height: 51vh;
   }
   
-
   .latest-head{
     flex-direction: column;
-    gap: 10px;
+    width: 80%;
   }
-  .latest-head h1{
-    font-size: 12px;
-  }
-  .latest-head p{
-    font-size: 10px;
+  .latest-content{
+    height: 210vh;
   }
   .latest-headrow{
     flex-direction: column;
     align-items: start;
+  }
+  .latest-headrow h1{
+    font-size: 15px;
   }
   .latest-social{
     justify-content: start;
@@ -1741,24 +1804,36 @@ nav{
   .latest-item{
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     gap: 10px;
   }
   .latestbox{
     width: 95%;
-    height: 25vh;
+    height: 45vh;
   }
   .latestIMG1{
-    height: 15vh;
+    height: 30vh;
   }
-  .latestboxHide{
-    display: none;
+  .latestboxcon{
+    height: 20vh;
+    width: 100%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 13px;
   }
 
 
   .signip-content{
     flex-direction: column;
+    height: 95vh;
     justify-content: start;
   }
   .signup-head{
@@ -1766,35 +1841,35 @@ nav{
   }
   .signup-head p{
     margin: 0px;
+    font-size: 13px;
+    font-weight: 700;
   }
   .signip-row{
     width: 90%;
-    height: 5vh;
-    gap: 5px;
+    height: 20vh;
   }
   .signup-con{
-    flex-direction: column;
-    gap: 0px;
+    flex-direction: column-reverse;
+    margin-top: 10px;
   }
   .sign-row{
     width: 100%;
     align-items: center;
-    margin: 0px;
-
   }
   .sign-row p{
     width: 100%;
+   margin: 0px;
+   display: none;
   }
   .sighupnow{
-    width: 50%;
+    width: 60%;
     height: 2vh;
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 0px;
-    border-radius: 1px;
-    padding: 10px;
-    font-size: 10px;
+    border-radius: 2px;
+    background-color: rgb(1, 58, 1);
   }
   .up-row{
     width: 100%;
@@ -1803,13 +1878,13 @@ nav{
     gap: 5px;
   }
   .getintouch-row{
-    width: 100%;
-    height: 15vh;
+    width: 90%;
+    height: 40vh;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     background-color: rgb(248, 247, 247);
-    margin-top: 150px;
+    margin-top: 100px;
   }
   .getintouch-head{
    width: 100%;
@@ -1817,23 +1892,39 @@ nav{
   .getintouch-head p{
    width: 100%;
    margin-left: 20px;
+   font-size: 15px;
+  }
+  .getintouchIMG{
+    width: 5%;
   }
   .touch-row{
     background-color: rgb(225, 225, 225);
     width: 90%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 13px;
   }
 
   .footer-content{
     flex-direction: column-reverse;
-    height: 60vh
+    height: 50vh
   }
   .footer-appstore{
-    background-color: rgb(248, 247, 247);
+    background-color: rgb(226, 225, 225);
     width: 100%;
     align-items: start;
   }
+  .appstore-head{
+    margin: 0px;
+    margin-left: 20px;
+  }
   .appstore-head p{
     color: black;
+    font-size: 15px;
+  }
+  .appstore-head p{
   }
   .appIMG{
     width: 50%;
@@ -1841,7 +1932,7 @@ nav{
   }
   .app-con{
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .footer-social{
     width: 100%;
@@ -1855,17 +1946,22 @@ nav{
     align-items: center;
     margin: 0px;
     flex-direction: row;
-
   }
   .footer-link{
-    flex-direction: column;
+    flex-direction: row;
     gap: 0px;
     width: 100%;
     margin-bottom: 50px;
   }
-
+  .link-row{
+    font-size: 13px;
+    width: 80%;
+  }
+  .link-row p{
+    font-size: 13px;
+  }
   .copyrightHide{
-    display: none;
+    display: flex;
   }
 }
 @media screen and (min-width: 390px) {
@@ -1873,10 +1969,10 @@ nav{
     font-size: 10px;
   }
   nav{
-    height: 18vh;
-  }
+    height: 28vh;
+}
   .time-nav{
-    height: 5vh;
+    height: 8vh;
   }
   .n-time{
     display: flex;
@@ -1895,32 +1991,43 @@ nav{
   .nav-menu{
     display: flex;
   }
+  .hamburger-head p{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .navmenu-head p{
+    font-size: 14px;
+    font-weight: 700;
+  }
   .depart{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
   .arrive{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
 
-  .hero-container{
-    height: 60vh;
-  }
   .hero-slider{
-    height: 70vh;
+    height: 80vh;
   }
   .slide{
-    height: 30vh;
+    height: 40vh;
   }
   .slider-btn{
     width: 7%;
   }
+  .slide-indicators{
+    top: 45%;
+  }
+  .hero-option{
+    background-color: rgb(248, 247, 247);
+  }
   .h-option{
-    margin-top: 65px;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     width: 100%;
   }
@@ -1933,11 +2040,11 @@ nav{
   .option-box{
     display: flex;
     flex-direction: row;
-    height: 5vh;
+    height: 6vh;
     width: 95%;
     gap: 25px;
     box-shadow: 1px 1px 5px;
-    border-radius: 3px;
+    border-radius: 1px;
   }
   .option-detail{
     display: none;
@@ -1947,7 +2054,7 @@ nav{
   }
 
   .ToForm{
-    height: 40vh;
+    height: 20vh;
   }
   .ToFrom-content{
     display: flex;
@@ -1965,74 +2072,76 @@ nav{
     margin-left: 20px;
   }
   .Tofrom-head h1{
-    font-size: 12px;
-  }
-  .Tofrom-head p{
-    font-size: 10px;
+    font-size: 15px;
   }
   .ToBox{
     width: 40%;
     height: 5vh;
     display: flex;
   }
-  .ToBox a{
+  .ToBox a {
     gap: 5px;
+    font-size: 13px;
+  }
+  .ToBox a p{
+    font-size: 13px;
   }
   .Tobox{
     display: none;
   }
   .tofromIMG{
-    width: 10%;
+    width: 13%;
   }
 
-  .keeppics{
+  .keepdate-content{
+    height: 210vh;
+  }
+  .keepdate-head{
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .keepdate-head h1{
+    font-size: 15px;
+  }
+ .keeppics{
     flex-direction: column;
     width: 100%;
     justify-content: start;
   }
-  .keepdate-head{
-    margin: 0px;
-    margin-left: 20px;
-  }
-  .keepdate-head h1{
-    font-size: 12px;
-  }
   .keepIMG{
     width: 100%;
-    height: 18vh;
+    height: 35vh;
   }
   .keepbox{
-    height: 11vh;
+    height: 15vh;
     width: 95%;
-    margin-bottom: 6rem;
+    margin-top: 35rem;
+    border-radius: 3px;
   }
   .keepbox h2{
-    margin-top: 3px;
+    margin-top: 10px;
   }
   .keepbox p{
-    font-size: 10px;
+    font-size: 13px;
   }
   .keepboxcon{
-    height: 30vh;
-  }
-  .keepboxconHide{
-    display: none;
+    height: 48vh;
   }
   
-
   .latest-head{
     flex-direction: column;
-    gap: 10px;
+    width: 80%;
   }
-  .latest-head h1{
-    font-size: 12px;
-  }
-  .latest-head p{
-    font-size: 10px;
+  .latest-content{
+    height: 210vh;
   }
   .latest-headrow{
     flex-direction: column;
     align-items: start;
+  }
+  .latest-headrow h1{
+    font-size: 15px;
   }
   .latest-social{
     justify-content: start;
@@ -2040,24 +2149,36 @@ nav{
   .latest-item{
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     gap: 10px;
   }
   .latestbox{
     width: 95%;
-    height: 25vh;
+    height: 45vh;
   }
   .latestIMG1{
-    height: 15vh;
+    height: 30vh;
   }
-  .latestboxHide{
-    display: none;
+  .latestboxcon{
+    height: 20vh;
+    width: 100%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 13px;
   }
 
 
   .signip-content{
     flex-direction: column;
+    height: 70vh;
     justify-content: start;
   }
   .signup-head{
@@ -2065,35 +2186,35 @@ nav{
   }
   .signup-head p{
     margin: 0px;
+    font-size: 13px;
+    font-weight: 700;
   }
   .signip-row{
     width: 90%;
-    height: 5vh;
-    gap: 5px;
+    height: 20vh;
   }
   .signup-con{
-    flex-direction: column;
-    gap: 50px;
+    flex-direction: column-reverse;
+    margin-top: 10px;
   }
   .sign-row{
     width: 100%;
     align-items: center;
-    margin: 0px;
-
   }
   .sign-row p{
     width: 100%;
+   margin: 0px;
+   display: none;
   }
   .sighupnow{
-    width: 50%;
+    width: 60%;
     height: 2vh;
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 0px;
-    border-radius: 1px;
-    padding: 10px;
-    font-size: 10px;
+    border-radius: 2px;
+    background-color: rgb(1, 58, 1);
   }
   .up-row{
     width: 100%;
@@ -2102,13 +2223,13 @@ nav{
     gap: 5px;
   }
   .getintouch-row{
-    width: 100%;
-    height: 15vh;
+    width: 90%;
+    height: 30vh;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     background-color: rgb(248, 247, 247);
-    margin-top: 235px;
+    margin-top: 100px;
   }
   .getintouch-head{
    width: 100%;
@@ -2116,23 +2237,39 @@ nav{
   .getintouch-head p{
    width: 100%;
    margin-left: 20px;
+   font-size: 15px;
+  }
+  .getintouchIMG{
+    width: 5%;
   }
   .touch-row{
     background-color: rgb(225, 225, 225);
     width: 90%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 13px;
   }
 
   .footer-content{
     flex-direction: column-reverse;
-    height: 60vh
+    height: 50vh
   }
   .footer-appstore{
-    background-color: rgb(248, 247, 247);
+    background-color: rgb(226, 225, 225);
     width: 100%;
     align-items: start;
   }
+  .appstore-head{
+    margin: 0px;
+    margin-left: 20px;
+  }
   .appstore-head p{
     color: black;
+    font-size: 15px;
+  }
+  .appstore-head p{
   }
   .appIMG{
     width: 50%;
@@ -2140,7 +2277,7 @@ nav{
   }
   .app-con{
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .footer-social{
     width: 100%;
@@ -2154,17 +2291,22 @@ nav{
     align-items: center;
     margin: 0px;
     flex-direction: row;
-
   }
   .footer-link{
-    flex-direction: column;
+    flex-direction: row;
     gap: 0px;
     width: 100%;
     margin-bottom: 50px;
   }
-
+  .link-row{
+    font-size: 13px;
+    width: 80%;
+  }
+  .link-row p{
+    font-size: 13px;
+  }
   .copyrightHide{
-    display: none;
+    display: flex;
   }
 }
 @media screen and (min-width: 412px) {
@@ -2172,10 +2314,10 @@ nav{
     font-size: 10px;
   }
   nav{
-    height: 18vh;
-  }
+    height: 28vh;
+}
   .time-nav{
-    height: 5vh;
+    height: 8vh;
   }
   .n-time{
     display: flex;
@@ -2194,32 +2336,43 @@ nav{
   .nav-menu{
     display: flex;
   }
+  .hamburger-head p{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .navmenu-head p{
+    font-size: 14px;
+    font-weight: 700;
+  }
   .depart{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
   .arrive{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
 
-  .hero-container{
-    height: 60vh;
-  }
   .hero-slider{
-    height: 70vh;
+    height: 80vh;
   }
   .slide{
-    height: 30vh;
+    height: 40vh;
   }
   .slider-btn{
     width: 7%;
   }
+  .slide-indicators{
+    top: 45%;
+  }
+  .hero-option{
+    background-color: rgb(248, 247, 247);
+  }
   .h-option{
-    margin-top: 90px;
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     width: 100%;
   }
@@ -2232,11 +2385,11 @@ nav{
   .option-box{
     display: flex;
     flex-direction: row;
-    height: 5vh;
+    height: 6vh;
     width: 95%;
     gap: 25px;
     box-shadow: 1px 1px 5px;
-    border-radius: 3px;
+    border-radius: 1px;
   }
   .option-detail{
     display: none;
@@ -2246,7 +2399,7 @@ nav{
   }
 
   .ToForm{
-    height: 40vh;
+    height: 20vh;
   }
   .ToFrom-content{
     display: flex;
@@ -2264,74 +2417,76 @@ nav{
     margin-left: 20px;
   }
   .Tofrom-head h1{
-    font-size: 12px;
-  }
-  .Tofrom-head p{
-    font-size: 10px;
+    font-size: 15px;
   }
   .ToBox{
     width: 40%;
     height: 5vh;
     display: flex;
   }
-  .ToBox a{
+  .ToBox a {
     gap: 5px;
+    font-size: 13px;
+  }
+  .ToBox a p{
+    font-size: 13px;
   }
   .Tobox{
     display: none;
   }
   .tofromIMG{
-    width: 10%;
+    width: 13%;
   }
 
-  .keeppics{
+  .keepdate-content{
+    height: 210vh;
+  }
+  .keepdate-head{
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .keepdate-head h1{
+    font-size: 15px;
+  }
+ .keeppics{
     flex-direction: column;
     width: 100%;
     justify-content: start;
   }
-  .keepdate-head{
-    margin: 0px;
-    margin-left: 20px;
-  }
-  .keepdate-head h1{
-    font-size: 12px;
-  }
   .keepIMG{
     width: 100%;
-    height: 18vh;
+    height: 35vh;
   }
   .keepbox{
-    height: 11vh;
+    height: 15vh;
     width: 95%;
-    margin-bottom: 6rem;
+    margin-top: 35rem;
+    border-radius: 3px;
   }
   .keepbox h2{
-    margin-top: 3px;
+    margin-top: 10px;
   }
   .keepbox p{
-    font-size: 10px;
+    font-size: 13px;
   }
   .keepboxcon{
-    height: 30vh;
-  }
-  .keepboxconHide{
-    display: none;
+    height: 48vh;
   }
   
-
   .latest-head{
     flex-direction: column;
-    gap: 10px;
+    width: 80%;
   }
-  .latest-head h1{
-    font-size: 12px;
-  }
-  .latest-head p{
-    font-size: 10px;
+  .latest-content{
+    height: 210vh;
   }
   .latest-headrow{
     flex-direction: column;
     align-items: start;
+  }
+  .latest-headrow h1{
+    font-size: 15px;
   }
   .latest-social{
     justify-content: start;
@@ -2339,24 +2494,36 @@ nav{
   .latest-item{
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     gap: 10px;
   }
   .latestbox{
     width: 95%;
-    height: 25vh;
+    height: 45vh;
   }
   .latestIMG1{
-    height: 15vh;
+    height: 30vh;
   }
-  .latestboxHide{
-    display: none;
+  .latestboxcon{
+    height: 20vh;
+    width: 100%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 13px;
   }
 
 
   .signip-content{
     flex-direction: column;
+    height: 70vh;
     justify-content: start;
   }
   .signup-head{
@@ -2364,35 +2531,35 @@ nav{
   }
   .signup-head p{
     margin: 0px;
+    font-size: 13px;
+    font-weight: 700;
   }
   .signip-row{
     width: 90%;
-    height: 5vh;
-    gap: 5px;
+    height: 20vh;
   }
   .signup-con{
-    flex-direction: column;
-    gap: 50px;
+    flex-direction: column-reverse;
+    margin-top: 10px;
   }
   .sign-row{
     width: 100%;
     align-items: center;
-    margin: 0px;
-
   }
   .sign-row p{
     width: 100%;
+   margin: 0px;
+   display: none;
   }
   .sighupnow{
-    width: 50%;
+    width: 60%;
     height: 2vh;
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 0px;
-    border-radius: 1px;
-    padding: 10px;
-    font-size: 10px;
+    border-radius: 2px;
+    background-color: rgb(1, 58, 1);
   }
   .up-row{
     width: 100%;
@@ -2401,13 +2568,13 @@ nav{
     gap: 5px;
   }
   .getintouch-row{
-    width: 100%;
-    height: 15vh;
+    width: 90%;
+    height: 30vh;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     background-color: rgb(248, 247, 247);
-    margin-top: 235px;
+    margin-top: 100px;
   }
   .getintouch-head{
    width: 100%;
@@ -2415,23 +2582,37 @@ nav{
   .getintouch-head p{
    width: 100%;
    margin-left: 20px;
+   font-size: 15px;
+  }
+  .getintouchIMG{
+    width: 5%;
   }
   .touch-row{
     background-color: rgb(225, 225, 225);
     width: 90%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 13px;
   }
 
   .footer-content{
     flex-direction: column-reverse;
-    height: 60vh
+    height: 50vh
   }
   .footer-appstore{
-    background-color: rgb(248, 247, 247);
+    background-color: rgb(226, 225, 225);
     width: 100%;
     align-items: start;
   }
+  .appstore-head{
+    margin: 0px;
+    margin-left: 20px;
+  }
   .appstore-head p{
     color: black;
+    font-size: 15px;
   }
   .appIMG{
     width: 50%;
@@ -2439,7 +2620,7 @@ nav{
   }
   .app-con{
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .footer-social{
     width: 100%;
@@ -2453,17 +2634,22 @@ nav{
     align-items: center;
     margin: 0px;
     flex-direction: row;
-
   }
   .footer-link{
-    flex-direction: column;
+    flex-direction: row;
     gap: 0px;
     width: 100%;
     margin-bottom: 50px;
   }
-
+  .link-row{
+    font-size: 13px;
+    width: 80%;
+  }
+  .link-row p{
+    font-size: 13px;
+  }
   .copyrightHide{
-    display: none;
+    display: flex;
   }
 }
 @media screen and (min-width: 414px) {
@@ -2471,10 +2657,10 @@ nav{
     font-size: 10px;
   }
   nav{
-    height: 18vh;
-  }
+    height: 28vh;
+}
   .time-nav{
-    height: 5vh;
+    height: 8vh;
   }
   .n-time{
     display: flex;
@@ -2493,32 +2679,43 @@ nav{
   .nav-menu{
     display: flex;
   }
+  .hamburger-head p{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .navmenu-head p{
+    font-size: 14px;
+    font-weight: 700;
+  }
   .depart{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
   .arrive{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
 
-  .hero-container{
-    height: 60vh;
-  }
   .hero-slider{
-    height: 70vh;
+    height: 80vh;
   }
   .slide{
-    height: 30vh;
+    height: 40vh;
   }
   .slider-btn{
     width: 7%;
   }
+  .slide-indicators{
+    top: 45%;
+  }
+  .hero-option{
+    background-color: rgb(248, 247, 247);
+  }
   .h-option{
-    margin-top: 80px;
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     width: 100%;
   }
@@ -2531,11 +2728,11 @@ nav{
   .option-box{
     display: flex;
     flex-direction: row;
-    height: 5vh;
+    height: 6vh;
     width: 95%;
     gap: 25px;
     box-shadow: 1px 1px 5px;
-    border-radius: 3px;
+    border-radius: 1px;
   }
   .option-detail{
     display: none;
@@ -2545,7 +2742,7 @@ nav{
   }
 
   .ToForm{
-    height: 40vh;
+    height: 20vh;
   }
   .ToFrom-content{
     display: flex;
@@ -2563,74 +2760,76 @@ nav{
     margin-left: 20px;
   }
   .Tofrom-head h1{
-    font-size: 12px;
-  }
-  .Tofrom-head p{
-    font-size: 10px;
+    font-size: 15px;
   }
   .ToBox{
     width: 40%;
     height: 5vh;
     display: flex;
   }
-  .ToBox a{
+  .ToBox a {
     gap: 5px;
+    font-size: 13px;
+  }
+  .ToBox a p{
+    font-size: 13px;
   }
   .Tobox{
     display: none;
   }
   .tofromIMG{
-    width: 10%;
+    width: 13%;
   }
 
-  .keeppics{
+  .keepdate-content{
+    height: 210vh;
+  }
+  .keepdate-head{
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .keepdate-head h1{
+    font-size: 15px;
+  }
+ .keeppics{
     flex-direction: column;
     width: 100%;
     justify-content: start;
   }
-  .keepdate-head{
-    margin: 0px;
-    margin-left: 20px;
-  }
-  .keepdate-head h1{
-    font-size: 12px;
-  }
   .keepIMG{
     width: 100%;
-    height: 18vh;
+    height: 35vh;
   }
   .keepbox{
-    height: 11vh;
+    height: 15vh;
     width: 95%;
-    margin-bottom: 6rem;
+    margin-top: 35rem;
+    border-radius: 3px;
   }
   .keepbox h2{
-    margin-top: 3px;
+    margin-top: 10px;
   }
   .keepbox p{
-    font-size: 10px;
+    font-size: 13px;
   }
   .keepboxcon{
-    height: 30vh;
-  }
-  .keepboxconHide{
-    display: none;
+    height: 48vh;
   }
   
-
   .latest-head{
     flex-direction: column;
-    gap: 10px;
+    width: 80%;
   }
-  .latest-head h1{
-    font-size: 12px;
-  }
-  .latest-head p{
-    font-size: 10px;
+  .latest-content{
+    height: 210vh;
   }
   .latest-headrow{
     flex-direction: column;
     align-items: start;
+  }
+  .latest-headrow h1{
+    font-size: 15px;
   }
   .latest-social{
     justify-content: start;
@@ -2638,24 +2837,36 @@ nav{
   .latest-item{
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     gap: 10px;
   }
   .latestbox{
     width: 95%;
-    height: 25vh;
+    height: 45vh;
   }
   .latestIMG1{
-    height: 15vh;
+    height: 30vh;
   }
-  .latestboxHide{
-    display: none;
+  .latestboxcon{
+    height: 20vh;
+    width: 100%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 13px;
   }
 
 
   .signip-content{
     flex-direction: column;
+    height: 70vh;
     justify-content: start;
   }
   .signup-head{
@@ -2663,35 +2874,35 @@ nav{
   }
   .signup-head p{
     margin: 0px;
+    font-size: 13px;
+    font-weight: 700;
   }
   .signip-row{
     width: 90%;
-    height: 5vh;
-    gap: 5px;
+    height: 20vh;
   }
   .signup-con{
-    flex-direction: column;
-    gap: 50px;
+    flex-direction: column-reverse;
+    margin-top: 10px;
   }
   .sign-row{
     width: 100%;
     align-items: center;
-    margin: 0px;
-
   }
   .sign-row p{
     width: 100%;
+   margin: 0px;
+   display: none;
   }
   .sighupnow{
-    width: 50%;
+    width: 60%;
     height: 2vh;
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 0px;
-    border-radius: 1px;
-    padding: 10px;
-    font-size: 10px;
+    border-radius: 2px;
+    background-color: rgb(1, 58, 1);
   }
   .up-row{
     width: 100%;
@@ -2700,13 +2911,13 @@ nav{
     gap: 5px;
   }
   .getintouch-row{
-    width: 100%;
-    height: 15vh;
+    width: 90%;
+    height: 30vh;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     background-color: rgb(248, 247, 247);
-    margin-top: 235px;
+    margin-top: 100px;
   }
   .getintouch-head{
    width: 100%;
@@ -2714,23 +2925,37 @@ nav{
   .getintouch-head p{
    width: 100%;
    margin-left: 20px;
+   font-size: 15px;
+  }
+  .getintouchIMG{
+    width: 5%;
   }
   .touch-row{
     background-color: rgb(225, 225, 225);
     width: 90%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 13px;
   }
 
   .footer-content{
     flex-direction: column-reverse;
-    height: 60vh
+    height: 50vh
   }
   .footer-appstore{
-    background-color: rgb(248, 247, 247);
+    background-color: rgb(226, 225, 225);
     width: 100%;
     align-items: start;
   }
+  .appstore-head{
+    margin: 0px;
+    margin-left: 20px;
+  }
   .appstore-head p{
     color: black;
+    font-size: 15px;
   }
   .appIMG{
     width: 50%;
@@ -2738,7 +2963,7 @@ nav{
   }
   .app-con{
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .footer-social{
     width: 100%;
@@ -2752,28 +2977,33 @@ nav{
     align-items: center;
     margin: 0px;
     flex-direction: row;
-
   }
   .footer-link{
-    flex-direction: column;
+    flex-direction: row;
     gap: 0px;
     width: 100%;
     margin-bottom: 50px;
   }
-
+  .link-row{
+    font-size: 13px;
+    width: 80%;
+  }
+  .link-row p{
+    font-size: 13px;
+  }
   .copyrightHide{
-    display: none;
+    display: flex;
   }
 }
-@media screen and (min-width: 490px) {
+@media screen and (min-width: 430px) {
   *{
     font-size: 10px;
   }
   nav{
-    height: 18vh;
-  }
+    height: 28vh;
+}
   .time-nav{
-    height: 5vh;
+    height: 8vh;
   }
   .n-time{
     display: flex;
@@ -2792,32 +3022,43 @@ nav{
   .nav-menu{
     display: flex;
   }
+  .hamburger-head p{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .navmenu-head p{
+    font-size: 14px;
+    font-weight: 700;
+  }
   .depart{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
   .arrive{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
 
-  .hero-container{
-    height: 60vh;
-  }
   .hero-slider{
-    height: 70vh;
+    height: 80vh;
   }
   .slide{
-    height: 30vh;
+    height: 40vh;
   }
   .slider-btn{
     width: 7%;
   }
+  .slide-indicators{
+    top: 45%;
+  }
+  .hero-option{
+    background-color: rgb(248, 247, 247);
+  }
   .h-option{
-    margin-top: 130px;
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     width: 100%;
   }
@@ -2830,11 +3071,11 @@ nav{
   .option-box{
     display: flex;
     flex-direction: row;
-    height: 5vh;
+    height: 6vh;
     width: 95%;
     gap: 25px;
     box-shadow: 1px 1px 5px;
-    border-radius: 3px;
+    border-radius: 1px;
   }
   .option-detail{
     display: none;
@@ -2844,7 +3085,7 @@ nav{
   }
 
   .ToForm{
-    height: 40vh;
+    height: 20vh;
   }
   .ToFrom-content{
     display: flex;
@@ -2862,74 +3103,76 @@ nav{
     margin-left: 20px;
   }
   .Tofrom-head h1{
-    font-size: 12px;
-  }
-  .Tofrom-head p{
-    font-size: 10px;
+    font-size: 15px;
   }
   .ToBox{
     width: 40%;
     height: 5vh;
     display: flex;
   }
-  .ToBox a{
+  .ToBox a {
     gap: 5px;
+    font-size: 13px;
+  }
+  .ToBox a p{
+    font-size: 13px;
   }
   .Tobox{
     display: none;
   }
   .tofromIMG{
-    width: 10%;
+    width: 13%;
   }
 
-  .keeppics{
+  .keepdate-content{
+    height: 210vh;
+  }
+  .keepdate-head{
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .keepdate-head h1{
+    font-size: 15px;
+  }
+ .keeppics{
     flex-direction: column;
     width: 100%;
     justify-content: start;
   }
-  .keepdate-head{
-    margin: 0px;
-    margin-left: 20px;
-  }
-  .keepdate-head h1{
-    font-size: 12px;
-  }
   .keepIMG{
     width: 100%;
-    height: 18vh;
+    height: 35vh;
   }
   .keepbox{
-    height: 11vh;
+    height: 15vh;
     width: 95%;
-    margin-bottom: 6rem;
+    margin-top: 35rem;
+    border-radius: 3px;
   }
   .keepbox h2{
-    margin-top: 3px;
+    margin-top: 10px;
   }
   .keepbox p{
-    font-size: 10px;
+    font-size: 13px;
   }
   .keepboxcon{
-    height: 30vh;
-  }
-  .keepboxconHide{
-    display: none;
+    height: 48vh;
   }
   
-
   .latest-head{
     flex-direction: column;
-    gap: 10px;
+    width: 80%;
   }
-  .latest-head h1{
-    font-size: 12px;
-  }
-  .latest-head p{
-    font-size: 10px;
+  .latest-content{
+    height: 210vh;
   }
   .latest-headrow{
     flex-direction: column;
     align-items: start;
+  }
+  .latest-headrow h1{
+    font-size: 15px;
   }
   .latest-social{
     justify-content: start;
@@ -2937,24 +3180,36 @@ nav{
   .latest-item{
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     gap: 10px;
   }
   .latestbox{
     width: 95%;
-    height: 25vh;
+    height: 45vh;
   }
   .latestIMG1{
-    height: 15vh;
+    height: 30vh;
   }
-  .latestboxHide{
-    display: none;
+  .latestboxcon{
+    height: 20vh;
+    width: 100%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 13px;
   }
 
 
   .signip-content{
     flex-direction: column;
+    height: 70vh;
     justify-content: start;
   }
   .signup-head{
@@ -2962,35 +3217,35 @@ nav{
   }
   .signup-head p{
     margin: 0px;
+    font-size: 13px;
+    font-weight: 700;
   }
   .signip-row{
     width: 90%;
-    height: 5vh;
-    gap: 5px;
+    height: 20vh;
   }
   .signup-con{
-    flex-direction: column;
-    gap: 50px;
+    flex-direction: column-reverse;
+    margin-top: 10px;
   }
   .sign-row{
     width: 100%;
     align-items: center;
-    margin: 0px;
-
   }
   .sign-row p{
     width: 100%;
+   margin: 0px;
+   display: none;
   }
   .sighupnow{
-    width: 50%;
+    width: 60%;
     height: 2vh;
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 0px;
-    border-radius: 1px;
-    padding: 10px;
-    font-size: 10px;
+    border-radius: 2px;
+    background-color: rgb(1, 58, 1);
   }
   .up-row{
     width: 100%;
@@ -2999,13 +3254,13 @@ nav{
     gap: 5px;
   }
   .getintouch-row{
-    width: 100%;
-    height: 15vh;
+    width: 90%;
+    height: 30vh;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     background-color: rgb(248, 247, 247);
-    margin-top: 235px;
+    margin-top: 100px;
   }
   .getintouch-head{
    width: 100%;
@@ -3013,23 +3268,37 @@ nav{
   .getintouch-head p{
    width: 100%;
    margin-left: 20px;
+   font-size: 15px;
+  }
+  .getintouchIMG{
+    width: 5%;
   }
   .touch-row{
     background-color: rgb(225, 225, 225);
     width: 90%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 13px;
   }
 
   .footer-content{
     flex-direction: column-reverse;
-    height: 60vh
+    height: 50vh
   }
   .footer-appstore{
-    background-color: rgb(248, 247, 247);
+    background-color: rgb(226, 225, 225);
     width: 100%;
     align-items: start;
   }
+  .appstore-head{
+    margin: 0px;
+    margin-left: 20px;
+  }
   .appstore-head p{
     color: black;
+    font-size: 15px;
   }
   .appIMG{
     width: 50%;
@@ -3037,7 +3306,7 @@ nav{
   }
   .app-con{
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .footer-social{
     width: 100%;
@@ -3051,28 +3320,33 @@ nav{
     align-items: center;
     margin: 0px;
     flex-direction: row;
-
   }
   .footer-link{
-    flex-direction: column;
+    flex-direction: row;
     gap: 0px;
     width: 100%;
     margin-bottom: 50px;
   }
-
+  .link-row{
+    font-size: 13px;
+    width: 80%;
+  }
+  .link-row p{
+    font-size: 13px;
+  }
   .copyrightHide{
-    display: none;
+    display: flex;
   }
 }
 @media screen and (min-width: 540px) {
   *{
-    font-size: 11px;
+    font-size: 10px;
   }
   nav{
-    height: 18vh;
-  }
+    height: 28vh;
+}
   .time-nav{
-    height: 5vh;
+    height: 8vh;
   }
   .n-time{
     display: flex;
@@ -3091,32 +3365,43 @@ nav{
   .nav-menu{
     display: flex;
   }
+  .hamburger-head p{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .navmenu-head p{
+    font-size: 14px;
+    font-weight: 700;
+  }
   .depart{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
   .arrive{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
   }
 
-  .hero-container{
-    height: 60vh;
-  }
   .hero-slider{
-    height: 70vh;
+    height: 90vh;
   }
   .slide{
-    height: 30vh;
+    height: 40vh;
   }
   .slider-btn{
     width: 7%;
   }
+  .slide-indicators{
+    top: 45%;
+  }
+  .hero-option{
+    background-color: rgb(248, 247, 247);
+  }
   .h-option{
-    margin-top: 25px;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     width: 100%;
   }
@@ -3129,11 +3414,11 @@ nav{
   .option-box{
     display: flex;
     flex-direction: row;
-    height: 5vh;
+    height: 7vh;
     width: 95%;
     gap: 25px;
     box-shadow: 1px 1px 5px;
-    border-radius: 3px;
+    border-radius: 1px;
   }
   .option-detail{
     display: none;
@@ -3142,8 +3427,386 @@ nav{
     width: 7%;
   }
 
-  .ToForm{
+  .ToFrom-content{
+    display: flex;
+    height: 20vh;
+  }
+  .tofrombox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+  }
+  .Tofrom-head{
+    flex-direction: column;
+    align-items: start;
+    margin: 20px;
+    margin-left: 20px;
+  }
+  .Tofrom-head h1{
+    font-size: 15px;
+  }
+  .ToBox{
+    width: 40%;
+    height: 5vh;
+    display: flex;
+  }
+  .ToBox a {
+    gap: 5px;
+  }
+  .ToBox a p{
+    font-size: 15px;
+  }
+  .Tobox{
+    display: none;
+  }
+  .tofromIMG{
+    width: 13%;
+  }
+
+  .keepdate-content{
+    height: 100vh;
+  }
+  .keepdate-head{
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .keepdate-head h1{
+    font-size: 15px;
+  }
+ .keeppics{
+    flex-direction: column;
+    width: 100%;
+    justify-content: start;
+  }
+  .keepIMG{
+    width: 100%;
     height: 40vh;
+  }
+  .keepbox{
+    height: 15vh;
+    width: 95%;
+    margin-top: 35rem;
+    border-radius: 3px;
+  }
+  .keepbox h2{
+    margin-top: 10px;
+  }
+  .keepbox p{
+    font-size: 15px;
+  }
+  .keepboxcon{
+    height: 55vh;
+  }
+  
+  .latest-head{
+    flex-direction: column;
+    width: 80%;
+  }
+  .latest-content{
+    height: 250vh;
+  }
+  .latest-headrow{
+    flex-direction: column;
+    align-items: start;
+  }
+  .latest-headrow h1{
+    font-size: 15px;
+  }
+  .latest-social{
+    justify-content: start;
+  }
+  .latest-item{
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    gap: 10px;
+  }
+  .latestIMG{
+    width: 10%;
+  }
+  .latestbox{
+    width: 95%;
+    height: 55vh;
+  }
+  .latestIMG1{
+    height: 40vh;
+  }
+  .latestboxcon{
+    height: 20vh;
+    width: 100%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 15px;
+  }
+
+
+  .signip-content{
+    flex-direction: column;
+    height: 90vh;
+    justify-content: start;
+  }
+  .signup-head{
+    margin-top: 10px;
+  }
+  .signup-head p{
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .signip-row{
+    width: 90%;
+    height: 25vh;
+  }
+  .signup-con{
+    flex-direction: column-reverse;
+    margin-top: 10px;
+  }
+  .sign-row{
+    width: 100%;
+    align-items: center;
+  }
+  .sign-row p{
+    width: 100%;
+   margin: 0px;
+   display: none;
+  }
+  .sighupnow{
+    width: 60%;
+    height: 2vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    border-radius: 2px;
+    background-color: rgb(1, 58, 1);
+  }
+  .up-row{
+    width: 100%;
+  }
+  .up-con{
+    gap: 5px;
+  }
+  .up-con-row p{
+    font-size: 13px;
+  }
+  .getintouch-row{
+    width: 90%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(248, 247, 247);
+    margin-top: 100px;
+  }
+  .getintouch-head{
+   width: 100%;
+  }
+  .getintouch-head p{
+   width: 100%;
+   margin-left: 20px;
+   font-size: 15px;
+  }
+  .getintouchIMG{
+    width: 5%;
+  }
+  .touch-row{
+    background-color: rgb(225, 225, 225);
+    width: 90%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 13px;
+  }
+
+  .footer-content{
+    flex-direction: column-reverse;
+    height: 60vh
+  }
+  .footer-appstore{
+    background-color: rgb(225, 225, 225);
+    width: 100%;
+    align-items: start;
+  }
+  .appstore-head{
+    margin: 0px;
+    margin-left: 20px;
+  }
+  .appstore-head p{
+    color: black;
+    font-size: 15px;
+  }
+  .appIMG{
+    width: 50%;
+    height: 5vh;
+  }
+  .app-con{
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-social{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .social-con p{
+    width: 100%;
+    margin-left: 20px;
+  }
+  .social-con{
+    align-items: center;
+    margin: 0px;
+    flex-direction: row;
+  }
+  .footer-link{
+    flex-direction: row;
+    gap: 0px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .link-row{
+    font-size: 13px;
+    width: 80%;
+  }
+  .link-row p{
+    font-size: 15px;
+  }
+  .copyrightHide{
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  *{
+    font-size: 10px;
+  }
+  nav{
+    height: 30vh;
+}
+  .time-nav{
+    height: 8vh;
+  }
+  .n-time{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .n-time p{
+    font-size: 15px;
+  }
+  .n-book{
+    display: flex;
+  }
+  .n-book p{
+    font-size: 15px;
+  }
+  .nav-link{
+    display: flex;
+  }
+  .nav-link li a{
+    font-size: 15px;
+  }
+  .nav-logo-link{
+    display: flex;
+  }
+  .n-logo-link ul{
+    gap: 5px;
+  }
+  .n-logo-link li a{
+    font-size: 17px;
+  }
+  .n-logo-link{
+    width: 80%;
+  }
+  .n-logo{
+    width: 25%;
+    font-size: 50px;
+  }
+  .n-logo p{
+    font-size: 15px;
+  }
+  .n-logoIMG{
+    width: 20%;
+  }
+  .nav-menu{
+    display: none;
+  }
+  .depart{
+    height: 8vh;
+    width: 40%;
+  }
+  .depart p{
+    font-size: 15px;
+  }
+  .departIMG{
+    width: 15%;
+  }
+  .arrive{
+    height: 8vh;
+    width: 40%;
+  }
+  .arrive p{
+    font-size: 15px;
+  }
+
+  .hero-slider{
+    height: 75vh;
+  }
+  .slide{
+    height: 50vh;
+  }
+  .slider-btn{
+    width: 5%;
+  }
+  .slide-indicators{
+    top: 56%;
+  }
+  .hero-option{
+    background-color: rgb(226, 226, 226);
+  }
+  .h-option{
+    margin-top: 17rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: 95%;
+  }
+  .opttext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .opttext h1{
+    font-size: 17px;
+  }
+  .option-box{
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 100%;
+    gap: 0px;
+    box-shadow: 1px 1px 5px;
+    border-radius: 1px;
+  }
+  .option-detail{
+    display: flex;
+  }
+  .optIMg{
+    width: 20%;
+  }
+
+  .ToForm{
+    height: 50vh;
   }
   .ToFrom-content{
     display: flex;
@@ -3161,154 +3824,176 @@ nav{
     margin-left: 20px;
   }
   .Tofrom-head h1{
-    font-size: 12px;
-  }
-  .Tofrom-head p{
-    font-size: 10px;
+    font-size: 19px;
   }
   .ToBox{
-    width: 40%;
+    width: 30%;
     height: 5vh;
     display: flex;
   }
-  .ToBox a{
+  .ToBox a {
     gap: 5px;
   }
+  .ToBox a p{
+    font-size: 15px;
+  }
   .Tobox{
-    display: none;
+    display: flex;
   }
   .tofromIMG{
-    width: 10%;
+    width: 13%;
   }
 
-  .keeppics{
-    flex-direction: column;
-    width: 100%;
-    justify-content: start;
+  .keepdate-content{
+    height: 75vh;
   }
   .keepdate-head{
     margin: 0px;
+    margin-top: 10px;
     margin-left: 20px;
   }
   .keepdate-head h1{
-    font-size: 12px;
+    font-size: 15px;
+  }
+ .keeppics{
+    flex-direction: row;
+    width: 95%;
+    justify-content: start;
   }
   .keepIMG{
-    width: 100%;
-    height: 18vh;
+    width: 23%;
+    height: 25vh;
   }
   .keepbox{
-    height: 11vh;
+    height: 25vh;
     width: 95%;
-    margin-bottom: 6rem;
+    margin-top: 46rem;
+    border-radius: 3px;
   }
   .keepbox h2{
-    margin-top: 3px;
+    margin-top: 10px;
   }
   .keepbox p{
-    font-size: 10px;
+    font-size: 15px;
   }
   .keepboxcon{
-    height: 30vh;
-  }
-  .keepboxconHide{
-    display: none;
+    height: 55vh;
   }
   
-
   .latest-head{
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    width: 100%;
   }
-  .latest-head h1{
-    font-size: 12px;
-  }
-  .latest-head p{
-    font-size: 10px;
+  .latest-content{
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
   }
   .latest-headrow{
     flex-direction: column;
     align-items: start;
   }
+  .latest-headrow h1{
+    font-size: 20px;
+  }
   .latest-social{
-    justify-content: start;
+    justify-content: end;
   }
   .latest-item{
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     gap: 10px;
   }
   .latestbox{
     width: 95%;
-    height: 25vh;
+    height: 49vh;
   }
   .latestIMG1{
-    height: 15vh;
+    height: 50vh;
+    width: 100%;
   }
-  .latestboxHide{
-    display: none;
+  .latestboxcon{
+    height: 50vh;
+    width: 90%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 15px;
   }
 
 
   .signip-content{
-    flex-direction: column;
-    justify-content: start;
+    flex-direction: row;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
   }
   .signup-head{
-    margin-top: 10px;
+    margin: 0px;
+    margin-left: 20px;
   }
   .signup-head p{
     margin: 0px;
+    font-size: 15px;
+    font-weight: 700;
   }
   .signip-row{
-    width: 90%;
-    height: 5vh;
-    gap: 5px;
+    width: 50%;
+    margin-top: 40px;
   }
   .signup-con{
     flex-direction: column;
-    gap: 0px;
+    margin-left: 20px;
+    gap: 30px;
   }
   .sign-row{
     width: 100%;
     align-items: center;
-    margin: 0px;
-
   }
   .sign-row p{
-    width: 100%;
+   display: flex;
+   font-size: 17px;
   }
   .sighupnow{
-    width: 50%;
-    height: 2vh;
+    width: 70%;
+    height: 5vh;
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 0px;
-    border-radius: 1px;
-    padding: 10px;
-    font-size: 10px;
+    border-radius: 2px;
+    background-color: rgb(1, 58, 1);
+    margin-right: 120px;
   }
   .up-row{
     width: 100%;
   }
   .up-con{
-    gap: 5px;
+    gap: 10px;
+  }
+  .up-con-row p{
+    font-size: 17px;
   }
   .getintouch-row{
-    width: 100%;
-    height: 13vh;
+    width: 40%;
+    height: 40vh;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-    background-color: rgb(248, 247, 247);
-    margin-top: 135px;
+    gap: 10px;
+    background-color: rgb(223, 220, 220);
+    margin-top: 100px;
   }
   .getintouch-con{
     width: 100%;
-    gap: 4px;
   }
   .getintouch-head{
    width: 100%;
@@ -3316,23 +4001,40 @@ nav{
   .getintouch-head p{
    width: 100%;
    margin-left: 30px;
+   font-size: 20px;
+  }
+  .getintouchIMG{
+    width: 8%;
   }
   .touch-row{
-    background-color: rgb(225, 225, 225);
-    width: 90%;
+    background-color: rgb(223, 220, 220);
+    width: 80%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 17px;
   }
 
   .footer-content{
-    flex-direction: column-reverse;
-    height: 60vh
+    flex-direction: row;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
   }
   .footer-appstore{
-    background-color: rgb(248, 247, 247);
-    width: 100%;
+    background-color: green;
+    width:100%;
     align-items: start;
+  }
+  .appstore-head{
+    margin: 0px;
+    margin-left: 20px;
   }
   .appstore-head p{
     color: black;
+    font-size: 20px;
+    font-weight: 700;
   }
   .appIMG{
     width: 50%;
@@ -3340,101 +4042,134 @@ nav{
   }
   .app-con{
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .footer-social{
-    width: 100%;
+    width: 70%;
     margin-top: 20px;
   }
   .social-con p{
     width: 100%;
-    margin-left: 20px;
+    margin: 0px;
+    font-size: 17px
   }
   .social-con{
     align-items: center;
     margin: 0px;
     flex-direction: row;
-
+  }
+  .socialIMG{
+    width: 20%;
   }
   .footer-link{
-    flex-direction: column;
+    flex-direction: row;
     gap: 0px;
     width: 100%;
-    margin-bottom: 50px;
   }
-
+  .link-row{
+    font-size: 13px;
+    width: 100%;
+  }
+  .link-row p{
+    font-size: 18px;
+  }
   .copyrightHide{
-    display: none;
+    display: flex;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 820px) {
   *{
-    font-size: 14px;
+    font-size: 10px;
   }
   nav{
-    height: 18vh;
-  }
+    height: 30vh;
+}
   .time-nav{
-    height: 5vh;
+    height: 8vh;
   }
   .n-time{
     display: flex;
     flex-direction: row;
     width: 100%;
   }
+  .n-time p{
+    font-size: 19px;
+  }
   .n-book{
     display: flex;
   }
+  .n-book p{
+    font-size: 19px;
+  }
   .nav-link{
     display: flex;
-    margin-bottom: 10px;
+  }
+  .nav-link li a{
+    font-size: 19px;
   }
   .nav-logo-link{
     display: flex;
-    margin-right: 20px;
   }
-  .n-logo-link ul li{
-    gap: 50px;
+  .n-logo-link ul{
+    gap: 5px;
+  }
+  .n-logo-link li a{
+    font-size: 19px;
+  }
+  .n-logo-link{
+    width: 80%;
+  }
+  .n-logo{
+    width: 25%;
+    font-size: 50px;
+  }
+  .n-logo p{
+    font-size: 15px;
+  }
+  .n-logoIMG{
+    width: 20%;
   }
   .nav-menu{
     display: none;
   }
-  .hambuger-content{
-    display: none;
-  }
-  .hamburger{
-    display: none;
-  }
-  .depArr{
-    /* margin-bottom: 20px; */
-    margin: 10px;
-  }
   .depart{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
+  }
+  .depart p{
+    font-size: 19px;
+  }
+  .departIMG{
+    width: 15%;
   }
   .arrive{
-    height: 5vh;
-    width: 30%;
+    height: 8vh;
+    width: 40%;
+  }
+  .arrive p{
+    font-size: 19px;
   }
 
-  .hero-container{
-    height: 60vh;
-  }
   .hero-slider{
-    height: 70vh;
+    height: 75vh;
   }
   .slide{
-    height: 30vh;
+    height: 50vh;
   }
   .slider-btn{
-    width: 7%;
+    width: 5%;
+  }
+  .slide-indicators{
+    top: 56%;
+  }
+  .hero-option{
+    background-color: rgb(226, 226, 226);
   }
   .h-option{
-    margin-top: 40px;
+    margin-top: 23rem;
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     width: 95%;
   }
@@ -3444,6 +4179,9 @@ nav{
     align-items: center;
     width: 100%;
   }
+  .opttext h1{
+    font-size: 17px;
+  }
   .option-box{
     display: flex;
     flex-direction: column;
@@ -3451,30 +4189,26 @@ nav{
     width: 100%;
     gap: 0px;
     box-shadow: 1px 1px 5px;
-    border-radius: 5px;
+    border-radius: 1px;
   }
   .option-detail{
     display: flex;
   }
   .optIMg{
-    width: 30%;
+    width: 20%;
   }
 
   .ToForm{
-    height: 40vh;
-    /* width: 95%; */
-    justify-content: center;
-    align-items: center;
+    height: 50vh;
   }
   .ToFrom-content{
     display: flex;
-    width: 100%;
   }
   .tofrombox{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* margin: 0px; */
+    margin: 0px;
   }
   .Tofrom-head{
     flex-direction: column;
@@ -3483,186 +4217,218 @@ nav{
     margin-left: 20px;
   }
   .Tofrom-head h1{
-    font-size: 15px;
-  }
-  .Tofrom-head p{
-    font-size: 12px;
+    font-size: 25px;
   }
   .ToBox{
     width: 30%;
-    height: 5vh;
+    height: 7vh;
     display: flex;
   }
-  .ToBox a{
+  .ToBox a {
     gap: 5px;
+  }
+  .ToBox a p{
+    font-size: 19px;
   }
   .Tobox{
     display: flex;
   }
   .tofromIMG{
-    width: 10%;
+    width: 15%;
   }
 
-  .keeppics{
-    width: 95%;
-    /* align-items: center; */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  .keepdate-content{
+    height: 75vh;
   }
   .keepdate-head{
     margin: 0px;
+    margin-top: 10px;
     margin-left: 20px;
   }
   .keepdate-head h1{
-    font-size: 12px;
+    font-size: 25px;
+  }
+ .keeppics{
+    flex-direction: row;
+    width: 95%;
+    justify-content: start;
   }
   .keepIMG{
-    width: 45%;
-    height: 30vh;
+    width: 23%;
+    height: 25vh;
   }
   .keepbox{
-    height: 11vh;
+    height: 25vh;
     width: 95%;
-    margin-bottom: -7rem;
+    margin-top: 46rem;
+    border-radius: 3px;
   }
   .keepbox h2{
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .keepbox p{
-    font-size: 10px;
+    font-size: 18px;
   }
   .keepboxcon{
-    height: 30vh;
-  }
-  .keepboxconHide{
-    display: flex;
+    height: 55vh;
   }
   
-
   .latest-head{
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    width: 100%;
   }
-  .latest-head h1{
-    font-size: 12px;
-  }
-  .latest-head p{
-    font-size: 10px;
+  .latest-content{
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
   }
   .latest-headrow{
     flex-direction: column;
     align-items: start;
   }
-  .latest-social{
-    justify-content: start;
+  .latest-headrow h1{
+    font-size: 20px;
   }
-  .latest-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .latest-social{
+    justify-content: end;
   }
   .latest-item{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 95%;
+    gap: 10px;
   }
   .latestbox{
     width: 95%;
-    height: 30vh;
+    height: 49vh;
   }
   .latestIMG1{
-    height: 20vh;
+    height: 50vh;
+    width: 100%;
   }
-  .latestboxHide{
+  .latestboxcon{
+    height: 50vh;
+    width: 90%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
     display: flex;
+    flex-direction: column;
+  }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 18px;
   }
 
-  .signup{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
+
   .signip-content{
-    display: flex;
     flex-direction: row;
-    width: 90%;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
   }
   .signup-head{
-    margin-bottom: 20px;
+    margin: 0px;
+    margin-left: 20px;
   }
   .signup-head p{
     margin: 0px;
+    font-size: 15px;
+    font-weight: 700;
   }
   .signip-row{
-    justify-content: center;
-    align-items: center;
     width: 50%;
+    margin-top: 40px;
   }
   .signup-con{
     flex-direction: column;
-    gap: 50px;
+    margin-left: 20px;
+    gap: 30px;
   }
   .sign-row{
     width: 100%;
     align-items: center;
-
   }
   .sign-row p{
-    width: 100%;
+   display: flex;
+   font-size: 17px;
   }
   .sighupnow{
-    width: 50%;
-    height: 3vh;
+    width: 70%;
+    height: 5vh;
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 0px;
-    border-radius: 1px;
-    padding: 10px;
-    font-size: 14px;
+    border-radius: 2px;
+    background-color: rgb(1, 58, 1);
+    margin-right: 120px;
+    font-size: 19px;
   }
   .up-row{
     width: 100%;
   }
   .up-con{
-    gap: 15px;
+    gap: 10px;
+  }
+  .up-con-row p{
+    font-size: 17px;
   }
   .getintouch-row{
-    width: 50%;
-    height: 15vh;
+    width: 40%;
+    height: 40vh;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin: 0px;
-    background-color: transparent;
+    background-color: rgb(223, 220, 220);
+    margin-top: 100px;
   }
   .getintouch-con{
     width: 100%;
-    gap: 10px;
   }
   .getintouch-head{
    width: 100%;
   }
+  .getintouch-head p{
+   width: 100%;
+   margin-left: 30px;
+   font-size: 20px;
+  }
+  .getintouchIMG{
+    width: 8%;
+  }
   .touch-row{
-    background-color: transparent;
-    width: 90%;
+    background-color: rgb(223, 220, 220);
+    width: 80%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 17px;
   }
 
   .footer-content{
     flex-direction: row;
-    height: 60vh
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
   }
   .footer-appstore{
-    background-color: transparent;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    background-color: green;
+    width:100%;
+    align-items: start;
+  }
+  .appstore-head{
+    margin: 0px;
+    margin-left: 20px;
   }
   .appstore-head p{
-    color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
   }
   .appIMG{
     width: 50%;
@@ -3670,107 +4436,922 @@ nav{
   }
   .app-con{
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .footer-social{
-    width: 100%;
+    width: 70%;
     margin-top: 20px;
-    justify-content: center;
   }
   .social-con p{
     width: 100%;
     margin: 0px;
+    font-size: 17px
   }
   .social-con{
     align-items: center;
     margin: 0px;
     flex-direction: row;
-    width: 100%;
-
   }
   .socialIMG{
-    width: 15%;
+    width: 20%;
   }
   .footer-link{
-    flex-direction: column-reverse;
-    justify-content: center;
+    flex-direction: row;
     gap: 0px;
     width: 100%;
   }
   .link-row{
+    font-size: 13px;
     width: 100%;
   }
+  .link-row p{
+    font-size: 18px;
+  }
+  .copyrightHide{
+    display: flex;
+  }
+}
+@media screen and (min-width: 853px) {
+  *{
+    font-size: 10px;
+  }
+  nav{
+    height: 30vh;
+}
+  .time-nav{
+    height: 8vh;
+  }
+  .n-time{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .n-time p{
+    font-size: 19px;
+  }
+  .n-book{
+    display: flex;
+  }
+  .n-book p{
+    font-size: 19px;
+  }
+  .nav-link{
+    display: flex;
+  }
+  .nav-link li a{
+    font-size: 19px;
+  }
+  .nav-logo-link{
+    display: flex;
+  }
+  .n-logo-link ul{
+    gap: 5px;
+  }
+  .n-logo-link li a{
+    font-size: 19px;
+  }
+  .n-logo-link{
+    width: 80%;
+  }
+  .n-logo{
+    width: 25%;
+    font-size: 50px;
+  }
+  .n-logo p{
+    font-size: 15px;
+  }
+  .n-logoIMG{
+    width: 20%;
+  }
+  .nav-menu{
+    display: none;
+  }
+  .depart{
+    height: 8vh;
+    width: 40%;
+  }
+  .depart p{
+    font-size: 19px;
+  }
+  .departIMG{
+    width: 15%;
+  }
+  .arrive{
+    height: 8vh;
+    width: 40%;
+  }
+  .arrive p{
+    font-size: 19px;
+  }
 
+  .hero-slider{
+    height: 75vh;
+  }
+  .slide{
+    height: 50vh;
+  }
+  .slider-btn{
+    width: 5%;
+  }
+  .slide-indicators{
+    top: 56%;
+  }
+  .hero-option{
+    background-color: rgb(226, 226, 226);
+  }
+  .h-option{
+    margin-top: 26rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: 95%;
+  }
+  .opttext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .opttext h1{
+    font-size: 17px;
+  }
+  .option-box{
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 100%;
+    gap: 0px;
+    box-shadow: 1px 1px 5px;
+    border-radius: 1px;
+  }
+  .option-detail{
+    display: flex;
+  }
+  .optIMg{
+    width: 20%;
+  }
+
+  .ToForm{
+    height: 50vh;
+  }
+  .ToFrom-content{
+    display: flex;
+  }
+  .tofrombox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+  }
+  .Tofrom-head{
+    flex-direction: column;
+    align-items: start;
+    margin: 20px;
+    margin-left: 20px;
+  }
+  .Tofrom-head h1{
+    font-size: 25px;
+  }
+  .ToBox{
+    width: 30%;
+    height: 7vh;
+    display: flex;
+  }
+  .ToBox a {
+    gap: 5px;
+  }
+  .ToBox a p{
+    font-size: 19px;
+  }
+  .Tobox{
+    display: flex;
+  }
+  .tofromIMG{
+    width: 15%;
+  }
+
+  .keepdate-content{
+    height: 75vh;
+  }
+  .keepdate-head{
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .keepdate-head h1{
+    font-size: 25px;
+  }
+ .keeppics{
+    flex-direction: row;
+    width: 95%;
+    justify-content: start;
+  }
+  .keepIMG{
+    width: 23%;
+    height: 25vh;
+  }
+  .keepbox{
+    height: 25vh;
+    width: 95%;
+    margin-top: 46rem;
+    border-radius: 3px;
+  }
+  .keepbox h2{
+    margin-top: 10px;
+  }
+  .keepbox p{
+    font-size: 18px;
+  }
+  .keepboxcon{
+    height: 55vh;
+  }
+  
+  .latest-head{
+    flex-direction: row;
+    width: 100%;
+  }
+  .latest-content{
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .latest-headrow{
+    flex-direction: column;
+    align-items: start;
+  }
+  .latest-headrow h1{
+    font-size: 20px;
+  }
+  .latest-social{
+    justify-content: end;
+  }
+  .latest-item{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    gap: 10px;
+  }
+  .latestbox{
+    width: 95%;
+    height: 49vh;
+  }
+  .latestIMG1{
+    height: 50vh;
+    width: 100%;
+  }
+  .latestboxcon{
+    height: 50vh;
+    width: 90%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 18px;
+  }
+
+
+  .signip-content{
+    flex-direction: row;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+  }
+  .signup-head{
+    margin: 0px;
+    margin-left: 20px;
+  }
+  .signup-head p{
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .signip-row{
+    width: 50%;
+    margin-top: 40px;
+  }
+  .signup-con{
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 30px;
+  }
+  .sign-row{
+    width: 100%;
+    align-items: center;
+  }
+  .sign-row p{
+   display: flex;
+   font-size: 17px;
+  }
+  .sighupnow{
+    width: 70%;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    border-radius: 2px;
+    background-color: rgb(1, 58, 1);
+    margin-right: 120px;
+    font-size: 19px;
+  }
+  .up-row{
+    width: 100%;
+  }
+  .up-con{
+    gap: 10px;
+  }
+  .up-con-row p{
+    font-size: 17px;
+  }
+  .getintouch-row{
+    width: 40%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(223, 220, 220);
+    margin-top: 100px;
+  }
+  .getintouch-con{
+    width: 100%;
+  }
+  .getintouch-head{
+   width: 100%;
+  }
+  .getintouch-head p{
+   width: 100%;
+   margin-left: 30px;
+   font-size: 20px;
+  }
+  .getintouchIMG{
+    width: 8%;
+  }
+  .touch-row{
+    background-color: rgb(223, 220, 220);
+    width: 80%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 17px;
+  }
+
+  .footer-content{
+    flex-direction: row;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-appstore{
+    background-color: green;
+    width:100%;
+    align-items: start;
+  }
+  .appstore-head{
+    margin: 0px;
+    margin-left: 20px;
+  }
+  .appstore-head p{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .appIMG{
+    width: 50%;
+    height: 5vh;
+  }
+  .app-con{
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-social{
+    width: 70%;
+    margin-top: 20px;
+  }
+  .social-con p{
+    width: 100%;
+    margin: 0px;
+    font-size: 17px
+  }
+  .social-con{
+    align-items: center;
+    margin: 0px;
+    flex-direction: row;
+  }
+  .socialIMG{
+    width: 20%;
+  }
+  .footer-link{
+    flex-direction: row;
+    gap: 0px;
+    width: 100%;
+  }
+  .link-row{
+    font-size: 13px;
+    width: 100%;
+  }
+  .link-row p{
+    font-size: 18px;
+  }
+  .copyrightHide{
+    display: flex;
+  }
+}
+@media screen and (min-width: 912px) {
+  *{
+    font-size: 10px;
+  }
+  nav{
+    height: 30vh;
+}
+  .time-nav{
+    height: 8vh;
+  }
+  .n-time{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .n-time p{
+    font-size: 20px;
+  }
+  .n-book{
+    display: flex;
+  }
+  .n-book p{
+    font-size: 19px;
+  }
+  .nav-link{
+    display: flex;
+  }
+  .nav-link li a{
+    font-size: 20px;
+  }
+  .nav-logo-link{
+    display: flex;
+  }
+  .n-logo-link ul{
+    gap: 5px;
+  }
+  .n-logo-link li a{
+    font-size: 20px;
+  }
+  .n-logo-link{
+    width: 80%;
+  }
+  .n-logo{
+    width: 25%;
+    font-size: 50px;
+  }
+  .n-logo p{
+    font-size: 20px;
+  }
+  .n-logoIMG{
+    width: 20%;
+  }
+  .nav-menu{
+    display: none;
+  }
+  .depart{
+    height: 8vh;
+    width: 40%;
+  }
+  .depart p{
+    font-size: 20px;
+  }
+  .departIMG{
+    width: 15%;
+  }
+  .arrive{
+    height: 8vh;
+    width: 40%;
+  }
+  .arrive p{
+    font-size: 20px;
+  }
+
+  .hero-slider{
+    height: 85vh;
+  }
+  .slide{
+    height: 50vh;
+  }
+  .slider-btn{
+    width: 5%;
+  }
+  .slide-indicators{
+    top: 50%;
+  }
+  .hero-option{
+    background-color: rgb(226, 226, 226);
+  }
+  .h-option{
+    margin-top: 30rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: 95%;
+  }
+  .opttext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .opttext h1{
+    font-size: 17px;
+  }
+  .option-box{
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 100%;
+    gap: 0px;
+    box-shadow: 1px 1px 5px;
+    border-radius: 1px;
+  }
+  .option-detail{
+    display: flex;
+  }
+  .optIMg{
+    width: 20%;
+  }
+
+  .ToForm{
+    height: 50vh;
+  }
+  .ToFrom-content{
+    display: flex;
+  }
+  .tofrombox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+  }
+  .Tofrom-head{
+    flex-direction: column;
+    align-items: start;
+    margin: 20px;
+    margin-left: 20px;
+  }
+  .Tofrom-head h1{
+    font-size: 25px;
+  }
+  .ToBox{
+    width: 30%;
+    height: 7vh;
+    display: flex;
+  }
+  .ToBox a {
+    gap: 5px;
+  }
+  .ToBox a p{
+    font-size: 19px;
+  }
+  .Tobox{
+    display: flex;
+  }
+  .tofromIMG{
+    width: 15%;
+  }
+
+  .keepdate-content{
+    height: 75vh;
+  }
+  .keepdate-head{
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .keepdate-head h1{
+    font-size: 25px;
+  }
+ .keeppics{
+    flex-direction: row;
+    width: 95%;
+    justify-content: start;
+  }
+  .keepIMG{
+    width: 23%;
+    height: 25vh;
+  }
+  .keepbox{
+    height: 25vh;
+    width: 95%;
+    margin-top: 46rem;
+    border-radius: 3px;
+  }
+  .keepbox h2{
+    margin-top: 10px;
+  }
+  .keepbox p{
+    font-size: 18px;
+  }
+  .keepboxcon{
+    height: 55vh;
+  }
+  
+  .latest-head{
+    flex-direction: row;
+    width: 100%;
+  }
+  .latest-content{
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .latest-headrow{
+    flex-direction: column;
+    align-items: start;
+  }
+  .latest-headrow h1{
+    font-size: 20px;
+  }
+  .latest-social{
+    justify-content: end;
+  }
+  .latest-item{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    gap: 10px;
+  }
+  .latestbox{
+    width: 95%;
+    height: 49vh;
+  }
+  .latestIMG1{
+    height: 50vh;
+    width: 100%;
+  }
+  .latestboxcon{
+    height: 50vh;
+    width: 90%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 18px;
+  }
+
+
+  .signip-content{
+    flex-direction: row;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
+  }
+  .signup-head{
+    margin: 0px;
+    margin-left: 20px;
+  }
+  .signup-head p{
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .signip-row{
+    width: 50%;
+    margin-top: 40px;
+  }
+  .signup-con{
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 30px;
+  }
+  .sign-row{
+    width: 100%;
+    align-items: center;
+  }
+  .sign-row p{
+   display: flex;
+   font-size: 17px;
+  }
+  .sighupnow{
+    width: 70%;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    border-radius: 2px;
+    background-color: rgb(1, 58, 1);
+    margin-right: 120px;
+    font-size: 19px;
+  }
+  .up-row{
+    width: 100%;
+  }
+  .up-con{
+    gap: 10px;
+  }
+  .up-con-row p{
+    font-size: 17px;
+  }
+  .getintouch-row{
+    width: 40%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(223, 220, 220);
+    margin-top: 100px;
+  }
+  .getintouch-con{
+    width: 100%;
+  }
+  .getintouch-head{
+   width: 100%;
+  }
+  .getintouch-head p{
+   width: 100%;
+   margin-left: 30px;
+   font-size: 20px;
+  }
+  .getintouchIMG{
+    width: 8%;
+  }
+  .touch-row{
+    background-color: rgb(223, 220, 220);
+    width: 80%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 17px;
+  }
+
+  .footer-content{
+    flex-direction: row;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-appstore{
+    background-color: green;
+    width:100%;
+    align-items: start;
+  }
+  .appstore-head{
+    margin: 0px;
+    margin-left: 20px;
+  }
+  .appstore-head p{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .appIMG{
+    width: 50%;
+    height: 5vh;
+  }
+  .app-con{
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-social{
+    width: 70%;
+    margin-top: 20px;
+  }
+  .social-con p{
+    width: 100%;
+    margin: 0px;
+    font-size: 17px
+  }
+  .social-con{
+    align-items: center;
+    margin: 0px;
+    flex-direction: row;
+  }
+  .socialIMG{
+    width: 20%;
+  }
+  .footer-link{
+    flex-direction: row;
+    gap: 0px;
+    width: 100%;
+  }
+  .link-row{
+    font-size: 13px;
+    width: 100%;
+  }
+  .link-row p{
+    font-size: 18px;
+  }
   .copyrightHide{
     display: flex;
   }
 }
 @media screen and (min-width: 1280px) {
   *{
-    font-size: 15px;
+    font-size: 6px;
   }
   nav{
-    height: 30vh;
-  }
+    height: 40vh;
+}
   .time-nav{
-    height: 7vh;
+    height: 8vh;
   }
   .n-time{
     display: flex;
     flex-direction: row;
     width: 100%;
   }
+  .n-time p{
+    font-size: 15px;
+  }
   .n-book{
     display: flex;
+  }
+  .n-book p{
+    font-size: 15px;
   }
   .nav-link{
     display: flex;
   }
+  .nav-link li a{
+    font-size: 15px;
+  }
   .nav-logo-link{
     display: flex;
-    margin-right: 20px;
   }
-  .n-logo-link ul li{
-    gap: 50px;
+  .n-logo-link ul{
+    gap: px;
+  }
+  .n-logo-link li a{
+    font-size: 15px;
+  }
+  .n-logo-link{
+    width: 80%;
+  }
+  .n-logo{
+    width: 25%;
+  }
+  .n-logo p{
+    font-size: 15px;
+  }
+  .n-logoIMG{
+    width: 20%;
   }
   .nav-menu{
     display: none;
   }
-  .hambuger-content{
-    display: none;
-  }
-  .hamburger{
-    display: none;
-  }
-  .depArr{
-    margin: 10px;
-  }
   .depart{
-    height: 9vh;
+    height: 8vh;
     width: 20%;
+  }
+  .depart p{
+    font-size: 15px;
+  }
+  .departIMG{
+    width: 15%;
   }
   .arrive{
-    height: 9vh;
+    height: 8vh;
     width: 20%;
   }
-
-  .hero-container{
-    height: 100vh;
+  .arrive p{
+    font-size: 15px;
   }
+
   .hero-slider{
     height: 100vh;
   }
   .slide{
-    height: 60vh;
+    height: 66vh;
   }
   .slider-btn{
-    width: 3%;
+    width: 5%;
+  }
+  .slide-indicators{
+    top: 50%;
+  }
+  .hero-option{
+    background-color: rgb(223, 223, 223);
+    height: 100vh;
   }
   .h-option{
-    margin-top: 40px;
+    margin-top: 30rem;
     display: flex;
     flex-direction: row;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     width: 95%;
   }
@@ -3780,6 +5361,9 @@ nav{
     align-items: center;
     width: 100%;
   }
+  .opttext h1{
+    font-size: 17px;
+  }
   .option-box{
     display: flex;
     flex-direction: column;
@@ -3788,30 +5372,27 @@ nav{
     gap: 0px;
     box-shadow: 1px 1px 5px;
     border-radius: 5px;
-    margin-top: 1rem;
   }
   .option-detail{
     display: flex;
+    height: 50vh;
   }
   .optIMg{
     width: 20%;
   }
 
   .ToForm{
-    height: 70vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    height: 50vh;
   }
   .ToFrom-content{
     display: flex;
-    width: 100%;
-    height: 50vh;
+    margin-bottom: 30px;
   }
   .tofrombox{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 0px;
   }
   .Tofrom-head{
     flex-direction: column;
@@ -3820,237 +5401,262 @@ nav{
     margin-left: 20px;
   }
   .Tofrom-head h1{
-    font-size: 18px;
-  }
-  .Tofrom-head p{
-    font-size: 14px;
+    font-size: 25px;
   }
   .ToBox{
     width: 30%;
-    height: 10vh;
+    height: 8vh;
     display: flex;
   }
-  .ToBox a{
-    gap: 19px;
+  .ToBox a {
+    gap: 10px;
+  }
+  .ToBox a p{
+    font-size: 15px;
   }
   .Tobox{
     display: flex;
   }
   .tofromIMG{
-    width: 10%;
+    width: 8%;
   }
-
 
   .keepdate-content{
-    display: flex;
-    justify-content: center;
-  }
-  .keepdate-item{
-    width: 100%;
-  }
-  .keeppics{
-    width: 95%;
-    display: flex;
-    flex-direction: row;
+    height: 100vh;
   }
   .keepdate-head{
     margin: 0px;
+    margin-top: 10px;
     margin-left: 20px;
   }
   .keepdate-head h1{
-    font-size: 12px;
+    font-size: 25px;
+  }
+ .keeppics{
+    flex-direction: row;
+    width: 95%;
+    justify-content: start;
   }
   .keepIMG{
     width: 23%;
-    height: 50vh;
+    height: 40vh;
   }
   .keepbox{
-    height: 30vh;
-    width: 96%;
-    border-radius: 0%;
-    margin-bottom: -5.5rem;
+    height: 35vh;
+    width: 90%;
+    margin-top: 75rem;
+    border-radius: 3px;
   }
   .keepbox h2{
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 10px;
   }
   .keepbox p{
-    font-size: 15px;
-  }
-  .keepboxcon{
-    height: 70vh;
-  }
-  .keepboxconHide{
-    display: flex;
-  }
-  
-
-  .latest-head{
-    flex-direction: column;
-    gap: 10px;
-    margin-left: 30px;
-  }
-  .latest-head h1{
     font-size: 18px;
   }
-  .latest-head p{
-    font-size: 15px;
+  .keepboxcon{
+    height: 55vh;
+  }
+  
+  .latest-head{
+    flex-direction: row;
+    width: 100%;
+  }
+  .latest-content{
+    height: 120vh;
+    justify-content: center;
+    align-items: center;
   }
   .latest-headrow{
     flex-direction: column;
     align-items: start;
   }
-  .latest-social{
-    justify-content: start;
+  .latest-headrow h1{
+    font-size: 25px;
   }
-  .latest-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .latest-social{
+    justify-content: end;
+  }
+  .latestIMG{
+    width: 5%;
   }
   .latest-item{
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 95%;
+    gap: 10px;
   }
   .latestbox{
     width: 95%;
-    height: 50vh;
-  }
-  .latestIMG{
-    width: 2%;
+    height: 70vh;
   }
   .latestIMG1{
-    height: 25vh;
+    height: 40vh;
+    width: 100%;
   }
-  .latestboxHide{
-    display: flex;
-  }
-
-
-  .signup{
-    display: flex;
-    /* flex-direction: row; */
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    height: 60vh;
-  }
-  .signip-content{
-    display: flex;
-    flex-direction: row;
+  .latestboxcon{
+    height: 50vh;
     width: 90%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 18px;
+  }
+  .latestboxcon h6{
+    font-size: 15px;
+  }
+
+
+  .signip-content{
+    flex-direction: row;
+    height: 75vh;
+    width: 100%;
+    justify-content: center;
+    align-items: start;
   }
   .signup-head{
-    margin-right: 30px;
+    margin: 0px;
+    margin-left: 20px;
+  }
+  .signup-head p{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 700;
   }
   .signip-row{
-    justify-content: center;
-    align-items: center;
     width: 50%;
+    margin-top: 40px;
   }
   .signup-con{
     flex-direction: column;
-    gap: 50px;
+    margin-left: 20px;
+    gap: 30px;
   }
   .sign-row{
     width: 100%;
-    align-items: start;
+    align-items: center;
   }
   .sign-row p{
-    width: 100%;
+   display: flex;
+   font-size: 15px;
   }
   .sighupnow{
     width: 50%;
-    height: 10vh;
+    height: 8vh;
     align-items: center;
     justify-content: center;
     display: flex;
     margin: 0px;
     border-radius: 2px;
-    padding: 10px;
-    font-size: 17px;
+    background-color: rgb(1, 58, 1);
+    margin-right: 340px;
+    font-size: 15px;
   }
   .up-row{
     width: 100%;
   }
   .up-con{
-    gap: 15px;
+    gap: 10px;
+  }
+  .up-con-row p{
+    font-size: 17px;
   }
   .getintouch-row{
-    width: 50%;
-    height: 15vh;
+    width: 40%;
+    height: 40vh;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin: 0px;
-    background-color: transparent;
+    background-color: rgb(223, 220, 220);
+    margin-top: 100px;
   }
   .getintouch-con{
     width: 100%;
-    gap: 10px;
   }
   .getintouch-head{
    width: 100%;
-   margin-left: 15px;
+  }
+  .getintouch-head p{
+   width: 100%;
+   margin-left: 50px;
+   font-size: 20px;
+  }
+  .getintouchIMG{
+    width: 5%;
   }
   .touch-row{
-    background-color: transparent;
-    width: 90%;
+    background-color: rgb(223, 220, 220);
+    width: 80%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 17px;
   }
 
   .footer-content{
     flex-direction: row;
-    height: 60vh
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
   }
   .footer-appstore{
-    background-color: transparent;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    background-color: green;
+    width:100%;
+    align-items: start;
+  }
+  .appstore-head{
+    margin: 0px;
+    margin-left: 20px;
   }
   .appstore-head p{
-    color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
   }
   .appIMG{
-    width: 50%;
+    width: 100%;
     height: 10vh;
   }
   .app-con{
     margin-left: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .footer-social{
-    width: 100%;
+    width: 70%;
     margin-top: 20px;
-    justify-content: center;
   }
   .social-con p{
     width: 100%;
     margin: 0px;
+    font-size: 17px
   }
   .social-con{
     align-items: center;
     margin: 0px;
     flex-direction: row;
-    width: 100%;
-
   }
   .socialIMG{
     width: 10%;
   }
   .footer-link{
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 0px;
     width: 100%;
   }
   .link-row{
+    font-size: 13px;
     width: 100%;
   }
-
+  .link-row p{
+    font-size: 18px;
+  }
   .copyrightHide{
     display: flex;
   }
