@@ -1042,7 +1042,7 @@ nav{
   .depart{
     height: 7vh;
     width: 40%;
-  }
+  } 
   .depart p{
     font-size: 14px;
   }
@@ -1069,7 +1069,6 @@ nav{
   .hero-option{
     background-color: rgb(248, 247, 247);
     height: 29vh;
-    /* background-color: red; */
     justify-content: end;
   }
   .booking{
@@ -1079,7 +1078,7 @@ nav{
     width: 100%;
     justify-content: end;
     align-items: center;
-    background-color: rgb(109, 226, 109);
+    background-color: rgb(146, 220, 146);
   }
   .bookingBox{
     display: flex;
@@ -1088,11 +1087,14 @@ nav{
     background-image: url(/img/green.jpg);
     background-position: center;
     background-size: cover;
-    height: 6vh;
+    height: 6.5vh;
     width: 95%;
     border-radius: 5px;
     margin-bottom: 15px;
     gap: 25px;
+  }
+  .optArrow1{
+    width: 20%;
   }
   .h-option{
     margin-top: 7.5rem;
@@ -1107,7 +1109,7 @@ nav{
   }
   .b-opttext h1{
     color: white;
-    font-size: 15px;
+    font-size: 13px;
   }
   #park{
     display: none;
@@ -1127,8 +1129,11 @@ nav{
     height: 6vh;
     width: 95%;
     gap: 25px;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 0px 0px 4px;
     border-radius: 1px;
+  }
+  .boy{
+    box-shadow: none;
   }
   .option-detail{
     display: none;
@@ -1446,8 +1451,11 @@ nav{
     height: 7vh;
     width: 95%;
     gap: 25px;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 0px 0px 4px;
     border-radius: 1px;
+  }
+  .boy{
+    box-shadow: none;
   }
   .option-detail{
     display: none;
@@ -1765,8 +1773,11 @@ nav{
     height: 7vh;
     width: 95%;
     gap: 25px;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 0px 0px 5px;
     border-radius: 1px;
+  }
+  .boy{
+    box-shadow: none;
   }
   .option-detail{
     display: none;
@@ -2114,8 +2125,11 @@ nav{
     height: 6vh;
     width: 95%;
     gap: 25px;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 0px 0px 4px;
     border-radius: 1px;
+  }
+  .boy{
+    box-shadow: none;
   }
   .option-detail{
     display: none;
@@ -2459,8 +2473,11 @@ nav{
     height: 6vh;
     width: 95%;
     gap: 25px;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 0px 0px 4px;
     border-radius: 1px;
+  }
+  .boy{
+    box-shadow: none;
   }
   .option-detail{
     display: none;
@@ -2802,8 +2819,11 @@ nav{
     height: 6vh;
     width: 95%;
     gap: 25px;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 0px 0px 4px;
     border-radius: 1px;
+  }
+  .boy{
+    box-shadow: none;
   }
   .option-detail{
     display: none;
@@ -3145,8 +3165,11 @@ nav{
     height: 6vh;
     width: 95%;
     gap: 25px;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 0px 0px 4px;
     border-radius: 1px;
+  }
+  .boy{
+    box-shadow: none;
   }
   .option-detail{
     display: none;
@@ -3495,8 +3518,11 @@ nav{
     height: 8vh;
     width: 95%;
     gap: 25px;
-    box-shadow: 1px 1px 5px;
+    box-shadow: 0px 0px 4px;
     border-radius: 1px;
+  }
+  .boy{
+    box-shadow: none;
   }
   .option-detail{
     display: none;
@@ -5460,6 +5486,9 @@ nav{
     gap: 0px;
     box-shadow: 1px 1px 5px;
     border-radius: 5px;
+  }
+  .boy{
+    box-shadow: none;
   }
   .option-detail{
     display: flex;
