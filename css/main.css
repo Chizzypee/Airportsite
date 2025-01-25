@@ -30,7 +30,7 @@ nav{
     background-color: green;
     background-image: url(/img/green.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
 }
 .time-nav{
     background-color: rgb(253, 253, 225);
@@ -257,13 +257,13 @@ nav{
     height: 20vh;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 10px;
 }
 .depart{
     width: 15%;
     height: 8vh;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -278,7 +278,7 @@ nav{
     width: 15%;
     height: 8vh;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -416,15 +416,16 @@ nav{
     flex-direction: column;
     width: 100%;
     align-items: center;
-    height: 50vh;
+    height: auto;
     background-color: rgb(221, 221, 221);
-    margin-top: 30rem;
   }
+  
   .h-option{                         
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
+    height: auto;
   }
   .option-box{
     z-index: 1;
@@ -438,6 +439,13 @@ nav{
     align-items: center;
     justify-content: center;
 } 
+  .opttext1{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 30%;
+    margin-right: 10px;
+  }
 #activebox{
   display: flex;
 }
@@ -467,6 +475,9 @@ nav{
 }
 .optIMg{
   width: 20%;
+}
+.optArrow{
+  width: 10px;
 }
 .option-box h1{
   font-weight: 700;
@@ -1009,7 +1020,7 @@ nav{
     height: 28vh;
 }
   .time-nav{
-    height: 8vh;
+    height: 5vh;
   }
   .n-time{
     display: flex;
@@ -1029,16 +1040,22 @@ nav{
     display: flex;
   }
   .depart{
-    height: 8vh;
+    height: 7vh;
     width: 40%;
   }
+  .depart p{
+    font-size: 14px;
+  }
+  .arrive p{
+    font-size: 14px;
+  }
   .arrive{
-    height: 8vh;
+    height: 7vh;
     width: 40%;
   }
 
   .hero-slider{
-    height: 75vh;
+    height: 80vh;
   }
   .slide{
     height: 40vh;
@@ -1046,8 +1063,36 @@ nav{
   .slider-btn{
     width: 7%;
   }
+  .slide-indicators{
+    top: 40%;
+  }
   .hero-option{
     background-color: rgb(248, 247, 247);
+    height: 29vh;
+    /* background-color: red; */
+    justify-content: end;
+  }
+  .booking{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    background-color: rgb(109, 226, 109);
+  }
+  .bookingBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/green.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 6vh;
+    width: 95%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    gap: 25px;
   }
   .h-option{
     margin-top: 7.5rem;
@@ -1057,16 +1102,29 @@ nav{
     align-items: center;
     width: 100%;
   }
+  .b-opttext{
+    gap: 10px;  
+  }
+  .b-opttext h1{
+    color: white;
+    font-size: 15px;
+  }
+  #park{
+    display: none;
+  }
   .opttext{
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 50%;
+    width: 100%;
+  }
+  .opttext1{
+    display: flex;
   }
   .option-box{
     display: flex;
     flex-direction: row;
-    height: 5vh;
+    height: 6vh;
     width: 95%;
     gap: 25px;
     box-shadow: 1px 1px 5px;
@@ -1077,6 +1135,7 @@ nav{
   }
   .optIMg{
     width: 7%;
+    margin-left: 20px;
   }
 
   .ToForm{
@@ -1165,6 +1224,9 @@ nav{
   .latestbox{
     width: 95%;
     height: 40vh;
+  }
+  .latestIMG{
+    width: 8%;
   }
   .latestIMG1{
     height: 30vh;
@@ -1317,7 +1379,7 @@ nav{
     height: 28vh;
 }
   .time-nav{
-    height: 8vh;
+    height: 5vh;
   }
   .n-time{
     display: flex;
@@ -1346,7 +1408,7 @@ nav{
   }
 
   .hero-slider{
-    height: 80vh;
+    height: 85vh;
   }
   .slide{
     height: 40vh;
@@ -1355,10 +1417,11 @@ nav{
     width: 7%;
   }
   .slide-indicators{
-    top: 45%;
+    top: 40%;
   }
   .hero-option{
     background-color: rgb(248, 247, 247);
+    height: 33vh;
   }
   .h-option{
     margin-top: 2rem;
@@ -1367,6 +1430,9 @@ nav{
     gap: 10px;
     align-items: center;
     width: 100%;
+  }
+  .b-opttext h1{
+    font-size: 14px;
   }
   .opttext{
     display: flex;
@@ -1377,7 +1443,7 @@ nav{
   .option-box{
     display: flex;
     flex-direction: row;
-    height: 5vh;
+    height: 7vh;
     width: 95%;
     gap: 25px;
     box-shadow: 1px 1px 5px;
@@ -1627,7 +1693,7 @@ nav{
     height: 28vh;
 }
   .time-nav{
-    height: 8vh;
+    height: 5vh;
   }
   .n-time{
     display: flex;
@@ -1664,7 +1730,7 @@ nav{
   }
 
   .hero-slider{
-    height: 80vh;
+    height: 85vh;
   }
   .slide{
     height: 40vh;
@@ -1673,10 +1739,11 @@ nav{
     width: 7%;
   }
   .slide-indicators{
-    top: 45%;
+    top: 40%;
   }
   .hero-option{
     background-color: rgb(248, 247, 247);
+    height: 34vh;
   }
   .h-option{
     margin-top: -1rem;
@@ -1695,7 +1762,7 @@ nav{
   .option-box{
     display: flex;
     flex-direction: row;
-    height: 6vh;
+    height: 7vh;
     width: 95%;
     gap: 25px;
     box-shadow: 1px 1px 5px;
@@ -1972,7 +2039,7 @@ nav{
     height: 28vh;
 }
   .time-nav{
-    height: 8vh;
+    height: 5vh;
   }
   .n-time{
     display: flex;
@@ -2022,6 +2089,7 @@ nav{
   }
   .hero-option{
     background-color: rgb(248, 247, 247);
+    height: 29vh;
   }
   .h-option{
     margin-top: 5rem;
@@ -2030,6 +2098,9 @@ nav{
     gap: 10px;
     align-items: center;
     width: 100%;
+  }
+  .b-opttext h1{
+    font-size: 15px;
   }
   .opttext{
     display: flex;
@@ -2317,7 +2388,7 @@ nav{
     height: 28vh;
 }
   .time-nav{
-    height: 8vh;
+    height: 5vh;
   }
   .n-time{
     display: flex;
@@ -2660,7 +2731,7 @@ nav{
     height: 28vh;
 }
   .time-nav{
-    height: 8vh;
+    height: 5vh;
   }
   .n-time{
     display: flex;
@@ -3003,7 +3074,7 @@ nav{
     height: 28vh;
 }
   .time-nav{
-    height: 8vh;
+    height: 5vh;
   }
   .n-time{
     display: flex;
@@ -3346,7 +3417,7 @@ nav{
     height: 28vh;
 }
   .time-nav{
-    height: 8vh;
+    height: 5vh;
   }
   .n-time{
     display: flex;
@@ -3383,27 +3454,34 @@ nav{
   }
 
   .hero-slider{
-    height: 90vh;
+    height: 110vh;
   }
   .slide{
-    height: 40vh;
+    height: 50vh;
   }
   .slider-btn{
     width: 7%;
   }
   .slide-indicators{
-    top: 45%;
+    top: 40%;
   }
   .hero-option{
     background-color: rgb(248, 247, 247);
+    height: 43vh;
   }
   .h-option{
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     width: 100%;
+  }
+  .booking{
+    height: 62vh;
+  }
+  .bookingBox{
+    padding: 6px;
   }
   .opttext{
     display: flex;
@@ -3414,7 +3492,7 @@ nav{
   .option-box{
     display: flex;
     flex-direction: row;
-    height: 7vh;
+    height: 8vh;
     width: 95%;
     gap: 25px;
     box-shadow: 1px 1px 5px;
@@ -3771,6 +3849,13 @@ nav{
   }
   .hero-option{
     background-color: rgb(226, 226, 226);
+    height: 75vh;
+  }
+  .booking{
+    display: none;
+  }
+  #park{
+    display: flex;
   }
   .h-option{
     margin-top: 17rem;
@@ -3785,6 +3870,9 @@ nav{
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+  .opttext1{
+    display: none;
   }
   .opttext h1{
     font-size: 17px;
@@ -5345,7 +5433,7 @@ nav{
   }
   .hero-option{
     background-color: rgb(223, 223, 223);
-    height: 100vh;
+    height: 125vh;
   }
   .h-option{
     margin-top: 30rem;
