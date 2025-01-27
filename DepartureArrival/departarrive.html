@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Info</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/depart.css">
+</head>
+<body>
+    <div class="container">
+      <div class="content">
+        <nav>
+            <div class="navbar">
+                <div class="time-nav">
+                    <div class="n-time">
+                        <p>SECURITY TIMES</p>
+                        <P>T1 = 6 min</P>
+                        <p>T2 = 6 min</p>
+                    </div>
+                    <div class="n-book">
+                        <a href="#">
+                            <p>Book Fast Track</p>
+                            <img src="../icon/arrow-right-solid.svg" class="n-bookIMG">
+                        </a>
+                    </div>
+                </div>
+                <div class="hamburger-container" id="hambuger">
+                  <div class="hamburger">
+                    <div class="hamburger-head">
+                      <img src="../img/Picsart_24-06-01_17-42-41-472.png" class="n-logoIMG">
+                          <p>Dublin Airport</p>
+                        <img src="../icon/xmark-solid.svg" class="menu" id="closemenu" onclick="closeMenu()">
+                    </div>
+                    <div class="hambuger-content">
+                      <ul>  
+                        <li><a href="../index.html">HOME</a></li>
+                        <img src="../icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>  
+                        <li><a href="#">Flight</a></li>
+                        <img src="../icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">To & From</a></li>
+                        <img src="../icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">Parking</a></li>
+                        <img src="../icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">Art the Airport</a></li>
+                        <img src="../icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">Enhanace Your Journey</a></li>
+                        <img src="../icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">Accessibility</a></li>
+                        <img src="../icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">NEWS</a></li>
+                        <img src="../icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">SHOP</a></li>
+                        <img src="../icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                      <ul>
+                        <li><a href="#">CONTACT</a></li>
+                        <img src="../icon/arrow-right-solid.svg" class="buggerback">
+                      </ul>
+                        <li><a href="#" class="cop">CORPORATE</a></li>
+                        <li><a href="#" class="cop">B2B</a></li>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav-menu" id="navmenu">
+                  <div class="navmenu-head">
+                    <img src="../img/search.png" class="menusearchIMG" onclick="openSearch()">
+                        <p>Dublin Airport</p>
+                      <img src="../icon/menu white.png" class="menu" onclick="openMenu()">
+                  </div>
+                </div>
+                <div class="white-menu whitemenu" id="whitemenu">
+                  <div class="whitemenu-head">
+                    <img src="../icon/xmark-solid.svg" class="menusearchIMG" onclick="closeSearch()">
+                        <p>Dublin Airport</p>
+                      <img src="../icon/bars-solid.svg" class="menu" onclick="openMenu()">
+                  </div>
+                </div>
+                <div class="navSearch" id="search">
+                  <div class="search-con">
+                    <input type="text" class="searchbar" placeholder="E.G, LUGGAGE, PASSWORD">
+                    <img src="../icon/black search.png" class="searchIMG">
+                  </div>
+                </div>
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="#">NEWS</a></li>
+                        <li><a href="#">SHOP</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <P>|</P>
+                        <li><a href="#">CORPORATE</a></li>
+                        <li><a href="#">B2B</a></li>
+                    </ul>
+                </div>
+                <div class="nav-logo-link">
+                    <div class="n-logo">
+                        <img src="../img/Picsart_24-06-01_17-42-41-472.png" class="n-logoIMG">
+                        <p>DublinAriport</p>    
+                    </div>
+                    <div class="n-logo-link">
+                        <ul>
+                            <li><a href="#">Flight</a></li>
+                            <li><a href="#">To & From</a></li>
+                            <li><a href="#">Parking</a></li>
+                            <li><a href="#">Enhanace Journey</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <img src="../icon/black search.png" class="n-search">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+            <section class="find">
+                <div class="find-content">
+                    <div class="find-head">
+                        <h1>Find Departing Flight</h1>
+                        <p>Flight infomation delayed here is provided bt the airlines. Should you have any queries about a flight, please contact the airline driectly</p>
+                    </div>
+                    <div class="find-field">
+                        <div class="findfield-con">
+                            <select class="findterminal">
+                                <option value="date">TODAY,JANUARY 27TH</option>
+                                <option value="date">JANUARY 28TH</option>
+                                <option value="date">JANUARY 29TH</option>
+                            </select>
+                            <select class="findterminal">
+                                <option value="date">SEARCH BOTH TERMINAL</option>
+                                <option value="date">TERMINAL 1 ONLY</option>
+                                <option value="date">TERMINAL 2 ONLY</option>
+                            </select>
+                            <div class="findsearch">
+                                <input type="text" placeholder="DESTINATION, FLIGHT NUMBER, AIRLINE OR STATUS" class="findsearchinput">
+                                <img src="../icon/black search.png" class="findsearchIMG">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="DepartureArrival">
+                      <div class="departarival-content">
+                        <div class="departure" id="depart" onclick="departureinfo()">
+                            <h1>Departure</h1>
+                        </div>
+                        <div class="arrival" id="arrival" onclick="arrivalinfo()">
+                            <h1>Arrivals</h1>
+                        </div>
+                      </div>
+                      <div class="findinfo">
+                        <div class="flightinfo-content" id="departureflight">
+                          <div class="time-nav findtime">
+                            <div class="n-time">
+                                <p>SECURITY TIMES</p>
+                                <P>T1 = 6 min</P>
+                                <p>T2 = 6 min</p>
+                            </div>
+                          </div>
+                          <div class="earlieflight">
+                            <div class="earlier">
+                              <h1>Show earlier flight</h1>
+                              <img src="../icon/arrow-right-solid.svg" class="arrowup">
+                            </div>
+                          </div>
+                          <div class="flightdetials">
+                            <div class="flightdetails-con">
+                              <a href="#">
+                                <div class="detailstime">
+                                  <h1>12:20</h1>
+                                  <div class="divide"></div>
+                                </div>
+                                <div class="detailscountry-gateStatus">
+                                  <div class="countrynumber">
+                                    <h1>Lisbon</h1>
+                                    <p>f2353th Ryanir</p>
+                                  </div>
+                                  <div class="gatenumber">
+                                    <label for="text" class="departed">GATE CLOSED</label>
+                                    <div class="divide"></div>
+                                  </div>
+                                </div>
+                                <div class="detailsterminal-gatenumber-moredetails">
+                                  <div class="tarminal-checkin">
+                                    <p>Terminal</p>
+                                    <p>Check-in Area 13</p>
+                                  </div>
+                                  <div class="gateNo">
+                                    <p>Gate 103</p>
+                                  </div>
+                                  <div class="moredetails">
+                                    <a href="#">
+                                    <P>More details</P>
+                                      <img src="../icon/arrow-right-solid.svg" class="moredetaislIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="flightdetails-con">
+                              <a href="#">
+                                <div class="detailstime">
+                                  <h1>12:20</h1>
+                                  <div class="divide"></div>
+                                </div>
+                                <div class="detailscountry-gateStatus">
+                                  <div class="countrynumber">
+                                    <h1>Lisbon</h1>
+                                    <p>f2353th Ryanir</p>
+                                  </div>
+                                  <div class="gatenumber">
+                                    <label for="text" class="gateclosed">GATE CLOSED</label>
+                                    <div class="divide"></div>
+                                  </div>
+                                </div>
+                                <div class="detailsterminal-gatenumber-moredetails">
+                                  <div class="tarminal-checkin">
+                                    <p>Terminal</p>
+                                    <p>Check-in Area 13</p>
+                                  </div>
+                                  <div class="gateNo">
+                                    <p>Gate 103</p>
+                                  </div>
+                                  <div class="moredetails">
+                                    <a href="#">More details
+                                      <img src="../icon/arrow-right-solid.svg" class="moredetaislIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="flightdetails-con">
+                              <a href="#">
+                                <div class="detailstime">
+                                  <h1>12:20</h1>
+                                  <div class="divide"></div>
+                                </div>
+                                <div class="detailscountry-gateStatus">
+                                  <div class="countrynumber">
+                                    <h1>Lisbon</h1>
+                                    <p>f2353th Ryanir</p>
+                                  </div>
+                                  <div class="gatenumber">
+                                    <label for="text" class="gateclosed">GATE CLOSED</label>
+                                    <div class="divide"></div>
+                                  </div>
+                                </div>
+                                <div class="detailsterminal-gatenumber-moredetails">
+                                  <div class="tarminal-checkin">
+                                    <p>Terminal</p>
+                                    <p>Check-in Area 13</p>
+                                  </div>
+                                  <div class="gateNo">
+                                    <p>Gate 103</p>
+                                  </div>
+                                  <div class="moredetails">
+                                    <a href="#">More details
+                                      <img src="../icon/arrow-right-solid.svg" class="moredetaislIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="flightdetails-con">
+                              <a href="#">
+                                <div class="detailstime">
+                                  <h1>12:20</h1>
+                                  <div class="divide"></div>
+                                </div>
+                                <div class="detailscountry-gateStatus">
+                                  <div class="countrynumber">
+                                    <h1>Lisbon</h1>
+                                    <p>f2353th Ryanir</p>
+                                  </div>
+                                  <div class="gatenumber">
+                                    <label for="text" class="gotogate">GATE CLOSED</label>
+                                    <div class="divide"></div>
+                                  </div>
+                                </div>
+                                <div class="detailsterminal-gatenumber-moredetails">
+                                  <div class="tarminal-checkin">
+                                    <p>Terminal</p>
+                                    <p>Check-in Area 13</p>
+                                  </div>
+                                  <div class="gateNo">
+                                    <p>Gate 103</p>
+                                  </div>
+                                  <div class="moredetails">
+                                    <a href="#">More details
+                                      <img src="../icon/arrow-right-solid.svg" class="moredetaislIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="flightdetails-con">
+                              <a href="#">
+                                <div class="detailstime">
+                                  <h1>12:20</h1>
+                                  <div class="divide"></div>
+                                </div>
+                                <div class="detailscountry-gateStatus">
+                                  <div class="countrynumber">
+                                    <h1>Lisbon</h1>
+                                    <p>f2353th Ryanir</p>
+                                  </div>
+                                  <div class="gatenumber">
+                                    <label for="text" class="gateclosed">GATE CLOSED</label>
+                                    <div class="divide"></div>
+                                  </div>
+                                </div>
+                                <div class="detailsterminal-gatenumber-moredetails">
+                                  <div class="tarminal-checkin">
+                                    <p>Terminal</p>
+                                    <p>Check-in Area 13</p>
+                                  </div>
+                                  <div class="gateNo">
+                                    <p>Gate 103</p>
+                                  </div>
+                                  <div class="moredetails">
+                                    <a href="#">More details
+                                      <img src="../icon/arrow-right-solid.svg" class="moredetaislIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="flightdetails-con">
+                              <a href="#">
+                                <div class="detailstime">
+                                  <h1>12:20</h1>
+                                  <div class="divide"></div>
+                                </div>
+                                <div class="detailscountry-gateStatus">
+                                  <div class="countrynumber">
+                                    <h1>Lisbon</h1>
+                                    <p>f2353th Ryanir</p>
+                                  </div>
+                                  <div class="gatenumber">
+                                    <label for="text" class="gateclosed">GATE CLOSED</label>
+                                    <div class="divide"></div>
+                                  </div>
+                                </div>
+                                <div class="detailsterminal-gatenumber-moredetails">
+                                  <div class="tarminal-checkin">
+                                    <p>Terminal</p>
+                                    <p>Check-in Area 13</p>
+                                  </div>
+                                  <div class="gateNo">
+                                    <p>Gate 103</p>
+                                  </div>
+                                  <div class="moredetails">
+                                    <a href="#">More details
+                                      <img src="../icon/arrow-right-solid.svg" class="moredetaislIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="showmoreflight">
+                            <div class="moreflight">
+                              <div class="moreflightbox">
+                                <P>SHOW MORE FLIGHT</P>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="arrivalinfo-content" id="arrivalflight">
+                          <div class="time-nav findtime">
+                            <div class="n-time">
+                                <p>SECURITY TIMES</p>
+                                <P>T1 = 6 min</P>
+                                <p>T2 = 6 min</p>
+                            </div>
+                          </div>
+                          <div class="earlieflight earlieflight2">
+                            <div class="earlier">
+                              <h1>Show earlier flight</h1>
+                              <img src="../icon/arrow-right-solid.svg" class="arrowup">
+                            </div>
+                          </div>
+                          <div class="flightdetials">
+                            <div class="flightdetails-con">
+                              <a href="#">
+                                <div class="detailstime">
+                                  <h1>12:20</h1>
+                                  <div class="divide"></div>
+                                </div>
+                                <div class="detailscountry-gateStatus">
+                                  <div class="countrynumber">
+                                    <h1>Lisbon</h1>
+                                    <p>f2353th Ryanir</p>
+                                  </div>
+                                  <div class="gatenumber">
+                                    <label for="text" class="departed">GATE CLOSED</label>
+                                    <div class="divide"></div>
+                                  </div>
+                                </div>
+                                <div class="detailsterminal-gatenumber-moredetails">
+                                  <div class="tarminal-checkin">
+                                    <p>Terminal</p>
+                                    <p>Check-in Area 13</p>
+                                  </div>
+                                  <div class="moredetails">
+                                    <a href="#">More details
+                                      <img src="../icon/arrow-right-solid.svg" class="moredetaislIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="flightdetails-con">
+                              <a href="#">
+                                <div class="detailstime">
+                                  <h1>12:20</h1>
+                                  <div class="divide"></div>
+                                </div>
+                                <div class="detailscountry-gateStatus">
+                                  <div class="countrynumber">
+                                    <h1>Lisbon</h1>
+                                    <p>f2353th Ryanir</p>
+                                  </div>
+                                  <div class="gatenumber">
+                                    <label for="text" class="departed">GATE CLOSED</label>
+                                    <div class="divide"></div>
+                                  </div>
+                                </div>
+                                <div class="detailsterminal-gatenumber-moredetails">
+                                  <div class="tarminal-checkin">
+                                    <p>Terminal</p>
+                                    <p>Check-in Area 13</p>
+                                  </div>
+                                  <div class="moredetails">
+                                    <a href="#">More details
+                                      <img src="../icon/arrow-right-solid.svg" class="moredetaislIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="flightdetails-con">
+                              <a href="#">
+                                <div class="detailstime">
+                                  <h1>12:20</h1>
+                                  <div class="divide"></div>
+                                </div>
+                                <div class="detailscountry-gateStatus">
+                                  <div class="countrynumber">
+                                    <h1>Lisbon</h1>
+                                    <p>f2353th Ryanir</p>
+                                  </div>
+                                  <div class="gatenumber">
+                                    <label for="text" class="gotogate">GATE CLOSED</label>
+                                    <div class="divide"></div>
+                                  </div>
+                                </div>
+                                <div class="detailsterminal-gatenumber-moredetails">
+                                  <div class="tarminal-checkin">
+                                    <p>Terminal</p>
+                                    <p>Check-in Area 13</p>
+                                  </div>
+                                  <div class="moredetails">
+                                    <a href="#">More details
+                                      <img src="../icon/arrow-right-solid.svg" class="moredetaislIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="flightdetails-con">
+                              <a href="#">
+                                <div class="detailstime">
+                                  <h1>12:20</h1>
+                                  <div class="divide"></div>
+                                </div>
+                                <div class="detailscountry-gateStatus">
+                                  <div class="countrynumber">
+                                    <h1>Lisbon</h1>
+                                    <p>f2353th Ryanir</p>
+                                  </div>
+                                  <div class="gatenumber">
+                                    <label for="text" class="departed">GATE CLOSED</label>
+                                    <div class="divide"></div>
+                                  </div>
+                                </div>
+                                <div class="detailsterminal-gatenumber-moredetails">
+                                  <div class="tarminal-checkin">
+                                    <p>Terminal</p>
+                                    <p>Check-in Area 13</p>
+                                  </div>
+                                  <div class="moredetails">
+                                    <a href="#">More details
+                                      <img src="../icon/arrow-right-solid.svg" class="moredetaislIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="flightdetails-con">
+                              <a href="#">
+                                <div class="detailstime">
+                                  <h1>12:20</h1>
+                                  <div class="divide"></div>
+                                </div>
+                                <div class="detailscountry-gateStatus">
+                                  <div class="countrynumber">
+                                    <h1>Lisbon</h1>
+                                    <p>f2353th Ryanir</p>
+                                  </div>
+                                  <div class="gatenumber">
+                                    <label for="text" class="gateclosed">GATE CLOSED</label>
+                                    <div class="divide"></div>
+                                  </div>
+                                </div>
+                                <div class="detailsterminal-gatenumber-moredetails">
+                                  <div class="tarminal-checkin">
+                                    <p>Terminal</p>
+                                    <p>Check-in Area 13</p>
+                                  </div>
+                                  <div class="moredetails">
+                                    <a href="#">More details
+                                      <img src="../icon/arrow-right-solid.svg" class="moredetaislIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="flightdetails-con">
+                              <a href="#">
+                                <div class="detailstime">
+                                  <h1>12:20</h1>
+                                  <div class="divide"></div>
+                                </div>
+                                <div class="detailscountry-gateStatus">
+                                  <div class="countrynumber">
+                                    <h1>Lisbon</h1>
+                                    <p>f2353th Ryanir</p>
+                                  </div>
+                                  <div class="gatenumber">
+                                    <label for="text" class="departed">GATE CLOSED</label>
+                                    <div class="divide"></div>
+                                  </div>
+                                </div>
+                                <div class="detailsterminal-gatenumber-moredetails">
+                                  <div class="tarminal-checkin">
+                                    <p>Terminal</p>
+                                    <p>Check-in Area 13</p>
+                                  </div>
+                                  <div class="moredetails">
+                                    <a href="#">More details
+                                      <img src="../icon/arrow-right-solid.svg" class="moredetaislIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="flightdetails-con">
+                              <a href="#">
+                                <div class="detailstime">
+                                  <h1>12:20</h1>
+                                  <div class="divide"></div>
+                                </div>
+                                <div class="detailscountry-gateStatus">
+                                  <div class="countrynumber">
+                                    <h1>Lisbon</h1>
+                                    <p>f2353th Ryanir</p>
+                                  </div>
+                                  <div class="gatenumber">
+                                    <label for="text" class="departed">GATE CLOSED</label>
+                                    <div class="divide"></div>
+                                  </div>
+                                </div>
+                                <div class="detailsterminal-gatenumber-moredetails">
+                                  <div class="tarminal-checkin">
+                                    <p>Terminal</p>
+                                    <p>Check-in Area 13</p>
+                                  </div>
+                                  <div class="moredetails">
+                                    <a href="#">More details
+                                      <img src="../icon/arrow-right-solid.svg" class="moredetaislIMG">
+                                    </a>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="showmoreflight">
+                            <div class="moreflight">
+                              <div class="moreflightbox">
+                                <P>SHOW MORE FLIGHT</P>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+              
+              <section class="signup">
+                <div class="signip-content">
+                  <div class="signip-row">
+                    <div class="signup-head">
+                      <p>SIgn up now and get 10% off your next Dublin Airport Duty free online purchuse</p>
+                    </div>
+                    <div class="signup-con">
+                      <div class="sign-row">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ex!</p>
+                        <button class="sighupnow">Sign up now</button>
+                      </div>
+                      <div class="up-row">
+                        <div class="up-con">
+                          <div class="up-con-row">
+                            <img src="../icon/check-solid.svg" class="getintouchIMG">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="up-con-row">
+                            <img src="../icon/check-solid.svg" class="getintouchIMG">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="up-con-row">
+                            <img src="../icon/check-solid.svg" class="getintouchIMG">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                          </div>
+                          <div class="up-con-row">
+                            <img src="../icon/check-solid.svg" class="getintouchIMG">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="getintouch-row">
+                    <div class="getintouch-head">
+                      <p>Get in touch</p>
+                    </div>
+                    <div class="getintouch-con">
+                      <div class="touch-row">
+                        <img src="../icon/envelope-solid.svg" class="getintouchIMG">
+                        <p>@DublinAriport</p>
+                      </div>
+                      <div class="touch-row">
+                        <img src="..//icon/whatsapp-brands-solid.svg" class="getintouchIMG">
+                        <p>Massage us on Whatsapp</p>
+                      </div>
+                      <div class="touch-row">
+                        <img src="../icon/map-solid.svg" class="getintouchIMG">
+                        <p>8131252376</p>
+                      </div>
+                      <div class="touch-row">
+                        <img src="../icon/comments-solid.svg" class="getintouchIMG">
+                        <p>Contact us</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer class="footer">
+                <div class="footer-content">
+                  <div class="footer-link">
+                    <div class="link-row">
+                      <p>Shop Dublin Airport Duty free</p>
+                      <p>North Runway</p>
+                      <p>Achievement to calebrate</p>
+                      <p>Privacy Policy</p>
+                      <div class="copyright copyrightHide">
+                        <p>@ DublinAriport 2025</p>
+                      </div>
+                    </div>
+                    <div class="link-row">
+                      <p>Terms & Conditions</p>
+                      <p>Accessibility Ststement</p>
+                      <p>Gaeilge</p>
+                      <p>Sitemap</p>
+                      <p>Cookie setting</p>
+                    </div>
+                  </div>
+                  <div class="footer-social">
+                    <div class="social-con">
+                      <p>Follow Us</p>
+                      <div class="social-row">
+                        <img src="../icon/whatsapp-brands-solid.svg" class="socialIMG">
+                        <img src="../icon/facebook-brands-solid.svg" class="socialIMG">
+                        <img src="../icon/linkedin-brands-solid.svg" class="socialIMG">
+                        <img src="../icon/twitter-brands-solid.svg" class="socialIMG">
+                      </div>
+                    </div>.
+                  </div>
+                  <div class="footer-appstore">
+                    <div class="appstore-head">
+                      <p>Download Dublin Ariport App</p>
+                    </div>
+                    <div class="app-con">
+                      <img src="../img/top-view.jpg" class="appIMG">
+                      <img src="../img/top-view.jpg" class="appIMG">
+                    </div>
+                  </div>
+                </div>
+              </footer>
+        </div>
+    </div>
+    <script src="../JS/slider.js"></script>
+</body>
+</html>

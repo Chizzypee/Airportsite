@@ -120,8 +120,8 @@
             </div>
             <div class="depArr" id="depArr">
                 <div class="depart">
-                    <img src="./icon/plane-departure-solid.svg" class="departIMG">
-                    <p>DEPARTURES</p>
+                  <img src="./icon/plane-departure-solid.svg" class="departIMG">
+                  <p><a href="./DepartureArrival/departarrive.html">DEPARTURE</a></p>
                 </div>
                 <div class="arrive">
                     <img src="./icon/plane-arrival-solid.svg" class="departIMG">
@@ -130,7 +130,7 @@
             </div>
         </nav>
             <section class="hero-container">
-                <div class="hero-slider">
+                <div class="hero-slider" id="hero-slider">
                   <div class="slide active">
                     <img src="./img/charles-causse-nZGLua7IlYg-unsplash.jpg"
                       alt="children playing" class="slider-image" id="sliderImage">
@@ -168,7 +168,7 @@
                   <button class="slider-btn prev-btn">&#10094;</button>
                   <button class="slider-btn next-btn">&#10095;</button>
           
-                  <div class="slide-indicators">
+                  <div class="slide-indicators" id="slide-indicators">
                     <span class="indicator active" data-slide="0"></span>
                     <span class="indicator" data-slide="1"></span>
                     <span class="indicator" data-slide="2"></span>
@@ -179,14 +179,66 @@
                     <span class="indicator" data-slide="7"></span>
                   </div>
                   
-                  <div class="booking">
-                    <div class="bookingBox">
+                  <div class="booking" >
+                    <div class="bookingBox" onclick="openField()">
                       <img src=".//icon/park.png" class="optIMg">
                       <div class="opttext b-opttext">
                         <h1>BOOK YOUR PARKING</h1>
                       </div>
-                      <div class="opttext1">
-                        <img src="./icon/cros.png" class="optArrow1">
+                      <div class="opttext1" >
+                        <img src="./icon/cros.png" class="optArrow1" id="optArrow1">
+                        <img src="./icon/arrow white.png" class="optArrow2" id="optArrow2" >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="booking-info" id="fieldbox">
+                    <div class="bookingfield">
+                      <div class="bookfieldinfo">
+                        <P>ENTRY DATE</P>
+                        <input type="date" class="date">
+                      </div>
+                      <div class="bookfieldinfo">
+                        <select class="findterminal">
+                          <option value="date">TIME</option>
+                          <option value="date">00:01</option>
+                          <option value="date">01:00</option>
+                          <option value="date">02:00</option>
+                          <option value="date">03:00</option>
+                          <option value="date">04:00</option>
+                          <option value="date">05:00</option>
+                      </select>
+                      </div>
+                      <div class="bookfieldinfo">
+                        <P>EXIT DATE</P>
+                        <input type="date" class="date">
+                      </div>
+                      <div class="bookfieldinfo">
+                        <select class="findterminal">
+                          <option value="date">TIME</option>
+                          <option value="date">00:01</option>
+                          <option value="date">01:00</option>
+                          <option value="date">02:00</option>
+                          <option value="date">03:00</option>
+                          <option value="date">04:00</option>
+                          <option value="date">05:00</option>
+                      </select>
+                      </div>
+                      <div class="bookkcon">
+                        <div class="bookKnow">
+                          <button class="bookK">BOOK NOW</button>
+                        </div>
+                      </div>
+                      <div class="bookhead">
+                        <div class="bookheadlink">
+                          <a href="#">
+                            <p>Login</p>
+                            <img src="./img/Picsart_24-04-19_14-47-27-441.png" class="bkIMG">
+                          </a>
+                          <a href="#" class="a">
+                            <p>Manage my bookings</p>
+                            <img src="./img/Picsart_24-04-19_14-47-27-441.png" class="bkIMG">
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>

@@ -105,3 +105,32 @@ function closeSearch(){
   document.getElementById("navmenu").style.display = "flex"
   document.getElementById("depArr").style.display = "flex"
 }
+
+function departureinfo(){
+  document.getElementById("departureflight").style.display = "flex"
+  document.getElementById("arrivalflight").style.display = "none"
+  document.getElementById("depart").style.boxShadow = "0px 0px 0px"
+  document.getElementById("arrival").style.boxShadow = "0px 0px 4px"
+  document.getElementById("depart").style.backgroundColor = "rgb(0, 66, 0)"
+  document.getElementById("arrival").style.backgroundColor = "rgb(241, 241, 241)"
+  document.getElementById("arrival").style.color = "black"
+  document.getElementById("depart").style.color = "white"
+}
+function arrivalinfo(){
+  document.getElementById("arrivalflight").style.display = "flex"
+  document.getElementById("departureflight").style.display = "none"
+  document.getElementById("arrival").style.backgroundColor = "rgb(0, 66, 0)"
+  document.getElementById("depart").style.backgroundColor = "rgb(241, 241, 241)"
+  document.getElementById("depart").style.color = "black"
+  document.getElementById("arrival").style.color = "white"
+  document.getElementById("arrival").style.boxShadow = "0px 0px 0px"
+  document.getElementById("depart").style.boxShadow = "0px 0px 4px"
+}
+
+function openField(){
+  document.getElementById("fieldbox").style.display = "flex"
+  document.getElementById("hero-slider").style.height = "116vh"
+  document.getElementById("slide-indicators").style.top = "30%"
+  document.getElementById("optArrow1").style.display = "none"
+  document.getElementById("optArrow2").style.display = "flex"
+}
