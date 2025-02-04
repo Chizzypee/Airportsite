@@ -1113,7 +1113,7 @@ nav{
     display: flex;
     flex-direction: column;
     width: 95%;
-    height: 25vh;
+    height: 30vh;
     gap: 10px;
     margin-top: 10px;
   }
@@ -1123,13 +1123,14 @@ nav{
     align-items: center;
     border: 1px solid rgb(219, 217, 217);
     background-color: rgb(251, 251, 251);
-    padding: 5px;
+    padding: 8px;
     border-radius: 5px;
     gap: 10px;
     justify-content: space-between;
   }
   .date{
     border: none;
+    background-color: rgb(251, 251, 251);
   }
   .findterminal{
     border: none;
@@ -1137,6 +1138,7 @@ nav{
     display: flex;
     width: 100%;
     justify-content: space-around;
+    background-color: rgb(251, 251, 251);
   }
   .bookkcon{
     display: flex;
@@ -1150,7 +1152,7 @@ nav{
   .bookK{
     background-color: transparent;
     width: 100%;
-    height: 3vh;
+    height: 5vh;
     color: white;
     border: none;
     font-weight: 700;
@@ -5546,6 +5548,408 @@ nav{
     display: flex;
   }
 }
+@media screen and (min-width: 1024px) {
+  *{
+    font-size: 10px;
+  }
+  nav{
+    height: 30vh;
+}
+  .time-nav{
+    height: 5vh;
+  }
+  .n-time{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .n-time p{
+    font-size: 25px;
+  }
+  .n-book{
+    display: flex;
+  }
+  .n-book p{
+    font-size: 19px;
+  }
+  .nav-link{
+    display: flex;
+  }
+  .nav-link li a{
+    font-size: 25px;
+  }
+  .nav-logo-link{
+    display: flex;
+  }
+  .n-logo-link ul{
+    gap: 5px;
+  }
+  .n-logo-link li a{
+    font-size: 25px;
+  }
+  .n-logo-link{
+    width: 80%;
+  }
+  .n-logo{
+    width: 25%;
+    font-size: 50px;
+  }
+  .n-logo p{
+    font-size: 20px;
+  }
+  .n-logoIMG{
+    width: 20%;
+  }
+  .nav-menu{
+    display: none;
+  }
+  .depart{
+    height: 7vh;
+    width: 30%;
+  }
+  .depart p a{
+    font-size: 20px;
+  }
+  .departIMG{
+    width: 15%;
+  }
+  .arrive{
+    height: 7vh;
+    width: 30%;
+  }
+  .arrive p a{
+    font-size: 20px;
+    color: green;
+  }
+
+  .hero-slider{
+    height: 70vh;
+  }
+  .slide{
+    height: 50vh;
+  }
+  .slider-btn{
+    width: 5%;
+  }
+  .slide-indicators{
+    top: 65%;
+  }
+  .hero-option{
+    background-color: rgb(226, 226, 226);
+  }
+  .h-option{
+    margin-top: 30rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: 95%;
+  }
+  .boy{
+    box-shadow: none;
+  }
+  .opttext{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .opttext h1{
+    font-size: 25px;
+  }
+  .opttext p{
+    font-size: 15px;
+  }
+  .option-box{
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 100%;
+    gap: 0px;
+    box-shadow: 1px 1px 5px;
+    border-radius: 1px;
+  }
+  .option-detail{
+    display: flex;
+  }
+  .optIMg{
+    width: 20%;
+  }
+
+  .ToForm{
+    height: 30vh;
+  }
+  .ToFrom-content{
+    display: flex;
+  }
+  .tofrombox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+  }
+  .Tofrom-head{
+    flex-direction: column;
+    align-items: start;
+    margin: 20px;
+    margin-left: 20px;
+  }
+  .Tofrom-head h1{
+    font-size: 25px;
+  }
+  .ToBox{
+    width: 30%;
+    height: 5vh;
+    display: flex;
+  }
+  .ToBox a {
+    gap: 5px;
+  }
+  .ToBox a p{
+    font-size: 19px;
+  }
+  .Tobox{
+    display: flex;
+  }
+  .tofromIMG{
+    width: 15%;
+  }
+
+  .keepdate-content{
+    height: 40vh;
+  }
+  .keepdate-head{
+    margin: 0px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .keepdate-head h1{
+    font-size: 25px;
+  }
+ .keeppics{
+    flex-direction: row;
+    width: 95%;
+    justify-content: start;
+  }
+  .keepIMG{
+    width: 23%;
+    height: 20vh;
+  }
+  .keepbox{
+    height: 14vh;
+    width: 95%;
+    margin-top: 46rem;
+    border-radius: 3px;
+  }
+  .keepbox h2{
+    margin-top: 10px;
+  }
+  .keepbox p{
+    font-size: 18px;
+  }
+  .keepboxcon{
+    height: 25vh;
+  }
+  
+  .latest-head{
+    flex-direction: row;
+    width: 100%;
+  }
+  .latest-content{
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .latest-headrow{
+    flex-direction: column;
+    align-items: start;
+  }
+  .latest-headrow h1{
+    font-size: 20px;
+  }
+  .latest-social{
+    justify-content: end;
+  }
+  .latest-item{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    gap: 10px;
+  }
+  .latestbox{
+    width: 95%;
+    height: 30vh;
+  }
+  .latestIMG1{
+    height: 40vh;
+    width: 100%;
+  }
+  .latestboxcon{
+    height: 50vh;
+    width: 90%;
+    margin: 0px;
+    margin-left: 10px;
+    align-items: start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .latestboxcon p{
+    width: 90%;
+    font-size: 18px;
+  }
+
+
+  .signip-content{
+    flex-direction: row;
+    height: 30vh;
+    width: 100%;
+    align-items: start;
+  }
+  .signup-head{
+    margin: 0px;
+    margin-left: 20px;
+    display: flex;
+  }
+  .signup-head p{
+    margin: 0px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .signip-row{
+    width: 69%;
+    height: 40vh;
+  }
+  .signup-con{
+    flex-direction: row;
+    margin-left: 20px;
+    height: 10vh;
+    width: 100%;
+  }
+  .sign-row{
+    width: 60%;
+    align-items: center;
+  }
+  .sign-row p{
+   display: flex;
+   font-size: 17px;
+  }
+  .sighupnow{
+    width: 70%;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    border-radius: 2px;
+    background-color: rgb(1, 58, 1);
+    margin-right: 60px;
+  }
+  .up-row{
+    width: 90%;
+    margin-top: 50px;
+  }
+  .up-con{
+    gap: 5px;
+  }
+  .up-con-row p{
+    font-size: 17px;
+  }
+  .getintouch-row{
+    width: 30%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 224, 224);
+    margin-top: 0px;
+  }
+  .getintouch-con{
+    width: 100%;
+    gap: 0px;
+  }
+  .getintouch-head{
+   width: 100%;
+  }
+  .getintouch-head p{
+   width: 100%;
+   margin-left: 30px;
+   font-size: 20px;
+  }
+  .getintouchIMG{
+    width: 8%;
+  }
+  .touch-row{
+    background-color: rgb(223, 220, 220);
+    width: 80%;
+    margin: 0px;
+    padding: 10px;
+  }
+  .touch-row p{
+    font-size: 17px;
+  }
+
+  .footer-content{
+    flex-direction: row;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-appstore{
+    background-color: green;
+    width:100%;
+    align-items: start;
+  }
+  .appstore-head{
+    margin: 0px;
+    margin-left: 20px;
+  }
+  .appstore-head p{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .appIMG{
+    width: 50%;
+    height: 5vh;
+  }
+  .app-con{
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-social{
+    width: 70%;
+    margin-top: 20px;
+  }
+  .social-con p{
+    width: 100%;
+    margin: 0px;
+    font-size: 17px
+  }
+  .social-con{
+    align-items: center;
+    margin: 0px;
+    flex-direction: row;
+  }
+  .socialIMG{
+    width: 20%;
+  }
+  .footer-link{
+    flex-direction: row;
+    gap: 0px;
+    width: 100%;
+  }
+  .link-row{
+    font-size: 13px;
+    width: 100%;
+  }
+  .link-row p{
+    font-size: 18px;
+  }
+  .copyrightHide{
+    display: flex;
+  }
+}
 @media screen and (min-width: 1280px) {
   *{
     font-size: 6px;
@@ -5583,7 +5987,7 @@ nav{
     gap: px;
   }
   .n-logo-link li a{
-    font-size: 15px;
+    font-size: 20px;
   }
   .n-logo-link{
     width: 80%;
@@ -5601,18 +6005,18 @@ nav{
     display: none;
   }
   .depart{
-    height: 8vh;
-    width: 20%;
+    height: 9vh;
+    width: 30%;
   }
   .depart p{
     font-size: 15px;
   }
   .departIMG{
-    width: 15%;
+    width: 13%;
   }
   .arrive{
-    height: 8vh;
-    width: 20%;
+    height: 9vh;
+    width: 30%;
   }
   .arrive p{
     font-size: 15px;

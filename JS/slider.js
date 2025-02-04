@@ -129,7 +129,7 @@ function arrivalinfo(){
 
 function openField(){
   document.getElementById("fieldbox").style.display = "flex"
-  document.getElementById("hero-slider").style.height = "116vh"
+  document.getElementById("hero-slider").style.height = "122vh"
   document.getElementById("slide-indicators").style.top = "30%"
   document.getElementById("optArrow1").style.display = "none"
   document.getElementById("optArrow2").style.display = "flex"
