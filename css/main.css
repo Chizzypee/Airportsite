@@ -442,6 +442,7 @@ nav{
     align-items: center;
     justify-content: center;
 } 
+
   .opttext1{
     display: flex;
     flex-direction: column;
@@ -1016,6 +1017,16 @@ nav{
 /* MEDIA QUARY */
 
 @media screen and (min-width: 344px) {
+  .option-box a{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+   
+}
+.opttext p{
+  color: black;
+}
   *{
     font-size: 10px;
   }
@@ -3888,6 +3899,15 @@ nav{
   }
 }
 @media screen and (min-width: 768px) {
+  .option-box a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.opttext p{
+  color: black;
+}
   *{
     font-size: 10px;
   }
