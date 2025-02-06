@@ -134,3 +134,13 @@ function openField(){
   document.getElementById("optArrow1").style.display = "none"
   document.getElementById("optArrow2").style.display = "flex"
 }
+function openfastmenu(){
+  document.getElementById("navft-menu").style.display = "flex"
+  document.getElementById("openmenu").style.display = "none"
+  document.getElementById("closemenu").style.display = "flex"
+}
+function closefastmenu(){
+  document.getElementById("navft-menu").style.display = "none"
+  document.getElementById("openmenu").style.display = "flex"
+  document.getElementById("closemenu").style.display = "none"
+}

@@ -323,7 +323,314 @@ background-color: white;
     color: white;
 }
 
+/* FAST TRACK */
+.navfasttrack{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(238, 226, 226);
+}
+.navft-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+.ft-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.ft-head p{
+    font-weight: 700;
+    color: green;
+}
+.ft-head ul{
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+.ft-head a{
+    font-weight: 700;
+    color: green;
+}
+.ftIMG{
+    width: 5%;
+    margin-left: 20px;
+}
+.closemenu{
+    width: 5%;
+}
+.navft-menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.navft-menu ul{
+    gap: 20px;
+    padding: 20px;
+}
+.navft-menu a{
+    font-weight: 700;
+    color: black;
+}
+.navft-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 16px;
+}
+.navft-heading p{
+    font-weight: 700;
+    color: green;
+    font-size: 15px;
+}
+.fasthero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.fastcontent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 130vh;
+}
+.fastImg{
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+}
+.fastdetails{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    justify-content: space-between;
+}
+.faststage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(78, 78, 78);
+    width: 100%;
+    height: 20vh;
+    opacity: 50%;
+}
+.fastinput{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(78, 78, 78);
+    opacity: 80%;
+    width: 100%;
+    height: 20vh;
+    gap: 50px;
+}
+.fastinfo{
+    display: flex;
+    flex-direction: column;
+}
+.fastlabel{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.fastlabel1{
+    color: black;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}   
+.fastfield{
+    background-color: white;
+    padding: 10px;
+    border: none;
+}
+.fasttime{
+    background-color: white;
+    padding: 10px;
+    border: none;
+}
+.bookfast{
+    display: flex;
+    height: 10vh;
+    align-items: end;
+}
+.fastbook{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+.bookfast1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fastbook1{
+    width: 90%;
+}
+.fast-con{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fast-content{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.fast-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.fast-info-row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    width: 50%;
+}
+.fast-info-col{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.fastfield1{
+    width: 30%;
+    padding: 10px;
+}
+.fasttime1{
+    width: 30%;
+    padding: 10px;
+}
+.fasttime2{
+    width: 65%;
+    padding: 10px;
+}
+.fasttips{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tipshead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 30vh;
+    gap: 20px;
+}
+.tipshead h1{
+    color: green;
+    font-weight: 700;
+    font-size: 25px;
+}
+.tipshead p{
+    color: green;
+    text-align: center;
+}
 @media screen and (min-width: 344px) {
+    .navfasttrack{
+        height: 11vh
+    }
+    .ft-head{
+        width: 50%;
+    }
+    .ft-headend{
+        justify-content: end;
+    }
+    .ft-headhide{
+       display: none;
+    }
+    .navft-menu{
+        display: none;
+        height: 5vh
+    }
+    .closemenu{
+        display: none;
+    }
+    .ft-head p{
+        font-size: 15px
+    }
+    .fastcontent{
+        height: 40vh;
+    }
+    .fast-content{
+        height: 60vh;
+    }
+    .fast-info-row{
+        width: 100%;
+        gap: 20px;
+    }
+    .fast-info-col{
+        width: 100%;
+        gap: 20px;
+    }
+    .fastfield1{
+        width: 80%;
+        margin-left: 10px;
+        border: 1px solid gray;
+        border-radius: 2px;
+        padding: 15px;
+    }
+    .fasttime1{
+        width: 90%;
+        padding: 15px;
+    }
+    .fasttime11{
+        width: 93%;
+        margin-left: 10px;
+        padding: 15px;
+    }
+    .fasttime2{
+        margin-left: 10px;
+        width: 93%;
+        border: 1px solid gray;
+        border-radius: 2px;
+        padding: 15px;
+    }
+    .bookfast1{
+        margin-left: 10px;
+    }
+    .tipshead{
+        height: 40vh;
+    }
+    .tipshead h1{
+        font-size: 15px;
+    }
+    .tipshead p{
+        font-size: 12px;
+    }
+    .fastinput{
+        display: none;
+    }
+    .fastImg{
+        height: 50vh;
+    }
+    .faststage{
+        /* background-color: transparent; */
+        height: 10vh;
+    }
     nav{
         height: 15vh;
     }
@@ -353,14 +660,14 @@ background-color: white;
         height: 20vh;
     }
     .findterminal{
-        height: 4vh;
+        height: 5vh;
         width: 90%;
         font-size: 10px;
     }
     .findsearch{
         width: 90%;
         margin-left: 20px;
-        height: 4vh;
+        height: 5vh;
     }
     .findsearchinput{
         font-size: 10px;
@@ -372,7 +679,7 @@ background-color: white;
     }
     .departure{
         width: 40%;
-        height: 4vh;
+        height: 5vh;
     }
     .departure h1{
         font-size: 12px;
@@ -382,7 +689,7 @@ background-color: white;
     }
     .arrival{
         width: 40%;
-        height: 4vh;
+        height: 5vh;
     }
     .findtime{
         width: 100%;
@@ -472,14 +779,97 @@ background-color: white;
     }
     .moreflightbox{
         width: 90%;
-        height: 4vh;
+        height: 5vh;
         border-radius: 3px;
     }
     .moreflightbox p{
         font-size: 13px;
     }
 }
+@media screen and (min-width: 360px){
+    .navfasttrack{
+        height: 15vh;
+    }
+    .tipshead{
+        height: 60vh;
+    }
+    .fast-con{
+        height: 70vh;
+    }
+}
+@media screen and (min-width: 375px){
+    .navfasttrack{
+        height: 15vh;
+    }
+    .fast-con{
+        height: 70vh;
+    }
+    .tipshead{
+        height: 60vh;
+    }
+}
+@media screen and (min-width: 390px){
+    .fast-con{
+        height: 60vh;
+    }
+    .tipshead{
+        height: 40vh;
+    }
+}
+@media screen and (min-width: 540px){
+    .navfasttrack{
+        height: 15vh;
+    }
+    .fast-con{
+        height: 70vh;
+    }
+    .tipshead{
+        height: 40vh;
+    }
+}
 @media screen and (min-width: 768px) {
+    .tipshead h1{
+        font-size: 20px;
+    }
+    .tipshead p{
+        font-size: 20px;
+    }
+    .ss{
+        display: none;
+    }
+    .st{
+        display: none;
+    }
+    .tipshead{
+        height: 40vh;
+    }
+    .navft-menu{
+        display: flex;
+    }
+    .ft-headend{
+        display: none;
+    }
+    .ft-headhide{
+        display: flex;
+        justify-content: end;
+    }
+    .fast-con{
+        display: none;
+    }
+    .fastcontent{
+        height: 90vh;
+    }
+    .fastinput{
+        display: flex;
+        height: 15vh;
+    }
+    .fastImg{
+        height: 80vh;
+    }
+    .faststage{
+        background-color: rgb(78, 78, 78);
+        height: 15vh;
+    }
     nav{
         height: 20vh;
     }

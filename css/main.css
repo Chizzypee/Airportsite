@@ -144,6 +144,9 @@ nav{
   width: 7%;
   margin-left: 10px
 }
+.navSearch1{
+  background-color: gray;
+}
 .navSearch{
   display: none;
   flex-direction: row;
@@ -1048,6 +1051,10 @@ nav{
   }
   .arrive p{
     font-size: 14px;
+  }
+  .arrive p a{
+    font-size: 14px;
+    color: green;
   }
   .arrive{
     height: 7vh;
