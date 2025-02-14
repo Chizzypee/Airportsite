@@ -853,7 +853,7 @@ background-color: white;
     margin-top: 30px;
     width: 70%;
     border-radius: 10px;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .cardamout{
     margin-left: 30px;
@@ -1075,6 +1075,7 @@ background-color: white;
     }
     .hero-heading p {
         font-size: 20px;
+        color: green;
     }
     .hero-head{
         display: none;
@@ -1087,7 +1088,7 @@ background-color: white;
         font-size: 10px;
     }
     .hero-box{
-        top: 28%;
+        top: 29%;
     }
     .red{
         height: 5vh;
