@@ -236,10 +236,11 @@ nav{
 .hambuger-content a{
   margin-left: 10px;
   color: black;
+  font-size: 15px;
 }
 .menu{
   width: 7%;
-  margin-right: 5px;
+  margin-right: 9px;
 }
 .n-logoIMG{
   width: 10%;
@@ -1052,6 +1053,7 @@ nav{
   }
   .nav-menu{
     display: flex;
+    /* background-color: white; */
   }
   .depart{
     height: 7vh;
@@ -1097,7 +1099,7 @@ nav{
     width: 100%;
     justify-content: end;
     align-items: center;
-    background-color: rgb(146, 220, 146);
+    background-color: rgb(216, 245, 178);
   }
   .bookingBox{
     display: flex;
@@ -6056,7 +6058,9 @@ nav{
     height: 66vh;
   }
   .slider-btn{
-    width: 5%;
+    width: 3%;
+    font-size: 15px;
+    height: 5vh;
   }
   .slide-indicators{
     top: 50%;

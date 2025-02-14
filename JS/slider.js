@@ -38,40 +38,40 @@ let interval =  setInterval(() => {
 
 
 function dropOpen(){
-  document.getElementById("green").style.display = "none";
-  document.getElementById("active").style.display = "none";
-  document.getElementById("red").style.display = "none";
-  document.getElementById("black").style.display = "none";
+  // document.getElementById("green").style.display = "none";
+  // document.getElementById("active").style.display = "none";
+  // document.getElementById("red").style.display = "none";
+  // document.getElementById("black").style.display = "none";
   document.getElementById("active").style.display = "flex";
 }
-function dropOpen1(){
-  document.getElementById("active").style.display = "none";
-  document.getElementById("red").style.display = "none";
-  document.getElementById("yellow").style.display = "none";
-  document.getElementById("black").style.display = "none";
-  document.getElementById("green").style.display = "flex";
-}
-function dropOpen2(){
-  document.getElementById("green").style.display = "none";
-  document.getElementById("active").style.display = "none";
-  document.getElementById("red").style.display = "none";
-  document.getElementById("yellow").style.display = "none";
-  document.getElementById("red").style.display = "flex";
-}
-function dropOpen3(){
-  document.getElementById("green").style.display = "none";
-  document.getElementById("active").style.display = "none";
-  document.getElementById("red").style.display = "none";
-  document.getElementById("black").style.display = "none";
-  document.getElementById("yellow").style.display = "flex";
-}
-function dropOpen4(){
-  document.getElementById("green").style.display = "none";
-  document.getElementById("active").style.display = "none";
-  document.getElementById("red").style.display = "none";
-  document.getElementById("yellow").style.display = "none";
-  document.getElementById("black").style.display = "flex";
- }
+// function dropOpen1(){
+//   document.getElementById("active").style.display = "none";
+//   document.getElementById("red").style.display = "none";
+//   document.getElementById("yellow").style.display = "none";
+//   document.getElementById("black").style.display = "none";
+//   document.getElementById("green").style.display = "flex";
+// }
+// function dropOpen2(){
+//   document.getElementById("green").style.display = "none";
+//   document.getElementById("active").style.display = "none";
+//   document.getElementById("red").style.display = "none";
+//   document.getElementById("yellow").style.display = "none";
+//   document.getElementById("red").style.display = "flex";
+// }
+// function dropOpen3(){
+//   document.getElementById("green").style.display = "none";
+//   document.getElementById("active").style.display = "none";
+//   document.getElementById("red").style.display = "none";
+//   document.getElementById("black").style.display = "none";
+//   document.getElementById("yellow").style.display = "flex";
+// }
+// function dropOpen4(){
+//   document.getElementById("green").style.display = "none";
+//   document.getElementById("active").style.display = "none";
+//   document.getElementById("red").style.display = "none";
+//   document.getElementById("yellow").style.display = "none";
+//   document.getElementById("black").style.display = "flex";
+//  }
 
 const option = document.querySelectorAll('.option-box')
 
@@ -134,13 +134,22 @@ function openField(){
   document.getElementById("optArrow1").style.display = "none"
   document.getElementById("optArrow2").style.display = "flex"
 }
+function closeField(){
+  document.getElementById("optArrow1").style.display = "flex"
+  document.getElementById("optArrow2").style.display = "none"
+  document.getElementById("fieldbox").style.display = "none"
+  document.getElementById("hero-slider").style.height = "90vh"
+  document.getElementById("slide-indicators").style.top = "40%"
+}
 function openfastmenu(){
   document.getElementById("navft-menu").style.display = "flex"
   document.getElementById("openmenu").style.display = "none"
   document.getElementById("closemenu").style.display = "flex"
+  document.getElementById("navftheading").style.display = "none"
 }
 function closefastmenu(){
   document.getElementById("navft-menu").style.display = "none"
   document.getElementById("openmenu").style.display = "flex"
   document.getElementById("closemenu").style.display = "none"
+  document.getElementById("navftheading").style.display = "flex"
 }

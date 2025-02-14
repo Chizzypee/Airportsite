@@ -359,7 +359,7 @@ background-color: white;
     color: green;
 }
 .ftIMG{
-    width: 5%;
+    width: 10%;
     margin-left: 20px;
 }
 .closemenu{
@@ -372,7 +372,7 @@ background-color: white;
 }
 .navft-menu ul{
     gap: 20px;
-    padding: 20px;
+    margin-left: 20px;
 }
 .navft-menu a{
     font-weight: 700;
@@ -499,7 +499,7 @@ background-color: white;
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 10px;
+    gap: 5px;
 }
 .fast-info-row{
     display: flex;
@@ -532,6 +532,9 @@ background-color: white;
     justify-content: center;
     align-items: center;
 }
+.fasttips-loung{
+    height: 50vh;
+}
 .tipshead{
     display: flex;
     flex-direction: column;
@@ -549,7 +552,626 @@ background-color: white;
     color: green;
     text-align: center;
 }
+
+/* BUY BUSS */
+.buybus{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+}
+.buy{
+    width: 30%;
+    height: auto;
+    flex-direction: column;
+    /* background-color: red; */
+}
+.bus{
+    width: 70%;
+    height: auto;
+    /* background-color: blue; */
+    flex-direction: column;
+}
+.buy-content{
+    width: 90%;
+    margin-left: 20px;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+.bus-content{
+    width: 95%;
+    background-color: whitesmoke;
+}
+.buyhead{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+.buyhead h1{
+    margin-left: 20px;
+}
+.buyitem ul{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(205, 205, 205);
+}
+.buyitem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.buyitem a{
+    color: black;
+}
+.buyicon{
+    width: 3%;
+}
+.businfo{
+    width: 100%;
+    /* background-color: darkblue; */
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.businfo1{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.businfo1 a{
+    color: green;
+    font-weight: 700;
+}
+.bigp{
+    color: green;
+    font-size: 25px;
+    font-weight: 500;
+}
+.busbtn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.businfofieldrow{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.infofield{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+}
+.infofield p{
+    font-weight: 500;
+}
+.searchbtn{
+    width: 100%;
+    padding: 15px;
+    background-image: url(/img/green.jpg);
+    background-size: contain;
+    background-position: center;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 5px 5px;
+}
+.pleasenote{
+    background-color: gainsboro;
+    height: 25vh;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pleasenote-con{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.pleasenote-con span{
+    font-weight: 700;
+}
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    background-color: gainsboro;
+    margin-bottom: 40px;
+}
+.faq-con{
+    display: flex;
+    flex-direction: column;
+}
+.faq-con ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.faq-con a{
+    color: green;
+    font-size: 17px;
+    font-weight: 600;
+}
+.faqicon{
+    width: 3%;
+}
+
+/* Airport club */
+.Airportclub{
+    width: 100%;
+    height: auto;
+}
+.hero-airport{
+    width: 100%;
+    height: 30vh;
+    background-image: url(/img/riku-lu-RISlZXiSShA-unsplash\ \(1\).jpg);
+    background-position: center;
+    background-size: cover; 
+}
+.heroairpotimg{
+    height: 30vh;
+    width: 100%;
+    background-color: green;
+    opacity: 70%;
+}
+.hero-head{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 75%;
+    margin-left: 30px;
+    gap: 5px;
+}
+.hero-head p a{
+    color: white;
+    font-weight: 500;
+}
+.hero-heading{
+    position: absolute;
+    bottom: 65%;
+    margin-left: 30px;
+}
+.hero-heading p{
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}
+.hero-box{
+    position: absolute;
+    bottom: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.red{
+    display: flex;
+    width: 20%;
+    height: 7vh;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    font-weight: 600;
+}
+.Blue{
+    display: flex;
+    width: 20%;
+    height: 7vh;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+     color: blue;
+    font-weight: 600;
+}
+.Green{
+    display: flex;
+    width: 20%;
+    height: 7vh;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+     color: green;
+    font-weight: 600;
+}
+.Silver{
+    display: flex;
+    width: 20%;
+    height: 7vh;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+     color: rgb(42, 42, 42);
+    font-weight: 600;
+}
+.airportclub-content{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.airportclub-con{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+.card1{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.carddetails{
+    height: auto;
+    width: 70%;
+}
+.cardcon{
+    border: 1px solid rgb(191, 191, 191);
+    height: auto;
+    width: 90%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+.cardcard{
+    border-bottom: 1px solid rgb(191, 191, 191);
+    height: 45vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 10px;
+}
+.cardimg{
+    margin-top: 30px;
+    width: 70%;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.cardamout{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.cardrow{
+    display: flex;
+    flex-direction: column;
+}
+.cardrow h1{
+    font-size: 30px;
+}
+.cardbenefit{
+    border-bottom: 1px solid rgb(191, 191, 191);
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.cardbenefit p{
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 30px;
+}
+.cardbenefit ul{
+    height: 30vh;
+}
+.cardbenefit ul li{
+    padding: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+.cardmembership{
+    border-bottom: 1px solid rgb(191, 191, 191);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.cardmembership-opt{
+    border: 1px solid rgb(179, 178, 178);
+    height: 7vh;
+    width: 90%;
+    border-radius: 5px;
+    background-color: transparent;
+    outline-style: none;
+}
+.cardlearnmore{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+}
+.learnmore-card{
+    background-color: green;
+    color: white;
+    width: 90%;
+    height: 7vh;
+    border-radius: 5px;
+    border:  none;
+}
+.carddetails-con{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.carddetails-head p{
+    font-weight: 600;
+    font-size: 25px;
+}
+.personal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: gainsboro;
+    margin-top: 20px;
+}
+.personal-con{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+}
+.personal-head{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.personal-head .ph{
+    font-size: 25px;
+    font-weight: 600;
+    color: green;
+}
+.personalinput{
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    outline: none;
+}
+.personaloption{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.additional-info-head{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+}
+.additional-info-head p{
+    font-size: 25px;
+    color: green;
+    font-weight: 600;
+}
+.additional-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.additionalinfo{
+    /* background-color: RED; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.airportnews-head{
+    height: 5vh;
+}
+.airportnews-head p{
+    font-size: 25px;
+    color: green;
+    font-weight: 500;
+}
+.airportnews-things{
+    margin-left: 30px;
+    margin-top: 20px;
+    /* gap: 10px; */
+   
+}
+.airportnews-thingsdetails{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.chek{
+    margin-top: 20px;
+}
+.joinnow{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.join-now{
+    background-color: green;
+    border: none;
+    font-weight: 600;
+    color: white;
+    width: 50%;
+    height: 6vh;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 344px) {
+    .personaldetails{
+        gap: 10px;
+    }
+    .hamburger{
+        z-index: 1;
+    }
+    .hero-airport{
+        background-image: none;
+        height: 15vh;
+    }
+    .heroairpotimg{
+        height: 15vh;
+        background-color: rgb(201, 238, 146);
+    }
+    .hero-heading{
+        top: 19%;
+        margin: 0px;
+        margin-left: 10px;
+    }
+    .hero-heading p {
+        font-size: 20px;
+    }
+    .hero-head{
+        display: flex;
+        margin: 0px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+    }
+    .hero-head p a{
+        color: black;
+        font-size: 10px;
+    }
+    .hero-box{
+        top: 25%;
+    }
+    .red{
+        height: 5vh;
+    }
+    .Blue{
+        height: 5vh;
+    }
+    .Green{
+        height: 5vh;
+    }
+    .Silver{
+        height: 5vh;
+    }
+    .airportnews-info p{
+        margin-bottom: 15px;
+    }
+    .airportnews-head p{
+        font-size: 23px;
+    }
+    .personaldetails{
+        display: flex;
+        flex-direction: column;
+    }
+    .carddetails-head{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+    }
+    .carddetails-head p{
+        margin-left: 15px;
+    }
+    .cardbenefit{
+        height: 20vh;
+    }
+    .cardcard{
+        height: 35vh;
+    }
+    .carddetails{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        display: none;
+    }
+    .buybus{
+        justify-content: center;
+        align-items: center;
+    }
+    .buy{
+        display: none;
+    }
+    .bus{
+        width: 90%;
+    }
+    .field{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+    }
+    .businfofieldrow{
+        flex-direction: column;
+    }
+    .pleasenote{
+        height: 40vh;
+    }
+    .FAQ{
+        height: 55vh;
+    }
+    .faq-con li a{
+        font-size: 14px;
+    }
+    .faqicon{
+        width: 8%;
+    }
+    .footer-appstore{
+        display: none;
+    }
+    .fast-con-loung{
+        margin-top: 50px;
+    }
+    .fasttips-loung{
+        height: 30vh;
+    }
     .navfasttrack{
         height: 11vh
     }
@@ -564,7 +1186,6 @@ background-color: white;
     }
     .navft-menu{
         display: none;
-        height: 5vh
     }
     .closemenu{
         display: none;
@@ -577,6 +1198,7 @@ background-color: white;
     }
     .fast-content{
         height: 60vh;
+        gap: 10px;
     }
     .fast-info-row{
         width: 100%;
@@ -584,7 +1206,7 @@ background-color: white;
     }
     .fast-info-col{
         width: 100%;
-        gap: 20px;
+        gap: 5px;
     }
     .fastfield1{
         width: 80%;
@@ -610,7 +1232,7 @@ background-color: white;
         padding: 15px;
     }
     .bookfast1{
-        margin-left: 10px;
+        margin-left: -10px;
     }
     .tipshead{
         height: 40vh;
@@ -787,6 +1409,27 @@ background-color: white;
     }
 }
 @media screen and (min-width: 360px){
+    .personaldetails{
+        gap: 10px;
+    }
+    .cardmembership{
+        border: none;
+    }
+    .cardcard{
+        height: 40vh;
+    }
+    .cardbenefit{
+        height: 25vh;
+    }
+    .pleasenote{
+        height: 45vh;
+    }
+    .FAQ{
+        height: 70vh;
+    }
+    .fasttips-loung{
+        height: 50vh;
+    }
     .navfasttrack{
         height: 15vh;
     }
@@ -798,6 +1441,18 @@ background-color: white;
     }
 }
 @media screen and (min-width: 375px){
+    .personal-head{
+        margin-top: 20px;
+    }
+    .cardcard{
+        height: 45vh;
+    }
+    .cardbenefit{
+        height: 30vh;
+    }
+    .FAQ{
+        height: 80vh;
+    }
     .navfasttrack{
         height: 15vh;
     }
@@ -809,6 +1464,21 @@ background-color: white;
     }
 }
 @media screen and (min-width: 390px){
+    .cardcard{
+        height: 35vh;
+    }
+    .cardbenefit{
+        height: 20vh;
+    }
+    .pleasenote{
+        height: 35vh;
+    }
+    .FAQ{
+        height: 65vh;
+    }
+    .fasttips-loung{
+        height: 30vh;
+    }
     .fast-con{
         height: 60vh;
     }
@@ -817,6 +1487,15 @@ background-color: white;
     }
 }
 @media screen and (min-width: 540px){
+    .cardcard{
+        height: 55vh;
+    }
+    .cardbenefit{
+        height: 25vh;
+    }
+    .FAQ{
+        height: 90vh;
+    }
     .navfasttrack{
         height: 15vh;
     }
@@ -828,6 +1507,111 @@ background-color: white;
     }
 }
 @media screen and (min-width: 768px) {
+    .carddetails-head{
+        height: 5vh;
+    }
+    .carddetails{
+        display: flex;
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+    .carddetails-con{
+        width: 95%;
+    }
+    .cardamout{
+        gap: 20px;
+    }
+    .cardrow h1{
+        font-size: 20px;
+    }
+    .cardcard{
+        height: 25vh;
+    }
+    .card{
+        display: flex;
+    }
+    .card1{
+        display: none;
+    }
+    .cardbenefit{
+        height: 20vh;
+    }
+    .cardbenefit p{
+        margin: 0px;
+        margin-left: 15px;
+    }
+    .cardbenefit ul li{
+        gap: 0px;
+        margin: 0px;
+        margin-left: 15px;
+        padding: 7px;
+    }
+    .hero-airport{
+        background-image: url(/img/riku-lu-RISlZXiSShA-unsplash\ \(1\).jpg);
+        height: 30vh;
+    }
+    .heroairpotimg{
+        height: 30vh;
+        background-color: rgb(201, 238, 146);
+    }
+    .hero-heading{
+        top: 30%;
+        margin: 0px;
+        margin-left: 10px;
+    }
+    .hero-heading p {
+        font-size: 30px;
+    }
+    .hero-head{
+        display: flex;
+        margin: 0px;
+        margin-left: 10px;
+    }
+    .hero-head p a{
+        color: white;
+        font-size: 20px;
+    }
+    .hero-box{
+        top: 45%;
+    }
+    .red{
+        height: 5vh;
+    }
+    .Blue{
+        height: 5vh;
+    }
+    .Green{
+        height: 5vh;
+    }
+    .Silver{
+        height: 5vh;
+    }
+    .FAQ{
+        height: 55vh;
+    }
+    .faq-con li a{
+        font-size: 20px;
+    }
+    .faqicon{
+        width: 5%;
+    }
+    .pleasenote{
+        height: 20vh;
+    }
+    .buybus{
+        gap: 20px;
+        align-items: start;
+    }
+    .buy{
+        display: flex;
+    }
+    .businfofieldrow{
+        flex-direction: row;
+    }
+    .bookfast{
+        margin-bottom: 20px;
+    }
     .tipshead h1{
         font-size: 20px;
     }
@@ -844,7 +1628,7 @@ background-color: white;
         height: 40vh;
     }
     .navft-menu{
-        display: flex;
+        display: none;
     }
     .ft-headend{
         display: none;
@@ -862,6 +1646,7 @@ background-color: white;
     .fastinput{
         display: flex;
         height: 15vh;
+        gap: 20px;
     }
     .fastImg{
         height: 80vh;
@@ -1024,5 +1809,16 @@ background-color: white;
     }
     .moreflightbox p{
         font-size: 15px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .cardbenefit{
+        height: 25vh;
+    }
+    .cardcard{
+        height: 50vh;
+    }
+    .FAQ{
+        height: 90vh;
     }
 }
