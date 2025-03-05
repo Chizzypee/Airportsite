@@ -913,7 +913,7 @@ background-color: white;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: gainsboro;
+    background-color: rgb(237, 235, 235);
 }
 .learnmore-card{
     background-color: green;
@@ -941,7 +941,7 @@ background-color: white;
     align-items: center;
     width: 100%;
     height: auto;
-    background-color: gainsboro;
+    background-color: rgb(237, 235, 235);
     margin-top: 20px;
 }
 .personal-con{
@@ -966,8 +966,9 @@ background-color: white;
 .personalinput{
     padding: 10px;
     border-radius: 3px;
-    border: 1px solid gray;
+    border: 1px solid rgb(208, 208, 208);
     outline: none;
+    border-radius: 5px;
 }
 .personaloption{
     display: flex;
