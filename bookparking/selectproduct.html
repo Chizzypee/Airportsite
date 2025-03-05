@@ -41,9 +41,152 @@
             </div>
             <div class="progress">
                 <div class="progress-con">
-                    <div class="progress-line"></div>
-                    <div class="progress-number"></div>
+                  <div class="progressnumber-con">
+                      <div class="progress-line"></div>
+                      <div class="progress-number-passed">1</div>
+                      <div class="progress-number-active">2</div>
+                      <div class="progress-number">3</div>
+                      <div class="progress-number">4</div>
+                      <div class="progress-number">5</div>
+                    </div>
+                    <div class="progresstext">
+                      <p>Select travel dates</p>
+                      <p>Select your product</p>
+                      <p>Enhance journey</p>
+                      <p>Your details</p>
+                      <p>Comfirmation</p>
+                    </div>
                 </div>
+            </div>
+            <div class="changefield" id="changefield">
+              <div class="changefield-con">
+                <div class="changefield-info">
+                  <p>Change entry date and time</p>
+                  <div class="changefieldrow">
+                    <input type="date" class="changedate">
+                    <select class="changetime">
+                      <option value="changetime">12:00</option>
+                      <option value="changetime">00:01</option>
+                      <option value="changetime">01:00</option>
+                      <option value="changetime">02:00</option>
+                      <option value="changetime">03:00</option>
+                      <option value="changetime">04:00</option>
+                      <option value="changetime">05:00</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="changefield-info">
+                  <p>Change exit date and time</p>
+                  <div class="changefieldrow">
+                    <input type="date" class="changedate">
+                    <select class="changetime">
+                      <option value="changetime">12:00</option>
+                      <option value="changetime">00:01</option>
+                      <option value="changetime">01:00</option>
+                      <option value="changetime">02:00</option>
+                      <option value="changetime">03:00</option>
+                      <option value="changetime">04:00</option>
+                      <option value="changetime">05:00</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="changefield-info">
+                  <div class="btn-apply">
+                    <button class="apply">APPLY</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="selecteddate">
+              <div class="selecteddate-con">
+                <div class="selecteddate-row">
+                  <p>From</p>
+                  <p>To</p>
+                </div>
+                <div class="selecteddate-row">
+                  <label for="text" class="dateandtimeselected">03/03/2025 at 07:00</label>
+                  <label for="text" class="dateandtimeselected">03/03/2025 at 07:00</label>
+                </div>
+              </div>
+            </div>
+            <div class="changedateoption" id="changedateoption" >
+              <p onclick="showchangedateoption()">Change Dates ?</p>
+            </div>
+            <div class="selectproduct">
+              <div class="selectproduct-con">
+                <div class="product">
+                  <div class="productIMg">
+                    <img src="../img/green.jpg" class="product-img">
+                  </div>
+                  <div class="productMinwalk">
+                    <img src="../icon/handshake-solid.svg" class="walkImg">
+                    <p>5 mins</p>
+                  </div>
+                  <div class="productdetials">
+                    <div class="productdetials-con">
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>close to Terminal and Terminal 2</p>
+                      </div>
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Minimum 3 day stay</p>
+                      </div>
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Breakdown assisitance for flat tyre/battery</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productprice">
+                    <h1>$450.00</h1>
+                  </div>
+                  <div class="productprice hh">
+                    <p>pre-save & save $99.00</p>
+                  </div>
+                  <div class="otheroption">
+                    <button class="showoption">SHOW OPTION (4)</button>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="productIMg">
+                    <img src="../img/pick buton.jpeg" class="product-img">
+                  </div>
+                  <div class="productMinwalk">
+                    <img src="../icon/handshake-solid.svg" class="walkImg">
+                    <p>15 mins Trensfer</p>
+                  </div>
+                  <div class="productdetials">
+                    <div class="productdetials-con">
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Good value for long stays</p>
+                      </div>
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Free shuttle bus every 15 mins</p>
+                      </div>
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Breakdown assisitance for flat tyre/battery</p>
+                      </div>
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Car cleaning service by crystal valet available</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productprice">
+                    <h1>$253.00</h1>
+                  </div>
+                  <div class="productprice">
+                    <p>pre-save & save $93.00</p>
+                  </div>
+                  <div class="otheroption">
+                    <button class="showoption">SHOW OPTION (4)</button>
+                  </div>
+                </div>
+              </div>
             </div>
               <footer class="footer">
                 <div class="footer-content">

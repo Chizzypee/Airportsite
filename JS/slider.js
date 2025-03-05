@@ -153,3 +153,7 @@ function closefastmenu(){
   document.getElementById("closemenu").style.display = "none"
   document.getElementById("navftheading").style.display = "flex"
 }
+function showchangedateoption(){
+  document.getElementById("changefield").style.display = "flex"
+  document.getElementById("changedateoption").style.display = "none"
+}
