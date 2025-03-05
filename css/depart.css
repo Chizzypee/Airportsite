@@ -1042,6 +1042,76 @@ background-color: white;
     height: 6vh;
     border-radius: 5px;
 }
+/* BOOK CAR PARK */
+.parkstage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 50, 1);
+    width: 100%;
+    height: 20vh;
+    opacity: 90%;
+}
+.parkinputcon{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.parkinput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    opacity: 90%;
+    width: 100%;
+    height: 70vh;
+}
+.parkinfo{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    gap: 10px;
+}
+.park-col{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.park-col p{
+    color: white;
+    font-weight: 500;
+}
+.park-col a{
+    color: yellow;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.parkfield{
+    width: 100%;
+    height: 8vh;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+}
+.parkfield1{
+    width: 100%;
+    height: 8vh;
+}
+.parkbooknow{
+    width: 100%;
+    height: 8vh;
+    border: none;
+    background-color: rgb(1, 218, 1);
+    color: white;
+    margin-top: 30px;
+    font-weight: 600;
+}
 
 
 
@@ -1052,9 +1122,40 @@ background-color: white;
 
 
 
-
-
-@media screen and (min-width: 344px) {
+@media screen and (min-width: 344px) { 
+    .parkstage{
+        height: 10vh;
+        background-image: url(/img/hyundai-motor-group-ErBFxMkJpKk-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        opacity: 10%;
+        margin-bottom: 20px;
+    }
+    .parkstageimg{
+        background-color: green;
+        width: 100%;
+    }
+    .parktips{
+        height: 20vh;
+    }
+    .parkcontent{
+        display: none;
+    }
+    .bookfast1 a{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        color: green;
+        text-decoration: underline;
+    }
+    .parkimg{
+        display: none;
+    }
+    .parkinput{
+        display: none;
+    }
     .personaldetails{
         gap: 10px;
     }
@@ -1415,6 +1516,9 @@ background-color: white;
     }
 }
 @media screen and (min-width: 360px){
+    .parkstage{
+        margin-top: 10px;
+    }
     .personaldetails{
         gap: 10px;
     }
@@ -1447,6 +1551,16 @@ background-color: white;
     }
 }
 @media screen and (min-width: 375px){
+    .parkstageimg{
+        height: 20vh;
+    }
+    .parkstage{
+        margin-top: -0px;
+    }
+    .parktips{
+        height: 25vh;
+        margin-top: 50px;
+    }
     .hero-head{
         margin-bottom: 30px;
     }
@@ -1516,6 +1630,32 @@ background-color: white;
     }
 }
 @media screen and (min-width: 768px) {
+    .parkstage{
+        display: none;
+    }
+    .parkfield{
+        height: 7vh;
+    }
+    .parkfield1{
+        height: 7vh;
+    }
+    .parkbooknow{
+        height: 7vh;
+    }
+    .parkinputcon{
+        height: 15vh;
+    }
+    .parkcontent{
+        display: flex;
+        height: 50vh;
+    }
+    .parkimg{
+        display: flex;
+    }
+    .parkinput{
+        display: flex;
+        height: 80vh;
+    }
     .carddetails-head{
         height: 5vh;
     }
