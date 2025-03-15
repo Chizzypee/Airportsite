@@ -157,3 +157,51 @@ function showchangedateoption(){
   document.getElementById("changefield").style.display = "flex"
   document.getElementById("changedateoption").style.display = "none"
 }
+function showdetailsoption(){
+  document.getElementById("productdetials").style.display = "none"
+  document.getElementById("productdetials1").style.display = "flex"
+  document.getElementById("showoption").style.display = "none"
+  document.getElementById("showoption1").style.display = "flex"
+}
+function closedetailsoption(){
+  document.getElementById("productdetials").style.display = "flex"
+  document.getElementById("productdetials1").style.display = "none"
+  document.getElementById("showoption").style.display = "flex"
+  document.getElementById("showoption1").style.display = "none"
+}
+function showdetailsoption2(){
+  document.getElementById("productdetials2").style.display = "flex"
+  document.getElementById("productdetials3").style.display = "none"
+  document.getElementById("showoption2").style.display = "none"
+  document.getElementById("showoption3").style.display = "flex"
+}
+function closedetailsoption2(){
+  document.getElementById("productdetials3").style.display = "flex"
+  document.getElementById("productdetials2").style.display = "none"
+  document.getElementById("showoption2").style.display = "flex"
+  document.getElementById("showoption3").style.display = "none"
+}
+function showdetailsoption3(){
+  document.getElementById("productdetials5").style.display = "flex"
+  document.getElementById("productdetials4").style.display = "none"
+  document.getElementById("showoption4").style.display = "none"
+  document.getElementById("showoption5").style.display = "flex"
+}
+function closedetailsoption3(){
+  document.getElementById("productdetials4").style.display = "flex"
+  document.getElementById("productdetials5").style.display = "none"
+  document.getElementById("showoption4").style.display = "flex"
+  document.getElementById("showoption5").style.display = "none"
+}
+function showdetailsoption4(){
+  document.getElementById("productdetials7").style.display = "flex"
+  document.getElementById("productdetials6").style.display = "none"
+  document.getElementById("showoption6").style.display = "none"
+  document.getElementById("showoption7").style.display = "flex"
+}
+function closedetailsoption4(){
+  document.getElementById("productdetials6").style.display = "flex"
+  document.getElementById("productdetials7").style.display = "none"
+  document.getElementById("showoption6").style.display = "flex"
+  document.getElementById("showoption7").style.display = "none"
+}

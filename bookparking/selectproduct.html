@@ -122,7 +122,7 @@
                     <img src="../icon/handshake-solid.svg" class="walkImg">
                     <p>5 mins</p>
                   </div>
-                  <div class="productdetials">
+                  <div class="productdetials" id="productdetials">
                     <div class="productdetials-con">
                       <div class="productdetials-info">
                         <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
@@ -138,6 +138,72 @@
                       </div>
                     </div>
                   </div>
+                  <div class="productdetials1" id="productdetials1">
+                    <div class="prod-nav">
+                      <div class="prodback">
+                        <img src="../icon/xmark-solid.svg" class="prodnavImg" onclick="closedetailsoption()">
+                        <p>Back</p>
+                      </div>
+                      <div class="prodback">
+                        <p>Option</p>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Terminal 2 Surface Car Park</label>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$987.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Parking + Fast Track</label>
+                          <p>save time through security</p>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$706.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Parking + 2x Fast Track</label>
+                          <p>save time through security</p>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$720.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Parking + 20% off Lounge</label>
+                          <p>Relex in our premium liffey Lounge</p>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$715.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="productprice">
                     <h1>$450.00</h1>
                   </div>
@@ -145,7 +211,10 @@
                     <p>pre-save & save $99.00</p>
                   </div>
                   <div class="otheroption">
-                    <button class="showoption">SHOW OPTION (4)</button>
+                    <button class="showoption" id="showoption" onclick="showdetailsoption()">SHOW OPTION (4)</button>
+                    <a href="./reserver.html">
+                    <button class="showoption1" id="showoption1">RESERVE NOW</button>
+                    </a>
                   </div>
                 </div>
                 <div class="product">
@@ -156,7 +225,7 @@
                     <img src="../icon/handshake-solid.svg" class="walkImg">
                     <p>15 mins Trensfer</p>
                   </div>
-                  <div class="productdetials">
+                  <div class="productdetials" id="productdetials3">
                     <div class="productdetials-con">
                       <div class="productdetials-info">
                         <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
@@ -176,6 +245,72 @@
                       </div>
                     </div>
                   </div>
+                  <div class="productdetials1" id="productdetials2">
+                    <div class="prod-nav">
+                      <div class="prodback">
+                        <img src="../icon/xmark-solid.svg" class="prodnavImg" onclick="closedetailsoption2()">
+                        <p>Back</p>
+                      </div>
+                      <div class="prodback">
+                        <p>Option</p>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Terminal 2 Short Term</label>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$987.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Parking + Fast Track</label>
+                          <p>save time through security</p>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$706.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Parking + 2x Fast Track</label>
+                          <p>save time through security</p>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$720.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Parking + 20% off Lounge</label>
+                          <p>Relex in our premium liffey Lounge</p>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$715.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="productprice">
                     <h1>$253.00</h1>
                   </div>
@@ -183,7 +318,218 @@
                     <p>pre-save & save $93.00</p>
                   </div>
                   <div class="otheroption">
-                    <button class="showoption">SHOW OPTION (4)</button>
+                    <button class="showoption" id="showoption2" onclick="showdetailsoption2()">SHOW OPTION (4)</button>
+                    <button class="showoption1" id="showoption3">RESERVE NOW</button>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="productIMg">
+                    <img src="../img/btn-bottons.jpg" class="product-img">
+                  </div>
+                  <div class="productMinwalk">
+                    <img src="../icon/handshake-solid.svg" class="walkImg">
+                    <p>10 mins Trensfer</p>
+                  </div>
+                  <div class="productdetials" id="productdetials4">
+                    <div class="productdetials-con">
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Good value for long stays</p>
+                      </div>
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Free shuttle bus every 15 mins</p>
+                      </div>
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Breakdown assisitance for flat tyre/battery</p>
+                      </div>
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Car cleaning service by crystal valet available</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productdetials1" id="productdetials5">
+                    <div class="prod-nav">
+                      <div class="prodback" >
+                        <img src="../icon/xmark-solid.svg" class="prodnavImg" onclick="closedetailsoption3()">
+                        <p>Back</p>
+                      </div>
+                      <div class="prodback">
+                        <p>Option</p>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Express Red Long Term</label>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$999.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Parking + Fast Track</label>
+                          <p>save time through security</p>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$600.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Parking + 2x Fast Track</label>
+                          <p>save time through security</p>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$560.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Parking + 20% off Lounge</label>
+                          <p>Relex in our premium liffey Lounge</p>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$499.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productprice">
+                    <h1>$300.00</h1>
+                  </div>
+                  <div class="productprice">
+                    <p>pre-save & save $93.00</p>
+                  </div>
+                  <div class="otheroption">
+                    <button class="showoption" id="showoption4" onclick="showdetailsoption3()">SHOW OPTION (4)</button>
+                    <button class="showoption1" id="showoption5">RESERVE NOW</button>
+                  </div>
+                </div>
+                <div class="product">
+                  <div class="productIMg">
+                    <img src="../img/rudityas-w-anggoro-ZadM4ldiuY8-unsplash.jpg" class="product-img">
+                  </div>
+                  <div class="productMinwalk">
+                    <img src="../icon/handshake-solid.svg" class="walkImg">
+                    <p>33 mins Trensfer</p>
+                  </div>
+                  <div class="productdetials" id="productdetials6">
+                    <div class="productdetials-con">
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Good value for long stays</p>
+                      </div>
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Free shuttle bus every 15 mins</p>
+                      </div>
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Breakdown assisitance for flat tyre/battery</p>
+                      </div>
+                      <div class="productdetials-info">
+                        <img src="../icon/square-google-plus-brands-solid.svg" class="detailsimg">
+                        <p>Car cleaning service by crystal valet available</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productdetials1" id="productdetials7">
+                    <div class="prod-nav">
+                      <div class="prodback" >
+                        <img src="../icon/xmark-solid.svg" class="prodnavImg" onclick="closedetailsoption4()">
+                        <p>Back</p>
+                      </div>
+                      <div class="prodback">
+                        <p>Option</p>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Holiday Blue Long Term</label>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$707.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Parking + Fast Track</label>
+                          <p>save time through security</p>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$606.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Parking + 2x Fast Track</label>
+                          <p>save time through security</p>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$920.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prod-packs">
+                      <div class="prod-packs-con">
+                        <div class="radio">
+                          <input type="radio" value="packprice">
+                        </div>
+                        <div class="radioinfo">
+                          <label for="packprice">Parking + 20% off Lounge</label>
+                          <p>Relex in our premium Lounge</p>
+                        </div>
+                        <div class="prod-packs-con1">
+                          <p>$815.00</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productprice">
+                    <h1>$685.00</h1>
+                  </div>
+                  <div class="productprice">
+                    <p>pre-save & save $77.00</p>
+                  </div>
+                  <div class="otheroption">
+                    <button class="showoption" id="showoption6" onclick="showdetailsoption4()">SHOW OPTION (4)</button>
+                    <button class="showoption1" id="showoption7">RESERVE NOW</button>
                   </div>
                 </div>
               </div>

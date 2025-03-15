@@ -566,12 +566,10 @@ background-color: white;
     width: 30%;
     height: auto;
     flex-direction: column;
-    /* background-color: red; */
 }
 .bus{
     width: 70%;
     height: auto;
-    /* background-color: blue; */
     flex-direction: column;
 }
 .buy-content{
@@ -1215,6 +1213,7 @@ background-color: white;
     padding: 10px;
     width: 50%;
     background-color: gainsboro;
+    color: black;
 }
 .changetime{
     width: 50%;
@@ -1321,10 +1320,18 @@ background-color: white;
     font-size: 20px;
     color: green;
 }
+.productdetials1{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 20px;
+}
 .productdetials{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     margin-top: 20px;
     width: 100%;
@@ -1332,8 +1339,6 @@ background-color: white;
 }
 .productdetials-con{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     flex-direction: column;
     width: 80%;
     gap: 10px;
@@ -1366,11 +1371,18 @@ background-color: white;
 }
 .otheroption{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 10vh;
+}
+.otheroption a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 .showoption{
     background-color: green;
@@ -1380,9 +1392,30 @@ background-color: white;
     border: none;
     border-radius: 5px;
     font-weight: 600;
+    justify-content: center;
+    align-items: center;
 }
 
 .showoption:hover{
+    background-image: url(/img/green.jpg);
+    background-position: center;
+    background-size: contain;
+}
+.showoption1{
+    background-color: green;
+    color: white;
+    height: 5vh;
+    font-size: 13px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.showoption1:hover{
     background-image: url(/img/green.jpg);
     background-position: center;
     background-size: contain;
@@ -1391,11 +1424,73 @@ background-color: white;
     height: 5vh;
     display: flex;
     align-items: center;
+    background-color: gainsboro;
 }
 .changedateoption p{
     color: green;
     font-weight: 700;
     margin-left: 15px;
+}
+.prod-nav{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.prodback{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.prodback p{
+    font-weight: 500;
+}
+.prodnavImg{
+    width: 5%;
+}
+.prod-packs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 218, 218);
+}
+.prod-packs-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 5vh;
+}
+.radioinfo{
+    width: 80%;
+}
+.prod-packs-con:hover{
+    background-color: aqua;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.prod-packs-con p{
+    font-weight: 500;
+}
+.radioinfo p{
+    font-size: 10px;
+    color: gray;
+}
+.prod-packs-con1{
+    display: flex;
+    justify-content: end;
+    width: 20%;
+    margin-right: 10px;
 }
 
 
@@ -1408,12 +1503,13 @@ background-color: white;
 
 
 @media screen and (min-width: 344px) {
+    
     .apply{
-        height: 3vh;
+        height: 5vh;
         width: 100%;
     }
     .btn-apply{
-        height: 3vh;
+        height: 5vh;
     }
     .changedate{
         width: 50%;
@@ -1421,12 +1517,13 @@ background-color: white;
         border: 1px solid black;
     }
     .changetime{
-        width: 100%;
+        width: 40%;
         height: 5vh;
     }
     .changefield{
         justify-content: center;
         align-items: center;
+        height: 25vh;
     }
     .changefield-con{
         width: 90%;
@@ -1438,7 +1535,7 @@ background-color: white;
         margin: 0px;
     }
     .changefield-info p{
-        font-size: 10px;
+        font-size: 13px;
 
     }
     .hh{
@@ -1456,14 +1553,14 @@ background-color: white;
         font-size: 14px;
     }
     .productIMg{
-        height: 10vh;
+        height: 20vh;
     }
     .product-img{
-        height: 10vh;
+        height: 20vh;
     }
     .product{
         width: 99%;
-        height: 60vh;
+        height: 75vh;
     }
     .selectproduct-con{
         flex-direction: column;
@@ -1484,16 +1581,14 @@ background-color: white;
     .changefield{
         display: none;
     }
+    .progress1{
+        background-color: green;
+    }
     .parkstage{
         height: 10vh;
-        background-image: url(/img/hyundai-motor-group-ErBFxMkJpKk-unsplash.jpg);
-        background-position: center;
-        background-size: cover;
-        opacity: 10%;
         margin-bottom: 20px;
     }
     .parkstageimg{
-        background-color: green;
         width: 100%;
     }
     .parktips{
@@ -1877,6 +1972,12 @@ background-color: white;
     }
 }
 @media screen and (min-width: 360px){
+    .product{
+        height: 70%;
+    }
+    .changetime{
+        height: 5.5vh;
+    }
     .changefield{
         height: 30vh;
     }
@@ -1915,11 +2016,14 @@ background-color: white;
     }
 }
 @media screen and (min-width: 375px){
+    .changetime{
+        height: 5.9vh;
+    }
     .product{
-        height: 65vh;
+        height: 80vh;
     }
     .changefield{
-        height: 30vh;
+        height: 35vh;
     }
     .selecteddate{
         height: 15vh;
@@ -1960,6 +2064,9 @@ background-color: white;
     }
 }
 @media screen and (min-width: 390px){
+    .changetime{
+        height: 5vh;
+    }
     .cardcard{
         height: 35vh;
     }
@@ -1983,6 +2090,33 @@ background-color: white;
     }
 }
 @media screen and (min-width: 540px){
+    .product{
+        height: 80%;
+        width: 60%;
+    }
+    .showoption{
+        height: 7vh;
+    }
+    .walkImg{
+        width: 10%;
+    }
+    .changefield{
+        height: 40vh;
+        justify-content: flex-start;
+    }
+    .changefield-con{
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .changefield-info p{
+        font-size: 15px;
+    }
+    .changetime{
+        height: 6vh;
+    }
+    .apply{
+        height: 6vh;
+    }
     .cardcard{
         height: 55vh;
     }
@@ -2385,6 +2519,9 @@ background-color: white;
     }
 }
 @media screen and (min-width: 1280px) {
+    .product{
+        height: 40%;
+    }
     .cardbenefit{
         height: 25vh;
     }
